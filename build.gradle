@@ -13,16 +13,19 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
 
-    exclusiveContent {
-        forRepository {
-            maven {
-                url "https://cursemaven.com"
+    repositories {
+        exclusiveContent {
+            forRepository {
+                maven {
+                    url "https://cursemaven.com"
+                }
             }
-        }
-        filter {
-            includeGroup "curse.maven"
+            filter {
+                includeGroup "curse.maven"
+            }
         }
     }
 }
@@ -83,8 +86,18 @@ configurations {
 }
 
 dependencies {
+    // Create, Ponder, Flywheel, and Registrate
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation "curse.maven:cobblemon-687131:7273151"
+    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    // Cobblemon
+    implementation "curse.maven:cobblemon-687131:${cobblemon_curse_file}"
+
+    // KotlinForForge
+    implementation "curse.maven:kotlin-for-forge-351264:${kotlinforforge_curse_file}"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
