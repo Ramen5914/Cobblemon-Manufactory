@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "cobblemon:antidote"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 250,
+      "id": "create_cobblemon:source_antidote_water"
+    }
+  ]
+}
