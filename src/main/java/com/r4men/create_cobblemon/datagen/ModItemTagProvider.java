@@ -1,5 +1,6 @@
 package com.r4men.create_cobblemon.datagen;
 
+import com.cobblemon.mod.common.CobblemonBlocks;
 import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.create_cobblemon.CreateCobblemon;
 import com.r4men.create_cobblemon.item.ModItems;
@@ -83,5 +84,20 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(CobblemonItems.PARALYZE_HEAL)
                 .add(CobblemonItems.POTION)
                 .add(CobblemonItems.SUPER_POTION);
+
+        tag(ModTags.Items.BLACK_TUMBLESTONE_BUDS)
+                .add(CobblemonBlocks.SMALL_BUDDING_BLACK_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.MEDIUM_BUDDING_BLACK_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.LARGE_BUDDING_BLACK_TUMBLESTONE.asItem());
+
+        tag(ModTags.Items.SKY_TUMBLESTONE_BUDS)
+                .add(CobblemonBlocks.SMALL_BUDDING_SKY_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.MEDIUM_BUDDING_SKY_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.LARGE_BUDDING_SKY_TUMBLESTONE.asItem());
+
+        tag(ModTags.Items.TUMBLESTONE_BUDS)
+                .add(CobblemonBlocks.SMALL_BUDDING_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.MEDIUM_BUDDING_TUMBLESTONE.asItem())
+                .add(CobblemonBlocks.LARGE_BUDDING_TUMBLESTONE.asItem());
     }
 }

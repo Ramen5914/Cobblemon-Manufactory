@@ -1,8 +1,6 @@
 package com.r4men.create_cobblemon.datagen;
 
-import com.cobblemon.mod.common.CobblemonBlocks;
 import com.r4men.create_cobblemon.CreateCobblemon;
-import com.r4men.create_cobblemon.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -19,19 +17,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        tag(ModTags.Blocks.BLACK_TUMBLESTONE_BUDS)
-                .add(CobblemonBlocks.SMALL_BUDDING_BLACK_TUMBLESTONE)
-                .add(CobblemonBlocks.MEDIUM_BUDDING_BLACK_TUMBLESTONE)
-                .add(CobblemonBlocks.LARGE_BUDDING_BLACK_TUMBLESTONE);
 
-        tag(ModTags.Blocks.SKY_TUMBLESTONE_BUDS)
-                .add(CobblemonBlocks.SMALL_BUDDING_SKY_TUMBLESTONE)
-                .add(CobblemonBlocks.MEDIUM_BUDDING_SKY_TUMBLESTONE)
-                .add(CobblemonBlocks.LARGE_BUDDING_SKY_TUMBLESTONE);
-
-        tag(ModTags.Blocks.TUMBLESTONE_BUDS)
-                .add(CobblemonBlocks.SMALL_BUDDING_TUMBLESTONE)
-                .add(CobblemonBlocks.MEDIUM_BUDDING_TUMBLESTONE)
-                .add(CobblemonBlocks.LARGE_BUDDING_TUMBLESTONE);
     }
 }
