@@ -2,7 +2,7 @@
   "type": "create:emptying",
   "ingredients": [
     {
-      "item": "cobblemon:antidote"
+      "item": "cobblemon:burn_heal"
     }
   ],
   "results": [
@@ -11,7 +11,7 @@
     },
     {
       "amount": 250,
-      "id": "create_cobblemon:source_antidote"
+      "id": "create_cobblemon:source_burn_heal"
     }
   ]
 }
