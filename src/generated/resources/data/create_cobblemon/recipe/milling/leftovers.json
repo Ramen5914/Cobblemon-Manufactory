@@ -1,0 +1,15 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "processing_time": 20,
+  "results": [
+    {
+      "chance": 0.9,
+      "id": "cobblemon:leftovers"
+    }
+  ]
+}

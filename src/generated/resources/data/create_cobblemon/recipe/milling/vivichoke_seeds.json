@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "cobblemon:vivichoke"
+    }
+  ],
+  "processing_time": 70,
+  "results": [
+    {
+      "count": 2,
+      "id": "cobblemon:vivichoke_seeds"
+    },
+    {
+      "chance": 0.5,
+      "id": "cobblemon:vivichoke_seeds"
+    }
+  ]
+}

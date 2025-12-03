@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "cobblemon:red_mint_leaf"
+    }
+  ],
+  "processing_time": 70,
+  "results": [
+    {
+      "id": "cobblemon:red_mint_seeds"
+    },
+    {
+      "chance": 0.5,
+      "id": "cobblemon:red_mint_seeds"
+    }
+  ]
+}
