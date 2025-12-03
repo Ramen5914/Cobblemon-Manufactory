@@ -12,10 +12,6 @@ import net.minecraft.world.level.material.Fluid;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> BLACK_TUMBLESTONE_BUDS = createTag("black_tumblestone_buds");
-        public static final TagKey<Block> SKY_TUMBLESTONE_BUDS = createTag("sky_tumblestone_buds");
-        public static final TagKey<Block> TUMBLESTONE_BUDS = createTag("tumblestone_buds");
-
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CreateCobblemon.MOD_ID, name));
         }
@@ -27,6 +23,10 @@ public class ModTags {
         public static final TagKey<Item> DYEABLE_POKE_BALLS = createTag("dyeable_poke_balls");
         public static final TagKey<Item> POKE_BALL_LIDS = createTag("poke_ball_lids");
         public static final TagKey<Item> UPGRADES_SUPER_POTION = createTag("upgrades_super_potion");
+
+        public static final TagKey<Item> BLACK_TUMBLESTONE_BUDS = createTag("black_tumblestone_buds");
+        public static final TagKey<Item> SKY_TUMBLESTONE_BUDS = createTag("sky_tumblestone_buds");
+        public static final TagKey<Item> TUMBLESTONE_BUDS = createTag("tumblestone_buds");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CreateCobblemon.MOD_ID, name));
