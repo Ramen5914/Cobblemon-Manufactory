@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "create_cobblemon:iron_ball_base"
+    }
+  ]
+}
