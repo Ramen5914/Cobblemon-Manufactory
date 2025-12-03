@@ -1,0 +1,20 @@
+{
+  "values": [
+    "cobblemon:antidote",
+    "cobblemon:awakening",
+    "cobblemon:burn_heal",
+    "cobblemon:elixir",
+    "cobblemon:ether",
+    "cobblemon:full_heal",
+    "cobblemon:full_restore",
+    "cobblemon:hyper_potion",
+    "cobblemon:ice_heal",
+    "cobblemon:max_elixir",
+    "cobblemon:max_ether",
+    "cobblemon:max_potion",
+    "cobblemon:medicinal_brew",
+    "cobblemon:paralyze_heal",
+    "cobblemon:potion",
+    "cobblemon:super_potion"
+  ]
+}
