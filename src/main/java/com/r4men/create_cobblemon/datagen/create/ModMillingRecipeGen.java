@@ -10,7 +10,7 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModMillingRecipeGen extends MillingRecipeGen {
+public final class ModMillingRecipeGen extends MillingRecipeGen {
     GeneratedRecipe BLUE_MINT_SEEDS = mintSeeds("blue_mint_seeds", CobblemonItems.BLUE_MINT_LEAF, CobblemonItems.BLUE_MINT_SEEDS);
     GeneratedRecipe CYAN_MINT_SEEDS = mintSeeds("cyan_mint_seeds", CobblemonItems.CYAN_MINT_LEAF, CobblemonItems.CYAN_MINT_SEEDS);
     GeneratedRecipe GREEN_MINT_SEEDS = mintSeeds("green_mint_seeds", CobblemonItems.GREEN_MINT_LEAF, CobblemonItems.GREEN_MINT_SEEDS);
