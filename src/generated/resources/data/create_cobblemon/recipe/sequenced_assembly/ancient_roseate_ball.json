@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create_cobblemon:ancient_roseate_ball_lid"
+    "item": "create_cobblemon:ancient_pink_ball_lid"
   },
   "results": [
     {

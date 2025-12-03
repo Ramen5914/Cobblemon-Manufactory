@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create_cobblemon:item/ancient_poke_ball_lid"
+    "layer0": "create_cobblemon:item/ancient_yellow_ball_lid"
   }
 }
