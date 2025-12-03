@@ -2,10 +2,7 @@ package com.r4men.create_cobblemon.datagen;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.create_cobblemon.CreateCobblemon;
-import com.r4men.create_cobblemon.datagen.create.ModCrushingRecipeGen;
-import com.r4men.create_cobblemon.datagen.create.ModCuttingRecipeGen;
-import com.r4men.create_cobblemon.datagen.create.ModDeployingRecipeGen;
-import com.r4men.create_cobblemon.datagen.create.ModEmptyingRecipeGen;
+import com.r4men.create_cobblemon.datagen.create.*;
 import com.r4men.create_cobblemon.util.ModTags;
 import com.simibubi.create.api.data.recipe.ProcessingRecipeGen;
 import net.minecraft.core.HolderLookup;
@@ -49,6 +46,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         GENERATORS.add(new ModCuttingRecipeGen(output, registries));
         GENERATORS.add(new ModDeployingRecipeGen(output, registries));
         GENERATORS.add(new ModEmptyingRecipeGen(output, registries));
+        GENERATORS.add(new ModFillingRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
             @Override
