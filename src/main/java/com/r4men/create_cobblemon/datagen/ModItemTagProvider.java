@@ -24,13 +24,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(ModTags.Items.ANCIENT_BALL_LIDS)
-                .add(ModItems.ANCIENT_AZURE_BALL_LID.get())
-                .add(ModItems.ANCIENT_CITRINE_BALL_LID.get())
-                .add(ModItems.ANCIENT_IVORY_BALL_LID.get())
-                .add(ModItems.ANCIENT_POKE_BALL_LID.get())
-                .add(ModItems.ANCIENT_ROSEATE_BALL_LID.get())
-                .add(ModItems.ANCIENT_SLATE_BALL_LID.get())
-                .add(ModItems.ANCIENT_VERDANT_BALL_LID.get())
+                .add(ModItems.ANCIENT_BLUE_BALL_LID.get())
+                .add(ModItems.ANCIENT_YELLOW_BALL_LID.get())
+                .add(ModItems.ANCIENT_WHITE_BALL_LID.get())
+                .add(ModItems.ANCIENT_RED_BALL_LID.get())
+                .add(ModItems.ANCIENT_PINK_BALL_LID.get())
+                .add(ModItems.ANCIENT_BLACK_BALL_LID.get())
+                .add(ModItems.ANCIENT_GREEN_BALL_LID.get())
                 .add(ModItems.TUMBLESTONE_LID.get());
 
         tag(ModTags.Items.DYEABLE_ANCIENT_BALLS)
