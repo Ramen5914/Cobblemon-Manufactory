@@ -6,8 +6,7 @@ import com.r4men.create_cobblemon.fluid.BaseFluidType;
 import com.r4men.create_cobblemon.fluid.ModFluidTypes;
 import com.r4men.create_cobblemon.fluid.ModFluids;
 import com.r4men.create_cobblemon.item.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.Holder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -59,12 +58,15 @@ public class CreateCobblemon {
     @EventBusSubscriber(modid = CreateCobblemon.MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) { }
+        public static void onClientSetup(FMLClientSetupEvent event) {
+
+        }
 
         @SubscribeEvent
         public static void onClientExtensions(RegisterClientExtensionsEvent event) {
-            event.registerFluidType(((BaseFluidType) ModFluidTypes.ANTIDOTE_WATER_FLUID_TYPE.get()).getClientFluidTypeExtensions(),
-                    ModFluidTypes.ANTIDOTE_WATER_FLUID_TYPE.get());
+            for (var fluid : ModFluidTypes.FLUID_TYPES.getEntries().stream().map(Holder::value).toList()) {
+                event.registerFluidType(((BaseFluidType) fluid).getClientFluidTypeExtensions(), fluid);
+            }
         }
     }
 }
