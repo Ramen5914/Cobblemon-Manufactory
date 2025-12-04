@@ -14,7 +14,7 @@ public final class ModCuttingRecipeGen extends CuttingRecipeGen {
             "iron_ball_base", b -> b
                     .require(Items.IRON_INGOT)
                     .duration(200)
-                    .output(ModItems.IRON_BALL_BASE));
+                    .output(ModItems.IRON_BALL_BASE, 6));
 
     public ModCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CreateCobblemon.MOD_ID);
