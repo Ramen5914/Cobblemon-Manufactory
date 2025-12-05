@@ -129,7 +129,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private void compressionRecipe(ItemLike input, int count, ItemLike output, RecipeOutput recipeOutput) {
         ShapelessRecipeBuilder recipe = ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, 1)
-                .unlockedBy("has_" + (input.toString().split(":")[1]), has(input));
+                .unlockedBy(getHasName(input), has(input));
 
         for (int i = 0; i < count; i++) {
             recipe.requires(input);
@@ -145,7 +145,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, seed, 1)
                 .requires(CobblemonItemTags.APRICORN_SPROUTS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .unlockedBy("has_apricorn_sprouts", has(CobblemonItemTags.APRICORN_SPROUTS))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
@@ -157,7 +157,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ball, 1)
                 .requires(ModTags.Items.DYEABLE_ANCIENT_BALLS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
                         ball.toString().split(":")[1])
@@ -168,7 +168,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ball, 1)
                 .requires(ModTags.Items.DYEABLE_POKE_BALLS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput,  ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
                         ball.toString().split(":")[1])
@@ -179,7 +179,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, lid, 1)
                 .requires(ModTags.Items.ANCIENT_BALL_LIDS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
                         lid.toString().split(":")[1])
@@ -190,7 +190,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, lid, 1)
                 .requires(ModTags.Items.POKE_BALL_LIDS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                                 CreateCobblemon.MOD_ID,
                                 lid.toString().split(":")[1])
@@ -201,7 +201,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, lid, 1)
                 .requires(input)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                                 CreateCobblemon.MOD_ID,
                                 lid.toString().split(":")[1])
@@ -212,7 +212,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, apricorn, 1)
                 .requires(CobblemonItemTags.APRICORNS)
                 .requires(dye)
-                .unlockedBy("has_" + (dye.toString().split(":")[1]), has(dye))
+                .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
                         apricorn.toString().split(":")[1])
