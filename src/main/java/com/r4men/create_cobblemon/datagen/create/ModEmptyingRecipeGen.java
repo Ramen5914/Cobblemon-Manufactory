@@ -2,6 +2,7 @@ package com.r4men.create_cobblemon.datagen.create;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.create_cobblemon.CreateCobblemon;
+import com.r4men.create_cobblemon.datagen.ModRecipeProvider;
 import com.r4men.create_cobblemon.fluid.ModFluids;
 import com.simibubi.create.api.data.recipe.EmptyingRecipeGen;
 import net.minecraft.core.HolderLookup;
@@ -97,7 +98,7 @@ public final class ModEmptyingRecipeGen extends EmptyingRecipeGen {
         return create(
                 name, b -> b
                         .require(potion)
-                        .output(fluid, 250)
+                        .output(fluid, ModRecipeProvider.BOTTLE)
                         .output(Items.GLASS_BOTTLE));
     }
 
