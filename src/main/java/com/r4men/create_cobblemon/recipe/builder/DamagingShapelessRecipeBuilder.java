@@ -116,7 +116,7 @@ public class DamagingShapelessRecipeBuilder implements RecipeBuilder {
                 this.resultStack,
                 this.ingredients);
 
-        recipeOutput.accept(id.withPrefix("shapeless/damaging/"), damagingShapelessRecipe, advancement$Builder.build(id.withPrefix("recipes/" + this.category.getFolderName() + "/")));
+        recipeOutput.accept(id.withPrefix("shapeless/damaging/"), damagingShapelessRecipe, advancement$Builder.build(id.withPrefix("recipes/" + this.category.getFolderName() + "/shapeless/damaging/")));
     }
 
     private void ensureValid(ResourceLocation id) {
