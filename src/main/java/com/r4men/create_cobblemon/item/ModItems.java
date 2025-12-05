@@ -61,62 +61,66 @@ public class ModItems {
     public static final DeferredItem<Item> YELLOW_BALL_LID = ITEMS.registerSimpleItem("yellow_ball_lid");
     
     // Incomplete Balls
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_AZURE_BALL = ITEMS.registerSimpleItem("incomplete_ancient_azure_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_CITRINE_BALL = ITEMS.registerSimpleItem("incomplete_ancient_citrine_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_FEATHER_BALL = ITEMS.registerSimpleItem("incomplete_ancient_feather_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GIGATON_BALL = ITEMS.registerSimpleItem("incomplete_ancient_gigaton_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GREAT_BALL = ITEMS.registerSimpleItem("incomplete_ancient_great_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_HEAVY_BALL = ITEMS.registerSimpleItem("incomplete_ancient_heavy_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_IVORY_BALL = ITEMS.registerSimpleItem("incomplete_ancient_ivory_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_JET_BALL = ITEMS.registerSimpleItem("incomplete_ancient_jet_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_LEADEN_BALL = ITEMS.registerSimpleItem("incomplete_ancient_leaden_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_POKE_BALL = ITEMS.registerSimpleItem("incomplete_ancient_poke_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ROSEATE_BALL = ITEMS.registerSimpleItem("incomplete_ancient_roseate_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_SLATE_BALL = ITEMS.registerSimpleItem("incomplete_ancient_slate_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ULTRA_BALL = ITEMS.registerSimpleItem("incomplete_ancient_ultra_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_VERDANT_BALL = ITEMS.registerSimpleItem("incomplete_ancient_verdant_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_WING_BALL = ITEMS.registerSimpleItem("incomplete_ancient_wing_ball");
-    public static final DeferredItem<Item> INCOMPLETE_AZURE_BALL = ITEMS.registerSimpleItem("incomplete_azure_ball");
-    public static final DeferredItem<Item> INCOMPLETE_BEAST_BALL = ITEMS.registerSimpleItem("incomplete_beast_ball");
-    public static final DeferredItem<Item> INCOMPLETE_CHERISH_BALL = ITEMS.registerSimpleItem("incomplete_cherish_ball");
-    public static final DeferredItem<Item> INCOMPLETE_CITRINE_BALL = ITEMS.registerSimpleItem("incomplete_citrine_ball");
-    public static final DeferredItem<Item> INCOMPLETE_DIVE_BALL = ITEMS.registerSimpleItem("incomplete_dive_ball");
-    public static final DeferredItem<Item> INCOMPLETE_DREAM_BALL = ITEMS.registerSimpleItem("incomplete_dream_ball");
-    public static final DeferredItem<Item> INCOMPLETE_DUSK_BALL = ITEMS.registerSimpleItem("incomplete_dusk_ball");
-    public static final DeferredItem<Item> INCOMPLETE_FAST_BALL = ITEMS.registerSimpleItem("incomplete_fast_ball");
-    public static final DeferredItem<Item> INCOMPLETE_FRIEND_BALL = ITEMS.registerSimpleItem("incomplete_friend_ball");
-    public static final DeferredItem<Item> INCOMPLETE_GREAT_BALL = ITEMS.registerSimpleItem("incomplete_great_ball");
-    public static final DeferredItem<Item> INCOMPLETE_HEAL_BALL = ITEMS.registerSimpleItem("incomplete_heal_ball");
-    public static final DeferredItem<Item> INCOMPLETE_HEAVY_BALL = ITEMS.registerSimpleItem("incomplete_heavy_ball");
-    public static final DeferredItem<Item> INCOMPLETE_LEVEL_BALL = ITEMS.registerSimpleItem("incomplete_level_ball");
-    public static final DeferredItem<Item> INCOMPLETE_LOVE_BALL = ITEMS.registerSimpleItem("incomplete_love_ball");
-    public static final DeferredItem<Item> INCOMPLETE_LURE_BALL = ITEMS.registerSimpleItem("incomplete_lure_ball");
-    public static final DeferredItem<Item> INCOMPLETE_LUXURY_BALL = ITEMS.registerSimpleItem("incomplete_luxury_ball");
-    public static final DeferredItem<Item> INCOMPLETE_MASTER_BALL = ITEMS.registerSimpleItem("incomplete_master_ball");
-    public static final DeferredItem<Item> INCOMPLETE_MOON_BALL = ITEMS.registerSimpleItem("incomplete_moon_ball");
-    public static final DeferredItem<Item> INCOMPLETE_NEST_BALL = ITEMS.registerSimpleItem("incomplete_nest_ball");
-    public static final DeferredItem<Item> INCOMPLETE_NET_BALL = ITEMS.registerSimpleItem("incomplete_net_ball");
-    public static final DeferredItem<Item> INCOMPLETE_PARK_BALL = ITEMS.registerSimpleItem("incomplete_park_ball");
-    public static final DeferredItem<Item> INCOMPLETE_POKE_BALL = ITEMS.registerSimpleItem("incomplete_poke_ball");
-    public static final DeferredItem<Item> INCOMPLETE_PREMIER_BALL = ITEMS.registerSimpleItem("incomplete_premier_ball");
-    public static final DeferredItem<Item> INCOMPLETE_QUICK_BALL = ITEMS.registerSimpleItem("incomplete_quick_ball");
-    public static final DeferredItem<Item> INCOMPLETE_REPEAT_BALL = ITEMS.registerSimpleItem("incomplete_repeat_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ROSEATE_BALL = ITEMS.registerSimpleItem("incomplete_roseate_ball");
-    public static final DeferredItem<Item> INCOMPLETE_SAFARI_BALL = ITEMS.registerSimpleItem("incomplete_safari_ball");
-    public static final DeferredItem<Item> INCOMPLETE_SLATE_BALL = ITEMS.registerSimpleItem("incomplete_slate_ball");
-    public static final DeferredItem<Item> INCOMPLETE_SPORT_BALL = ITEMS.registerSimpleItem("incomplete_sport_ball");
-    public static final DeferredItem<Item> INCOMPLETE_TIMER_BALL = ITEMS.registerSimpleItem("incomplete_timer_ball");
-    public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL = ITEMS.registerSimpleItem("incomplete_ultra_ball");
-    public static final DeferredItem<Item> INCOMPLETE_VERDANT_BALL = ITEMS.registerSimpleItem("incomplete_verdant_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_AZURE_BALL = registerSimpleIncompleteItem("incomplete_ancient_azure_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_CITRINE_BALL = registerSimpleIncompleteItem("incomplete_ancient_citrine_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_FEATHER_BALL = registerSimpleIncompleteItem("incomplete_ancient_feather_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GIGATON_BALL = registerSimpleIncompleteItem("incomplete_ancient_gigaton_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GREAT_BALL = registerSimpleIncompleteItem("incomplete_ancient_great_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_HEAVY_BALL = registerSimpleIncompleteItem("incomplete_ancient_heavy_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_IVORY_BALL = registerSimpleIncompleteItem("incomplete_ancient_ivory_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_JET_BALL = registerSimpleIncompleteItem("incomplete_ancient_jet_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_LEADEN_BALL = registerSimpleIncompleteItem("incomplete_ancient_leaden_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_POKE_BALL = registerSimpleIncompleteItem("incomplete_ancient_poke_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ROSEATE_BALL = registerSimpleIncompleteItem("incomplete_ancient_roseate_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_SLATE_BALL = registerSimpleIncompleteItem("incomplete_ancient_slate_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ULTRA_BALL = registerSimpleIncompleteItem("incomplete_ancient_ultra_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_VERDANT_BALL = registerSimpleIncompleteItem("incomplete_ancient_verdant_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_WING_BALL = registerSimpleIncompleteItem("incomplete_ancient_wing_ball");
+    public static final DeferredItem<Item> INCOMPLETE_AZURE_BALL = registerSimpleIncompleteItem("incomplete_azure_ball");
+    public static final DeferredItem<Item> INCOMPLETE_BEAST_BALL = registerSimpleIncompleteItem("incomplete_beast_ball");
+    public static final DeferredItem<Item> INCOMPLETE_CHERISH_BALL = registerSimpleIncompleteItem("incomplete_cherish_ball");
+    public static final DeferredItem<Item> INCOMPLETE_CITRINE_BALL = registerSimpleIncompleteItem("incomplete_citrine_ball");
+    public static final DeferredItem<Item> INCOMPLETE_DIVE_BALL = registerSimpleIncompleteItem("incomplete_dive_ball");
+    public static final DeferredItem<Item> INCOMPLETE_DREAM_BALL = registerSimpleIncompleteItem("incomplete_dream_ball");
+    public static final DeferredItem<Item> INCOMPLETE_DUSK_BALL = registerSimpleIncompleteItem("incomplete_dusk_ball");
+    public static final DeferredItem<Item> INCOMPLETE_FAST_BALL = registerSimpleIncompleteItem("incomplete_fast_ball");
+    public static final DeferredItem<Item> INCOMPLETE_FRIEND_BALL = registerSimpleIncompleteItem("incomplete_friend_ball");
+    public static final DeferredItem<Item> INCOMPLETE_GREAT_BALL = registerSimpleIncompleteItem("incomplete_great_ball");
+    public static final DeferredItem<Item> INCOMPLETE_HEAL_BALL = registerSimpleIncompleteItem("incomplete_heal_ball");
+    public static final DeferredItem<Item> INCOMPLETE_HEAVY_BALL = registerSimpleIncompleteItem("incomplete_heavy_ball");
+    public static final DeferredItem<Item> INCOMPLETE_LEVEL_BALL = registerSimpleIncompleteItem("incomplete_level_ball");
+    public static final DeferredItem<Item> INCOMPLETE_LOVE_BALL = registerSimpleIncompleteItem("incomplete_love_ball");
+    public static final DeferredItem<Item> INCOMPLETE_LURE_BALL = registerSimpleIncompleteItem("incomplete_lure_ball");
+    public static final DeferredItem<Item> INCOMPLETE_LUXURY_BALL = registerSimpleIncompleteItem("incomplete_luxury_ball");
+    public static final DeferredItem<Item> INCOMPLETE_MASTER_BALL = registerSimpleIncompleteItem("incomplete_master_ball");
+    public static final DeferredItem<Item> INCOMPLETE_MOON_BALL = registerSimpleIncompleteItem("incomplete_moon_ball");
+    public static final DeferredItem<Item> INCOMPLETE_NEST_BALL = registerSimpleIncompleteItem("incomplete_nest_ball");
+    public static final DeferredItem<Item> INCOMPLETE_NET_BALL = registerSimpleIncompleteItem("incomplete_net_ball");
+    public static final DeferredItem<Item> INCOMPLETE_PARK_BALL = registerSimpleIncompleteItem("incomplete_park_ball");
+    public static final DeferredItem<Item> INCOMPLETE_POKE_BALL = registerSimpleIncompleteItem("incomplete_poke_ball");
+    public static final DeferredItem<Item> INCOMPLETE_PREMIER_BALL = registerSimpleIncompleteItem("incomplete_premier_ball");
+    public static final DeferredItem<Item> INCOMPLETE_QUICK_BALL = registerSimpleIncompleteItem("incomplete_quick_ball");
+    public static final DeferredItem<Item> INCOMPLETE_REPEAT_BALL = registerSimpleIncompleteItem("incomplete_repeat_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ROSEATE_BALL = registerSimpleIncompleteItem("incomplete_roseate_ball");
+    public static final DeferredItem<Item> INCOMPLETE_SAFARI_BALL = registerSimpleIncompleteItem("incomplete_safari_ball");
+    public static final DeferredItem<Item> INCOMPLETE_SLATE_BALL = registerSimpleIncompleteItem("incomplete_slate_ball");
+    public static final DeferredItem<Item> INCOMPLETE_SPORT_BALL = registerSimpleIncompleteItem("incomplete_sport_ball");
+    public static final DeferredItem<Item> INCOMPLETE_TIMER_BALL = registerSimpleIncompleteItem("incomplete_timer_ball");
+    public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL = registerSimpleIncompleteItem("incomplete_ultra_ball");
+    public static final DeferredItem<Item> INCOMPLETE_VERDANT_BALL = registerSimpleIncompleteItem("incomplete_verdant_ball");
     
     // Incomplete Lids
-    public static final DeferredItem<Item> INCOMPLETE_MASTER_BALL_LID = ITEMS.registerSimpleItem("incomplete_master_ball_lid");
+    public static final DeferredItem<Item> INCOMPLETE_MASTER_BALL_LID = registerSimpleIncompleteItem("incomplete_master_ball_lid");
     
     // Misc
     public static final DeferredItem<Item> CRUSHED_EXP_QUARTZ = ITEMS.registerSimpleItem("crushed_exp_quartz");
     public static final DeferredItem<Item> EXP_QUARTZ = ITEMS.registerSimpleItem("exp_quartz");
     public static final DeferredItem<Item> IRON_BALL_BASE = ITEMS.registerSimpleItem("iron_ball_base");
     
+    private static DeferredItem<Item> registerSimpleIncompleteItem(String name) {
+        return ITEMS.registerSimpleItem(name, new Item.Properties().stacksTo(1));
+    }
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
