@@ -2,6 +2,7 @@ package com.r4men.create_cobblemon.datagen;
 
 import com.r4men.create_cobblemon.CreateCobblemon;
 import com.r4men.create_cobblemon.datagen.create.ModSequencedAssemblyRecipeGen;
+import com.r4men.create_cobblemon.datagen.lang.ModUSEnglishLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -37,6 +38,8 @@ public class DataGenerator {
 
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new ModUSEnglishLanguageProvider(packOutput));
 
         generator.addProvider(event.includeServer(), new ModSequencedAssemblyRecipeGen(packOutput, lookupProvider));
 
