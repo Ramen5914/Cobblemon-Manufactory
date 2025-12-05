@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cobblemon:red_apricorn"
+    },
+    "B": {
+      "item": "cobblemon:black_apricorn"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "RAR",
+    "BIB",
+    "RAR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon:cherish_ball"
+  }
+}
