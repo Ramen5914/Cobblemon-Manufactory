@@ -15,10 +15,12 @@ displayURL="https://github.com/Ramen5914/Create-Cobblemon-Industrialized"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
+
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    # reason="..."
     versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
