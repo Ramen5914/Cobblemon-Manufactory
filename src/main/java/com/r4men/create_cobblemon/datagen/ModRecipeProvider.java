@@ -137,7 +137,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         recipe.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                 CreateCobblemon.MOD_ID,
-                output.toString().split(":")[1])
+                getItemName(output))
                 .withPrefix("shapeless/"));
     }
 
@@ -149,7 +149,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_apricorn_sprouts", has(CobblemonItemTags.APRICORN_SPROUTS))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
-                        seed.toString().split(":")[1])
+                        getItemName(seed))
                         .withPrefix("shapeless/"));
     }
 
@@ -160,7 +160,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
-                        ball.toString().split(":")[1])
+                        getItemName(ball))
                         .withPrefix("shapeless/"));
     }
 
@@ -171,7 +171,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput,  ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
-                        ball.toString().split(":")[1])
+                        getItemName(ball))
                         .withPrefix("shapeless/"));
     }
 
@@ -182,7 +182,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
-                        lid.toString().split(":")[1])
+                        getItemName(lid))
                         .withPrefix("shapeless/"));
     }
 
@@ -193,7 +193,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                                 CreateCobblemon.MOD_ID,
-                                lid.toString().split(":")[1])
+                                getItemName(lid))
                         .withPrefix("shapeless/"));
     }
 
@@ -204,7 +204,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                                 CreateCobblemon.MOD_ID,
-                                lid.toString().split(":")[1])
+                                getItemName(lid))
                         .withPrefix("shapeless/"));
     }
 
@@ -215,7 +215,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
                         CreateCobblemon.MOD_ID,
-                        apricorn.toString().split(":")[1])
+                        getItemName(apricorn))
                         .withPrefix("shapeless/"));
     }
 
