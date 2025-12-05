@@ -6,6 +6,7 @@ import com.r4men.create_cobblemon.fluid.BaseFluidType;
 import com.r4men.create_cobblemon.fluid.ModFluidTypes;
 import com.r4men.create_cobblemon.fluid.ModFluids;
 import com.r4men.create_cobblemon.item.ModItems;
+import com.r4men.create_cobblemon.recipe.ModRecipeSerializers;
 import net.minecraft.core.Holder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -34,6 +35,8 @@ public class CreateCobblemon {
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+
+        ModRecipeSerializers.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 
