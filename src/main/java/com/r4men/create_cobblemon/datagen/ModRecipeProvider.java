@@ -230,6 +230,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         GENERATORS.add(new ModMixingRecipeGen(output, registries));
         GENERATORS.add(new ModPolishingRecipeGen(output, registries));
         GENERATORS.add(new ModPressingRecipeGen(output, registries));
+        GENERATORS.add(new ModWashingRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
             @Override

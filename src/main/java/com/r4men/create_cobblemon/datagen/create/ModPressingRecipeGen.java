@@ -10,7 +10,7 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModPressingRecipeGen extends PressingRecipeGen {
+public final class ModPressingRecipeGen extends PressingRecipeGen {
     GeneratedRecipe BLACK_BALL_LID = itemToLid("black_ball_lid", CobblemonItems.BLACK_APRICORN, ModItems.BLACK_BALL_LID);
     GeneratedRecipe BLACK_TUMBLESTONE_LID = itemToLid("black_tumblestone_lid", CobblemonItems.BLACK_TUMBLESTONE, ModItems.BLACK_TUMBLESTONE_LID);
     GeneratedRecipe BLUE_BALL_LID = itemToLid("blue_ball_lid", CobblemonItems.BLUE_APRICORN, ModItems.BLUE_BALL_LID);
