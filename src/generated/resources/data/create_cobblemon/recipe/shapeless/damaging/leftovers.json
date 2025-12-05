@@ -1,0 +1,16 @@
+{
+  "type": "create_cobblemon:damaging_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:shears"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon:leftovers"
+  }
+}

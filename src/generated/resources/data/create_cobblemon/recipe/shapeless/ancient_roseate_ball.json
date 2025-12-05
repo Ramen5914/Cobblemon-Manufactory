@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "create_cobblemon:dyeable_ancient_balls"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon:ancient_roseate_ball"
+  }
+}
