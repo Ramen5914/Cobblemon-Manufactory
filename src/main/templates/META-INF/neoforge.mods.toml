@@ -11,7 +11,7 @@ displayName="${mod_name}"
 updateJSONURL="https://raw.githubusercontent.com/Ramen5914/Create-Cobblemon-Industrialized/refs/heads/main/update.json"
 displayURL="https://github.com/Ramen5914/Create-Cobblemon-Industrialized"
 logoFile="${mod_logo}"
-credits="{$mod_credits}"
+credits="${mod_credits}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
