@@ -10,18 +10,18 @@ version="${mod_version}"
 displayName="${mod_name}"
 updateJSONURL="https://raw.githubusercontent.com/Ramen5914/Create-Cobblemon-Industrialized/refs/heads/main/update.json"
 displayURL="https://github.com/Ramen5914/Create-Cobblemon-Industrialized"
-#logoFile="examplemod.png" #optional
-#credits="" #optional
+logoFile="${mod_logo}"
+credits="{$mod_credits}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
 [[accessTransformers]]
-file="META-INF/accesstransformer.cfg"
+file="${access_transformer}"
 
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    versionRange="[${neo_version},)"
+    versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
 
