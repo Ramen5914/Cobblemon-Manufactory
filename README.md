@@ -12,16 +12,13 @@
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/d6eddddb-e2ec-43d1-bfaa-add1cd144f32.svg?style=for-the-badge)](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/d6eddddb-e2ec-43d1-bfaa-add1cd144f32)
 
 ## Stats
-### Modrinth
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
 [![Modrinth Version](https://img.shields.io/modrinth/v/FMcIBFPB?style=for-the-badge&logo=modrinth&label=Latest%20Version&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
 [![Modrinth Followers](https://img.shields.io/modrinth/followers/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
 
-### Curseforge
 [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
 [![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
 
-### Github
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Ramen5914/Create-Cobblemon-Industrialized/total?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/releases)
 [![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Create-Cobblemon-Industrialized?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/releases/latest)
 
