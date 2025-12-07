@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_exp_candy_s": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:exp_candy_s"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cobblemon_manufactory:shapeless/exp_candy_m"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_exp_candy_s"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cobblemon_manufactory:shapeless/exp_candy_m"
+    ]
+  }
+}

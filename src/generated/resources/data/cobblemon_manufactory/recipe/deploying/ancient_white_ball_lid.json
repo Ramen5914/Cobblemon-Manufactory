@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "cobblemon_manufactory:tumblestone_lid"
+    },
+    {
+      "item": "minecraft:white_dye"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon_manufactory:ancient_white_ball_lid"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon_manufactory:ancient_green_ball_lid"
+  },
+  "results": [
+    {
+      "id": "cobblemon:ancient_verdant_ball"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_ancient_verdant_ball"
+        },
+        {
+          "item": "cobblemon_manufactory:iron_ball_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_ancient_verdant_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_ancient_verdant_ball"
+        },
+        {
+          "item": "create:copper_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_ancient_verdant_ball"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_ancient_verdant_ball"
+  }
+}

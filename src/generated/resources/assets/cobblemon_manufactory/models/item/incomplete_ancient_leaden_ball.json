@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemon_manufactory:item/incomplete_ancient_leaden_ball"
+  }
+}

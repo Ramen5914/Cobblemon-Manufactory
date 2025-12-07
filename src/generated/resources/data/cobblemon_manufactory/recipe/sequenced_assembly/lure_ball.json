@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon_manufactory:lure_ball_lid"
+  },
+  "results": [
+    {
+      "id": "cobblemon:lure_ball"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_lure_ball"
+        },
+        {
+          "item": "cobblemon_manufactory:iron_ball_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_lure_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_lure_ball"
+        },
+        {
+          "tag": "c:nuggets/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_lure_ball"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_lure_ball"
+  }
+}

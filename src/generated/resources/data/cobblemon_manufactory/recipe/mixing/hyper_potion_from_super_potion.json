@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "cobblemon_manufactory:upgrades_super_potion"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "cobblemon_manufactory:source_super_potion"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "cobblemon_manufactory:source_hyper_potion"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cobblemon_manufactory:exp_quartz_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "cobblemon_manufactory:exp_quartz"
+  }
+}

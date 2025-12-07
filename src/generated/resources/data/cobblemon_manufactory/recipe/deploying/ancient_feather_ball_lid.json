@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "cobblemon_manufactory:sky_tumblestone_lid"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon_manufactory:ancient_feather_ball_lid"
+    }
+  ]
+}

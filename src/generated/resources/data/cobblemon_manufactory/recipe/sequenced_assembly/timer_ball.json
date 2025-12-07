@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon_manufactory:timer_ball_lid"
+  },
+  "results": [
+    {
+      "id": "cobblemon:timer_ball"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_timer_ball"
+        },
+        {
+          "item": "cobblemon_manufactory:iron_ball_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_timer_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_timer_ball"
+        },
+        {
+          "tag": "c:nuggets/gold"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_timer_ball"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_timer_ball"
+  }
+}

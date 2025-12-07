@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cobblemon_manufactory:block/small_exp_quartz_tiles"
+  }
+}

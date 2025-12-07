@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "create_cobblemon:block/exp_quartz_block_top",
-    "side": "create_cobblemon:block/exp_quartz_block_side"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemon_manufactory:item/sky_tumblestone_lid"
+  }
+}

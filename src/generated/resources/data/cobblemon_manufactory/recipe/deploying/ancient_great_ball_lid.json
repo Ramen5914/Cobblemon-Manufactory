@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "cobblemon_manufactory:ancient_blue_ball_lid"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon_manufactory:ancient_great_ball_lid"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_empty_schematic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "create:empty_schematic"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_exp_candy_l": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:exp_candy_l"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cobblemon_manufactory:shapeless/rare_candy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_exp_candy_l",
+      "has_empty_schematic"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cobblemon_manufactory:shapeless/rare_candy"
+    ]
+  }
+}

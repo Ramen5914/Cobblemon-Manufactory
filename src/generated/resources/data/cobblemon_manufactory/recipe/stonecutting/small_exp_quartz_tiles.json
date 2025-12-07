@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cobblemon_manufactory:exp_quartz_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "cobblemon_manufactory:small_exp_quartz_tiles"
+  }
+}
