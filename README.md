@@ -23,7 +23,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Create-Cobblemon-Industrialized?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/releases/latest)
 
 ## Mod Details
-Create Cobblemon Industrialized expands both the Create and Cobblemon experience by industrializing the entire Poké Ball crafting process. With custom sequenced assemblies, new intermediate items, and recipe balancing tuned for Create 6.0, you can build complex factories that mass-produce Poké Balls with full mechanical automation. Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that want deeper progression and automated infrastructure.
+Cobblemon Manufactory expands both the Create and Cobblemon experience by automating the entire Poké Ball crafting process. With custom sequenced assemblies, new intermediate items, and recipe balancing tuned for Create 6.0, you can build complex factories that mass-produce Poké Balls with full mechanical automation. Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that want deeper progression and automated infrastructure.
 
 ## Support Me :)
 You can support me at any of the places below!
