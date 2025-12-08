@@ -45,7 +45,7 @@ Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Cr
 ## Support Me :)
 You can support me at any of the places below!
 
-[![Static Badge](https://img.shields.io/badge/Ko--Fi-%23FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/OmarRahman)
-[![Static Badge](https://img.shields.io/badge/Patreon-%23000000?style=for-the-badge&logo=patreon&logoColor=white)](patreon.com/OmarRahman)
-[![Static Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-%23FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](buymeacoffee.com/OmarRahman)
 [![Static Badge](https://img.shields.io/badge/Github_Sponsors-%23EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Ramen5914)
+[![Static Badge](https://img.shields.io/badge/Patreon-%23000000?style=for-the-badge&logo=patreon&logoColor=white)](patreon.com/OmarRahman)
+[![Static Badge](https://img.shields.io/badge/Ko--Fi-%23FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/OmarRahman)
+[![Static Badge](https://img.shields.io/badge/Buy_Me_A_Coffee-%23FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](buymeacoffee.com/OmarRahman)
