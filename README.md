@@ -9,7 +9,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory)
 [![GitHub License](https://img.shields.io/github/license/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/LICENSE)
 
-[![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7)
+[![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/projects/Cobblemon-Manufactory)
 
 ## Stats
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
