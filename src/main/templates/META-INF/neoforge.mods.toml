@@ -2,14 +2,14 @@ modLoader="javafml"
 loaderVersion="${loader_version_range}" #mandatory
 
 license="${mod_license}"
-issueTrackerURL="https://github.com/Ramen5914/Create-Cobblemon-Industrialized/issues"
+issueTrackerURL="${mod_issue_tracker}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-updateJSONURL="https://raw.githubusercontent.com/Ramen5914/Create-Cobblemon-Industrialized/refs/heads/main/update.json"
-displayURL="https://github.com/Ramen5914/Create-Cobblemon-Industrialized"
+updateJSONURL="${mod_update_json}"
+displayURL="${mod_display_url}"
 logoFile="${mod_logo}"
 credits="${mod_credits}"
 authors="${mod_authors}"
