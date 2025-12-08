@@ -5,6 +5,8 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: self-hosted
+    env:
+      GRADLE_USER_HOME: ${{ github.workspace }}/.gradle
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
