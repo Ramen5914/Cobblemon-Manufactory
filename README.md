@@ -1,4 +1,4 @@
-[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FRamen5914%2FCobblemon-Manufactory%2Frefs%2Fheads%2Fmain%2Fupdate.json&query=%24.supportedVersions&style=for-the-badge&logo=semver&label=Available%20For&color=%23EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/update.json)
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FRamen5914%2FCobblemon-Manufactory%2Frefs%2Fheads%2F1.21.1%2Fupdate.json&query=%24.supportedVersions&style=for-the-badge&logo=semver&label=Available%20For&color=%23EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/1.21.1/update.json)
 
 ## Info
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Ramen5914/Cobblemon-Manufactory/build.yml?style=for-the-badge&logo=github)](https://github.com/Ramen5914/Cobblemon-Manufactory/actions/workflows/build.yml)
@@ -7,7 +7,7 @@
 
 [![GitHub watchers](https://img.shields.io/github/watchers/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/watchers)
 [![GitHub Repo stars](https://img.shields.io/github/stars/ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory)
-[![GitHub License](https://img.shields.io/github/license/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/1.21.1/LICENSE)
 
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/projects/Cobblemon-Manufactory)
 
