@@ -32,6 +32,11 @@ This mod will be heavily changed by version 1.0.0.
 Expect your existing automations to need an update as I will be changing recipes.
 Also, my mod will not be available on Curseforge or Modrinth until the 1.0.0 release.
 
+## Suggestions and Contributing
+If you have any suggestions for the mod, please open an issue on GitHub and/or join the Discord server linked above.
+The channel for this mod is [here](https://discord.com/channels/1284033904344567828/1447676302210367579).
+Pull requests are welcome as well!
+
 ## Credits
 My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/Cobblemon-Manufactory) mod.
 Huge thanks to them for the original idea and permission to do a port.
