@@ -51,9 +51,7 @@ public class CobblemonManufactory {
         LOGGER.info("{} initializing!", NAME);
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
-    }
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
