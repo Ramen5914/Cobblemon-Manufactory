@@ -25,6 +25,9 @@
 ## Mod Details
 Cobblemon Manufactory expands both the Create and Cobblemon experience by automating the entire Poké Ball crafting process. With custom sequenced assemblies, new intermediate items, and recipe balancing tuned for Create 6.0, you can build complex factories that mass-produce Poké Balls with full mechanical automation. Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that want deeper progression and automated infrastructure.
 
+## Disclaimer
+This mod will be heavily changed by version 1.0.0. Expect your existing automations to need an update as I will be changing recipes. Also, my mod will not be available on Curseforge or Modrinth until the 1.0.0 release.
+
 ## Credits
 My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-industrialized) mod. Huge thanks to them for the original idea and permission to do a port. Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x).
 
