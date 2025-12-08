@@ -111,7 +111,6 @@ dependencies {
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 
     // EMI
-//    compileOnly "dev.emi:emi-neoforge:${emi_version}+${minecraft_version}:api"
     runtimeOnly "dev.emi:emi-neoforge:${emi_version}+${minecraft_version}"
 
     // Create, Ponder, Flywheel, and Registrate
