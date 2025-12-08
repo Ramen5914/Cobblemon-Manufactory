@@ -1,11 +1,12 @@
 {
   "homepage": "https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest",
   "1.21.1": {
+    "0.0.2": "Fixed mod metadata and added new icon",
     "0.0.1": "Direct port of Create: Cobblemon Industrialized"
   },
   "promos": {
-    "1.21.1-latest": "0.0.1",
-    "1.21.1-recommended": "0.0.1"
+    "1.21.1-latest": "0.0.2",
+    "1.21.1-recommended": "0.0.2"
   },
   "supportedVersions": "1.21.1"
 }

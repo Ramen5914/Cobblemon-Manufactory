@@ -1,12 +1,12 @@
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FRamen5914%2FCobblemon-Manufactory%2Frefs%2Fheads%2Fmain%2Fupdate.json&query=%24.supportedVersions&style=for-the-badge&logo=semver&label=Available%20For&color=%23EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/update.json)
 
 ## Info
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Ramen5914/Create-Cobblemon-Industrialized/build.yml?style=for-the-badge&logo=github)](https://github.com/Ramen5914/Cobblemon-Manufactory/actions/workflows/build.yml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Ramen5914/Cobblemon-Manufactory/build.yml?style=for-the-badge&logo=github)](https://github.com/Ramen5914/Cobblemon-Manufactory/actions/workflows/build.yml)
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/issues)
 [![Discord](https://img.shields.io/discord/1284033904344567828?style=for-the-badge&logo=discord&color=%235865f2)](https://discord.gg/Fp7AT6uaD8)
 
-[![GitHub watchers](https://img.shields.io/github/watchers/Ramen5914/Create-Cobblemon-Industrialized?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/watchers)
-[![GitHub Repo stars](https://img.shields.io/github/stars/ramen5914/create-cobblemon-industrialized?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized)
+[![GitHub watchers](https://img.shields.io/github/watchers/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/watchers)
+[![GitHub Repo stars](https://img.shields.io/github/stars/ramen5914/Cobblemon-Manufactory?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory)
 [![GitHub License](https://img.shields.io/github/license/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/LICENSE)
 
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7)
@@ -29,7 +29,7 @@ Cobblemon Manufactory expands both the Create and Cobblemon experience by automa
 This mod will be heavily changed by version 1.0.0. Expect your existing automations to need an update as I will be changing recipes. Also, my mod will not be available on Curseforge or Modrinth until the 1.0.0 release.
 
 ## Credits
-My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-industrialized) mod. Huge thanks to them for the original idea and permission to do a port. Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x).
+My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/Cobblemon-Manufactory) mod. Huge thanks to them for the original idea and permission to do a port. Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x).
 
 ## Support Me :)
 You can support me at any of the places below!
