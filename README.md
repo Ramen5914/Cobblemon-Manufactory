@@ -7,7 +7,7 @@
 
 [![GitHub watchers](https://img.shields.io/github/watchers/Ramen5914/Create-Cobblemon-Industrialized?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/watchers)
 [![GitHub Repo stars](https://img.shields.io/github/stars/ramen5914/create-cobblemon-industrialized?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized)
-[![GitHub License](https://img.shields.io/github/license/ramen5914/create-cobblemon-industrialized?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/Ramen5914/Cobblemon-Manufactory?style=for-the-badge&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/blob/main/LICENSE)
 
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7)
 
@@ -19,8 +19,8 @@
 [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
 [![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
 
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Ramen5914/Create-Cobblemon-Industrialized/total?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/releases)
-[![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Create-Cobblemon-Industrialized?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Create-Cobblemon-Industrialized/releases/latest)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Ramen5914/Cobblemon-Manufactory/total?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Cobblemon-Manufactory?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest)
 
 ## Mod Details
 Cobblemon Manufactory expands both the Create and Cobblemon experience by automating the entire Poké Ball crafting process. With custom sequenced assemblies, new intermediate items, and recipe balancing tuned for Create 6.0, you can build complex factories that mass-produce Poké Balls with full mechanical automation. Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that want deeper progression and automated infrastructure.
