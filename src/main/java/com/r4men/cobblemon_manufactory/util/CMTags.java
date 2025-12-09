@@ -28,6 +28,8 @@ public class CMTags {
         public static final TagKey<Item> SKY_TUMBLESTONE_BUDS = createTag("sky_tumblestone_buds");
         public static final TagKey<Item> TUMBLESTONE_BUDS = createTag("tumblestone_buds");
 
+        public static final TagKey<Item> NO_MECHANICAL_CRAFTING = createTag("no_mechanical_crafting");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonManufactory.ID, name));
         }

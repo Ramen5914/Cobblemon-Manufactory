@@ -1,8 +1,7 @@
 package com.r4men.cobblemon_manufactory.mixin;
 
+import com.r4men.cobblemon_manufactory.util.CMTags;
 import com.simibubi.create.content.kinetics.crafter.RecipeGridHandler;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,9 +19,7 @@ public abstract class RecipeGridHandlerMixin {
     )
     private static ItemStack blockPokeballRecipes(ItemStack result) {
         if (result != null && !result.isEmpty()) {
-            ResourceLocation id = BuiltInRegistries.ITEM.getKey(result.getItem());
-
-            if (id.getNamespace().equals("cobblemon") && id.getPath().endsWith("_ball")) {
+            if (result.is(CMTags.Items.NO_MECHANICAL_CRAFTING)) {
                 return null;
             }
         }

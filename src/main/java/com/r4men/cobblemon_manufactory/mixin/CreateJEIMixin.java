@@ -1,10 +1,9 @@
 package com.r4men.cobblemon_manufactory.mixin;
 
+import com.r4men.cobblemon_manufactory.util.CMTags;
 import com.simibubi.create.compat.jei.CreateJEI;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import org.spongepowered.asm.mixin.Mixin;
@@ -37,8 +36,7 @@ public class CreateJEIMixin {
             ItemStack result = recipe.value().getResultItem(registryAccess);
 
             if (!result.isEmpty()) {
-                ResourceLocation id = BuiltInRegistries.ITEM.getKey(result.getItem());
-                return !(id.getNamespace().equals("cobblemon") && id.getPath().endsWith("_ball"));
+                return !result.is(CMTags.Items.NO_MECHANICAL_CRAFTING);
             }
 
             return true;
