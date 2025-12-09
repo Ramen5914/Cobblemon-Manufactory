@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.r4men.cobblemon_manufactory.mixin",
+  "plugin": "com.r4men.cobblemon_manufactory.CMMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "RecipeGridHandlerMixin"
+  ],
+  "client": [
+    "CreateJEIMixin"
+  ]
+}
