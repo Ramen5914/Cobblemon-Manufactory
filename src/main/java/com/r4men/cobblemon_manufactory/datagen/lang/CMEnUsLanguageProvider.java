@@ -3,6 +3,7 @@ package com.r4men.cobblemon_manufactory.datagen.lang;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
 import com.r4men.cobblemon_manufactory.fluid.CMFluidTypes;
 import com.r4men.cobblemon_manufactory.item.CMItems;
+import com.r4men.cobblemon_manufactory.util.CMTags;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
@@ -51,5 +52,7 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         }
 
         add("itemGroup.cobblemon_manufactory.cobblemon_manufactory_tab", "Cobblemon Manufactory");
+
+        addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
     }
 }
