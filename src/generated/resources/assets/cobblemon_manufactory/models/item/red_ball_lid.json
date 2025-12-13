@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "cobblemon_manufactory:item/red_ball_lid"
-  }
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "cobblemon_manufactory:item/red_ball_lid"
+	}
 }

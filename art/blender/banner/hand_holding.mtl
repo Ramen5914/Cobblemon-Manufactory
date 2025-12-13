@@ -1,0 +1,8 @@
+# Made in Blockbench 5.0.4
+newmtl m_b5ba4fa8-c033-22d5-cba3-44f675c5b4d1
+map_Kd mechanical_press_pole.png
+newmtl m_f3ab5708-0030-2e0f-aa4e-617fb0e6d9e5
+map_Kd mechanical_press_head.png
+newmtl m_3fe1ec19-5f13-012c-d474-7c10a9d2e47b
+map_Kd deployer.png
+newmtl none

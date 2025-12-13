@@ -1,0 +1,14 @@
+# Made in Blockbench 5.0.4
+newmtl m_f34aab5e-4033-509f-3d3b-bcc1d026719d
+map_Kd piston_bottom.png
+newmtl m_1f074b5a-4932-fd38-ffda-3c43c5f51c7e
+map_Kd andesite_casing_piston.png
+newmtl m_e9f9009d-2169-2689-89d6-0e57ea4a80fd
+map_Kd gearbox_top.png
+newmtl m_ecf6feff-0c8f-c261-e4c2-99179b331942
+map_Kd andesite_casing_short.png
+newmtl m_72ace643-9ca2-209c-1d8b-7fc3b8ebbacb
+map_Kd gearbox.png
+newmtl m_02c7b671-c4f0-5fcf-29b2-2b73a17f956e
+map_Kd piston_inner.png
+newmtl none
