@@ -2,11 +2,13 @@ package com.r4men.cobblemon_manufactory;
 
 import com.mojang.logging.LogUtils;
 import com.r4men.cobblemon_manufactory.block.CMBlocks;
+import com.r4men.cobblemon_manufactory.component.CMDataComponentTypes;
+import com.r4men.cobblemon_manufactory.crafting.CMRecipes;
 import com.r4men.cobblemon_manufactory.fluid.BaseFluidType;
 import com.r4men.cobblemon_manufactory.fluid.CMFluidTypes;
 import com.r4men.cobblemon_manufactory.fluid.CMFluids;
 import com.r4men.cobblemon_manufactory.item.CMItems;
-import com.r4men.cobblemon_manufactory.crafting.CMRecipes;
+import com.r4men.cobblemon_manufactory.util.CMItemProperties;
 import net.minecraft.core.Holder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -35,6 +37,8 @@ public class CobblemonManufactory {
         CMItems.register(modEventBus);
         CMBlocks.register(modEventBus);
 
+        CMDataComponentTypes.register(modEventBus);
+
         CMFluidTypes.register(modEventBus);
         CMFluids.register(modEventBus);
 
@@ -51,7 +55,8 @@ public class CobblemonManufactory {
         LOGGER.info("{} initializing!", NAME);
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
@@ -62,7 +67,7 @@ public class CobblemonManufactory {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            CMItemProperties.addCustomItemProperties();
         }
 
         @SubscribeEvent
