@@ -16,7 +16,7 @@
           "item": "cobblemon_manufactory:incomplete_poke_ball"
         },
         {
-          "item": "cobblemon_manufactory:iron_ball_base"
+          "item": "cobblemon_manufactory:copper_ball_base"
         }
       ],
       "results": [
@@ -32,7 +32,7 @@
           "item": "cobblemon_manufactory:incomplete_poke_ball"
         },
         {
-          "item": "create:copper_nugget"
+          "item": "minecraft:iron_nugget"
         }
       ],
       "results": [
