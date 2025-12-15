@@ -16,9 +16,11 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -49,6 +51,8 @@ public class CobblemonManufactory {
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        modContainer.registerConfig(ModConfig.Type.COMMON, CMConfig.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
