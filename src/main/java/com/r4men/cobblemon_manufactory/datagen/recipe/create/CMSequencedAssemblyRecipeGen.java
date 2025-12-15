@@ -7,16 +7,25 @@ import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.SequencedAssemblyRecipeGen;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
 public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeGen {
+    GeneratedRecipe POKE_BALL = baseBall(
+            "poke_ball",
+            CMItems.RED_BALL_LID,
+            CMItems.INCOMPLETE_POKE_BALL,
+            CobblemonItems.POKE_BALL);
+
     GeneratedRecipe ANCIENT_SLATE_BALL = simpleCopperBall(
             "ancient_slate_ball",
             CMItems.ANCIENT_BLACK_BALL_LID,
@@ -233,12 +242,6 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
             CMItems.INCOMPLETE_PARK_BALL,
             CobblemonItems.PARK_BALL);
 
-    GeneratedRecipe POKE_BALL = simpleCopperBall(
-            "poke_ball",
-            CMItems.RED_BALL_LID,
-            CMItems.INCOMPLETE_POKE_BALL,
-            CobblemonItems.POKE_BALL);
-
     GeneratedRecipe PREMIER_BALL = simpleCopperBall(
             "premier_ball",
             CMItems.WHITE_BALL_LID,
@@ -327,6 +330,19 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
                 .loops(1)
                 .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.IRON_BALL_BASE))
                 .addStep(DeployerApplicationRecipe::new, rb -> rb.require(nugget)));
+    }
+
+    private GeneratedRecipe baseBall(String name, ItemLike lid, ItemLike incomplete, ItemLike ball) {
+        ItemStack transitional = new ItemStack(incomplete);
+        transitional.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(0));
+
+        return create(name, b -> b
+                .require(lid)
+                .transitionTo(transitional.getItem())
+                .addOutput(ball, 1)
+                .loops(1)
+                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.COPPER_BALL_BASE))
+                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.IRON_NUGGET)));
     }
 
     private GeneratedRecipe simpleCopperBall(String name, ItemLike lid, ItemLike incomplete, ItemLike ball) {
