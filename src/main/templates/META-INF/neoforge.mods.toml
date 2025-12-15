@@ -1,50 +1,50 @@
-modLoader="javafml"
-loaderVersion="${loader_version_range}" #mandatory
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}" #mandatory
 
-license="${mod_license}"
-issueTrackerURL="${mod_issue_tracker}"
+license = "${mod_license}"
+issueTrackerURL = "${mod_issue_tracker}"
 
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
-updateJSONURL="${mod_update_json}"
-displayURL="${mod_display_url}"
-logoFile="${mod_logo}"
-credits="${mod_credits}"
-authors="${mod_authors}"
-description='''${mod_description}'''
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+updateJSONURL = "${mod_update_json}"
+displayURL = "${mod_display_url}"
+logoFile = "${mod_logo}"
+credits = "${mod_credits}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
 
 [[accessTransformers]]
-file="${access_transformer}"
+file = "${access_transformer}"
 
 [[mixins]]
-config="${mixin}"
+config = "${mixin}"
 
-[[dependencies.${mod_id}]]
-    modId="neoforge"
-    type="required"
-    versionRange="${neo_version_range}"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${ mod_id }]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
 
-[[dependencies.${mod_id}]]
-    modId="minecraft"
-    type="required"
-    versionRange="${minecraft_version_range}"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${ mod_id }]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
 
-[[dependencies.${mod_id}]]
-    modId="create"
-    type="required"
-    versionRange="${create_version_range}"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${ mod_id }]]
+modId = "create"
+type = "required"
+versionRange = "${create_version_range}"
+ordering = "NONE"
+side = "BOTH"
 
-[[dependencies.${mod_id}]]
-    modId="cobblemon"
-    type="required"
-    versionRange="${cobblemon_version_range}"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${ mod_id }]]
+modId = "cobblemon"
+type = "required"
+versionRange = "${cobblemon_version_range}"
+ordering = "NONE"
+side = "BOTH"
