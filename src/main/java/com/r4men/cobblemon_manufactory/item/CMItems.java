@@ -133,13 +133,7 @@ public class CMItems {
     }
 
     private static DeferredItem<Item> registerSimpleIncompleteItem(String name) {
-        DeferredItem<Item> item = ITEMS.registerSimpleItem(name, new Item.Properties().stacksTo(1));
-
-        if (!"incomplete_poke_ball".equals(name)) {
-            ALL_ITEMS.add(item);
-        }
-
-        return item;
+        return ITEMS.registerSimpleItem(name, new Item.Properties().stacksTo(1));
     }
 
     public static void register(IEventBus eventBus) {
