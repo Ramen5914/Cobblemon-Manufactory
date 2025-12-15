@@ -312,6 +312,10 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
                     .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.NETHERITE_INGOT))
                     .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.NETHERITE_INGOT)));
 
+    public CMSequencedAssemblyRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe simpleBall(String name, ItemLike lid, ItemLike incomplete, ItemLike ball, TagKey<Item> tag) {
         return create(name, b -> b
                 .require(lid)
@@ -355,9 +359,5 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     private GeneratedRecipe simpleIronBall(String name, ItemLike lid, ItemLike incomplete, ItemLike ball) {
         return simpleBall(name, lid, incomplete, ball, Tags.Items.NUGGETS_IRON);
-    }
-
-    public CMSequencedAssemblyRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }
