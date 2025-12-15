@@ -35,7 +35,7 @@ public class DamagingShapelessRecipe extends ShapelessRecipe {
                     remainders.set(i, item.copy());
                 }
             }
-            }
+        }
 
         return remainders;
     }
@@ -48,6 +48,9 @@ public class DamagingShapelessRecipe extends ShapelessRecipe {
     public static class Serializer implements RecipeSerializer<DamagingShapelessRecipe> {
 
 
+        public static final StreamCodec<RegistryFriendlyByteBuf, DamagingShapelessRecipe> STREAM_CODEC = StreamCodec.of(
+                DamagingShapelessRecipe.Serializer::toNetwork, DamagingShapelessRecipe.Serializer::fromNetwork
+        );
         private static final MapCodec<DamagingShapelessRecipe> CODEC = RecordCodecBuilder.mapCodec(
                 instance -> instance.group(
                                 Codec.STRING.optionalFieldOf("group", "").forGetter(ShapelessRecipe::getGroup),
@@ -74,20 +77,6 @@ public class DamagingShapelessRecipe extends ShapelessRecipe {
                         .apply(instance, DamagingShapelessRecipe::new)
         );
 
-        public static final StreamCodec<RegistryFriendlyByteBuf, DamagingShapelessRecipe> STREAM_CODEC = StreamCodec.of(
-                DamagingShapelessRecipe.Serializer::toNetwork, DamagingShapelessRecipe.Serializer::fromNetwork
-        );
-
-        @Override
-        public @NotNull MapCodec<DamagingShapelessRecipe> codec() {
-            return CODEC;
-        }
-
-        @Override
-        public @NotNull StreamCodec<RegistryFriendlyByteBuf, DamagingShapelessRecipe> streamCodec() {
-            return STREAM_CODEC;
-        }
-
         private static DamagingShapelessRecipe fromNetwork(RegistryFriendlyByteBuf buffer) {
             String s = buffer.readUtf();
             CraftingBookCategory craftingBookCategory = buffer.readEnum(CraftingBookCategory.class);
@@ -107,6 +96,16 @@ public class DamagingShapelessRecipe extends ShapelessRecipe {
                 Ingredient.CONTENTS_STREAM_CODEC.encode(buffer, ingredient);
             }
             ItemStack.STREAM_CODEC.encode(buffer, recipe.result);
+        }
+
+        @Override
+        public @NotNull MapCodec<DamagingShapelessRecipe> codec() {
+            return CODEC;
+        }
+
+        @Override
+        public @NotNull StreamCodec<RegistryFriendlyByteBuf, DamagingShapelessRecipe> streamCodec() {
+            return STREAM_CODEC;
         }
     }
 }
