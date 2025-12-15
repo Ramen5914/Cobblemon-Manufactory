@@ -64,7 +64,7 @@ public class CMItems {
     public static final DeferredItem<Item> ULTRA_BALL_LID = registerSimpleItem("ultra_ball_lid");
     public static final DeferredItem<Item> WHITE_BALL_LID = registerSimpleItem("white_ball_lid");
     public static final DeferredItem<Item> YELLOW_BALL_LID = registerSimpleItem("yellow_ball_lid");
-    
+
     // Incomplete Balls
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_AZURE_BALL = registerSimpleIncompleteItem("incomplete_ancient_azure_ball");
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_CITRINE_BALL = registerSimpleIncompleteItem("incomplete_ancient_citrine_ball");
@@ -113,14 +113,17 @@ public class CMItems {
     public static final DeferredItem<Item> INCOMPLETE_TIMER_BALL = registerSimpleIncompleteItem("incomplete_timer_ball");
     public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL = registerSimpleIncompleteItem("incomplete_ultra_ball");
     public static final DeferredItem<Item> INCOMPLETE_VERDANT_BALL = registerSimpleIncompleteItem("incomplete_verdant_ball");
-    
+
     // Incomplete Lids
     public static final DeferredItem<Item> INCOMPLETE_MASTER_BALL_LID = registerSimpleIncompleteItem("incomplete_master_ball_lid");
-    
+
     // Misc
     public static final DeferredItem<Item> CRUSHED_EXP_QUARTZ = registerSimpleItem("crushed_exp_quartz");
     public static final DeferredItem<Item> EXP_QUARTZ = registerSimpleItem("exp_quartz");
+
     public static final DeferredItem<Item> IRON_BALL_BASE = registerSimpleItem("iron_ball_base");
+    public static final DeferredItem<Item> COPPER_BALL_BASE = registerSimpleItem("copper_ball_base");
+    public static final DeferredItem<Item> GOLD_BALL_BASE = registerSimpleItem("gold_ball_base");
 
     public static DeferredItem<Item> registerSimpleItem(String name) {
         DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
