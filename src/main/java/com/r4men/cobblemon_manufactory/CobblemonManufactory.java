@@ -35,17 +35,16 @@ public class CobblemonManufactory {
     public CobblemonManufactory(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
+        CMTabs.register(modEventBus);
+
         CMItems.register(modEventBus);
         CMBlocks.register(modEventBus);
+        CMFluids.register(modEventBus);
+        CMFluidTypes.register(modEventBus);
 
         CMDataComponentTypes.register(modEventBus);
 
-        CMFluidTypes.register(modEventBus);
-        CMFluids.register(modEventBus);
-
         CMRecipes.register(modEventBus);
-
-        CMTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
