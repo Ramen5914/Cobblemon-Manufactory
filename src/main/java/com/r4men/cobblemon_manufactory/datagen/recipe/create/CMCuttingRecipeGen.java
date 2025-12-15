@@ -16,6 +16,12 @@ public final class CMCuttingRecipeGen extends CuttingRecipeGen {
                     .duration(200)
                     .output(CMItems.IRON_BALL_BASE, 6));
 
+    GeneratedRecipe COPPER_BALL_BASE = create(
+            "copper_ball_base", b -> b
+                    .require(Items.COPPER_INGOT)
+                    .duration(200)
+                    .output(CMItems.COPPER_BALL_BASE, 4));
+
     public CMCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
     }
