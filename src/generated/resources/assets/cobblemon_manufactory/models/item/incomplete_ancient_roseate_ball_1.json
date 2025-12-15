@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblemon_manufactory:item/incomplete_ancient_roseate_ball_1"
+  }
+}
