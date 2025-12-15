@@ -31,15 +31,15 @@ public final class CMMillingRecipeGen extends MillingRecipeGen {
                     .output(CobblemonItems.VIVICHOKE_SEEDS, 2)
                     .output(.5f, CobblemonItems.VIVICHOKE_SEEDS));
 
+    public CMMillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe mintSeeds(String name, ItemLike leaf, ItemLike seed) {
         return create(name, b -> b
                 .require(leaf)
                 .duration(70)
                 .output(seed)
                 .output(.5f, seed));
-    }
-
-    public CMMillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }

@@ -93,14 +93,14 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
             CMFluids.SUPER_POTION.get(),
             CobblemonItems.SUPER_POTION);
 
+    public CMFillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe potionFilling(String name, FlowingFluid fluid, ItemLike potionItem) {
         return create(name, b -> b
                 .require(fluid, 250)
                 .require(Items.GLASS_BOTTLE)
                 .output(potionItem));
-    }
-
-    public CMFillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }

@@ -22,13 +22,13 @@ public final class CMPressingRecipeGen extends PressingRecipeGen {
     GeneratedRecipe WHITE_BALL_LID = itemToLid("white_ball_lid", CobblemonItems.WHITE_APRICORN, CMItems.WHITE_BALL_LID);
     GeneratedRecipe YELLOW_BALL_LID = itemToLid("yellow_ball_lid", CobblemonItems.YELLOW_APRICORN, CMItems.YELLOW_BALL_LID);
 
+    public CMPressingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe itemToLid(String name, ItemLike apricorn, ItemLike lid) {
         return create(name, b -> b
                 .require(apricorn)
                 .output(lid));
-    }
-
-    public CMPressingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }

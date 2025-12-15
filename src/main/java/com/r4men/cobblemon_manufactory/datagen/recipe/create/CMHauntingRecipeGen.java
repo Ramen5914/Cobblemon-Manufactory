@@ -20,11 +20,11 @@ public final class CMHauntingRecipeGen extends HauntingRecipeGen {
     GeneratedRecipe COPPER_NUGGET = simpleHaunting("copper_nugget", Items.IRON_NUGGET, AllItems.COPPER_NUGGET);
     GeneratedRecipe TWISTED_SPOON = simpleHaunting("twisted_spoon", Items.IRON_SHOVEL, CobblemonItems.TWISTED_SPOON);
 
-    private GeneratedRecipe simpleHaunting(String name, ItemLike from, ItemLike to) {
-        return create(name, b -> b.require(from).output(to));
-    }
-
     public CMHauntingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
+    }
+
+    private GeneratedRecipe simpleHaunting(String name, ItemLike from, ItemLike to) {
+        return create(name, b -> b.require(from).output(to));
     }
 }

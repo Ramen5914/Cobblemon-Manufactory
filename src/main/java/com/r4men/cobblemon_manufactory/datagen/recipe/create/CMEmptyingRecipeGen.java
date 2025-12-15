@@ -94,15 +94,15 @@ public final class CMEmptyingRecipeGen extends EmptyingRecipeGen {
             CobblemonItems.SUPER_POTION,
             CMFluids.SUPER_POTION.get());
 
+    public CMEmptyingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe potionEmptying(String name, ItemLike potion, Fluid fluid) {
         return create(
                 name, b -> b
                         .require(potion)
                         .output(fluid, CMRecipeProvider.BOTTLE)
                         .output(Items.GLASS_BOTTLE));
-    }
-
-    public CMEmptyingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }

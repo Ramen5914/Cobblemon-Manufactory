@@ -169,6 +169,10 @@ public final class CMMixingRecipeGen extends MixingRecipeGen {
                     .require(Items.BREAD)
                     .output(CobblemonItems.VIVICHOKE_DIP));
 
+    public CMMixingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe xToPotion(String name, ItemLike item, FlowingFluid in, FlowingFluid out) {
         return create(name, b -> b
                 .requiresHeat(HeatCondition.HEATED)
@@ -191,9 +195,5 @@ public final class CMMixingRecipeGen extends MixingRecipeGen {
                 .require(CMFluids.MEDICINAL_BREW.get(), 1000)
                 .require(berry)
                 .output(potion, 1000));
-    }
-
-    public CMMixingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }
