@@ -204,7 +204,7 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
             CobblemonItems.WATER_STONE);
 
     GeneratedRecipe EXP_QUARTZ = create(
-            "exp_quartz", b-> b
+            "exp_quartz", b -> b
                     .require(CMItems.EXP_QUARTZ)
                     .duration(250)
                     .output(CMItems.CRUSHED_EXP_QUARTZ, 2)
@@ -212,7 +212,7 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(.125f, Items.REDSTONE));
 
     GeneratedRecipe EXPERIENCE_CANDY_XL = create(
-            "experience_candy_xl", b-> b
+            "experience_candy_xl", b -> b
                     .require(CobblemonItems.EXPERIENCE_CANDY_XL)
                     .duration(300)
                     .output(CobblemonItems.EXPERIENCE_CANDY_L, 2)
@@ -220,7 +220,7 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(.375f, CobblemonItems.EXPERIENCE_CANDY_M));
 
     GeneratedRecipe EXPERIENCE_CANDY_L = create(
-            "experience_candy_l", b-> b
+            "experience_candy_l", b -> b
                     .require(CobblemonItems.EXPERIENCE_CANDY_L)
                     .duration(250)
                     .output(CobblemonItems.EXPERIENCE_CANDY_M, 2)
@@ -228,14 +228,14 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(.375f, CobblemonItems.EXPERIENCE_CANDY_S));
 
     GeneratedRecipe EXPERIENCE_CANDY_M = create(
-            "experience_candy_m", b-> b
+            "experience_candy_m", b -> b
                     .require(CobblemonItems.EXPERIENCE_CANDY_M)
                     .duration(200)
                     .output(CobblemonItems.EXPERIENCE_CANDY_S, 2)
                     .output(.375f, CobblemonItems.EXPERIENCE_CANDY_XS));
 
     GeneratedRecipe EXPERIENCE_CANDY_S = create(
-            "experience_candy_s", b-> b
+            "experience_candy_s", b -> b
                     .require(CobblemonItems.EXPERIENCE_CANDY_S)
                     .duration(150)
                     .output(CobblemonItems.EXPERIENCE_CANDY_XS)
@@ -243,7 +243,7 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(.25f, Items.REDSTONE));
 
     GeneratedRecipe EXPERIENCE_CANDY_XS = create(
-            "experience_candy_xs", b-> b
+            "experience_candy_xs", b -> b
                     .require(CobblemonItems.EXPERIENCE_CANDY_XS)
                     .duration(100)
                     .output(.5f, Items.REDSTONE));
@@ -378,6 +378,10 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(Items.SUGAR, 4)
                     .output(Items.SWEET_BERRIES));
 
+    public CMCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, CobblemonManufactory.ID);
+    }
+
     private GeneratedRecipe createTumblestoneBlock(String name, ItemLike tumblestoneBlock, ItemLike tumblestoneItem) {
         return create(name, b -> b
                 .require(tumblestoneBlock)
@@ -421,9 +425,5 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                 .output(.25f, stone)
                 .output(.75f, AllItems.EXP_NUGGET)
                 .output(.125f, Blocks.COBBLED_DEEPSLATE));
-    }
-
-    public CMCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblemonManufactory.ID);
     }
 }

@@ -4,9 +4,9 @@ import com.cobblemon.mod.common.CobblemonItems;
 import com.cobblemon.mod.common.api.tags.CobblemonItemTags;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
 import com.r4men.cobblemon_manufactory.block.CMBlocks;
+import com.r4men.cobblemon_manufactory.crafting.builder.DamagingShapelessRecipeBuilder;
 import com.r4men.cobblemon_manufactory.datagen.recipe.create.*;
 import com.r4men.cobblemon_manufactory.item.CMItems;
-import com.r4men.cobblemon_manufactory.crafting.builder.DamagingShapelessRecipeBuilder;
 import com.r4men.cobblemon_manufactory.util.CMTags;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.ProcessingRecipeGen;
@@ -29,12 +29,40 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class CMRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    static final List<ProcessingRecipeGen<?, ?, ?>> GENERATORS = new ArrayList<>();
     public static final int BUCKET = FluidType.BUCKET_VOLUME;
     public static final int BOTTLE = 250;
+    static final List<ProcessingRecipeGen<?, ?, ?>> GENERATORS = new ArrayList<>();
 
     public CMRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
+    }
+
+    public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        GENERATORS.add(new CMCrushingRecipeGen(output, registries));
+        GENERATORS.add(new CMCuttingRecipeGen(output, registries));
+        GENERATORS.add(new CMDeployingRecipeGen(output, registries));
+        GENERATORS.add(new CMEmptyingRecipeGen(output, registries));
+        GENERATORS.add(new CMFillingRecipeGen(output, registries));
+        GENERATORS.add(new CMHauntingRecipeGen(output, registries));
+        GENERATORS.add(new CMMillingRecipeGen(output, registries));
+        GENERATORS.add(new CMMixingRecipeGen(output, registries));
+        GENERATORS.add(new CMPolishingRecipeGen(output, registries));
+        GENERATORS.add(new CMPressingRecipeGen(output, registries));
+        GENERATORS.add(new CMWashingRecipeGen(output, registries));
+
+        gen.addProvider(true, new DataProvider() {
+            @Override
+            public @NotNull String getName() {
+                return "Cobblemon Manufactory Processing Recipes";
+            }
+
+            @Override
+            public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cachedOutput) {
+                return CompletableFuture.allOf(GENERATORS.stream()
+                        .map(gen -> gen.run(cachedOutput))
+                        .toArray(CompletableFuture[]::new));
+            }
+        });
     }
 
     @Override
@@ -101,8 +129,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_exp_candy_l", has(CobblemonItems.EXPERIENCE_CANDY_L))
                 .unlockedBy("has_empty_schematic", has(AllItems.EMPTY_SCHEMATIC))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        "rare_candy")
+                                CobblemonManufactory.ID,
+                                "rare_candy")
                         .withPrefix("shapeless/"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CobblemonItems.CHERISH_BALL, 1)
@@ -116,8 +144,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_red_apricorn", has(CobblemonItems.RED_APRICORN))
                 .unlockedBy("has_black_apricorn", has(CobblemonItems.BLACK_APRICORN))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        "cherish_ball")
+                                CobblemonManufactory.ID,
+                                "cherish_ball")
                         .withPrefix("shaped/"));
 
         DamagingShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, CobblemonItems.LEFTOVERS, 1)
@@ -138,8 +166,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.MISC, output)
                 .unlockedBy(getHasName(input), has(input))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(output))
+                                CobblemonManufactory.ID,
+                                getItemName(output))
                         .withPrefix("stonecutting/"));
     }
 
@@ -150,16 +178,16 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("##")
                 .unlockedBy(getHasName(item), has(item))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(block))
+                                CobblemonManufactory.ID,
+                                getItemName(block))
                         .withPrefix("shaped/"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, item, 4)
                 .requires(block)
                 .unlockedBy(getHasName(item), has(item))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(item) + "_from_" + getItemName(block))
+                                CobblemonManufactory.ID,
+                                getItemName(item) + "_from_" + getItemName(block))
                         .withPrefix("shapeless/"));
     }
 
@@ -172,8 +200,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
         }
 
         recipe.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                CobblemonManufactory.ID,
-                getItemName(output))
+                        CobblemonManufactory.ID,
+                        getItemName(output))
                 .withPrefix("shapeless/"));
     }
 
@@ -184,8 +212,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy(getHasName(dye), has(dye))
                 .unlockedBy("has_apricorn_sprouts", has(CobblemonItemTags.APRICORN_SPROUTS))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(seed))
+                                CobblemonManufactory.ID,
+                                getItemName(seed))
                         .withPrefix("shapeless/"));
     }
 
@@ -195,8 +223,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(ball))
+                                CobblemonManufactory.ID,
+                                getItemName(ball))
                         .withPrefix("shapeless/"));
     }
 
@@ -205,9 +233,9 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CMTags.Items.DYEABLE_POKE_BALLS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput,  ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(ball))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
+                                CobblemonManufactory.ID,
+                                getItemName(ball))
                         .withPrefix("shapeless/"));
     }
 
@@ -217,8 +245,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(lid))
+                                CobblemonManufactory.ID,
+                                getItemName(lid))
                         .withPrefix("shapeless/"));
     }
 
@@ -250,36 +278,8 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(apricorn))
+                                CobblemonManufactory.ID,
+                                getItemName(apricorn))
                         .withPrefix("shapeless/"));
-    }
-
-    public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        GENERATORS.add(new CMCrushingRecipeGen(output, registries));
-        GENERATORS.add(new CMCuttingRecipeGen(output, registries));
-        GENERATORS.add(new CMDeployingRecipeGen(output, registries));
-        GENERATORS.add(new CMEmptyingRecipeGen(output, registries));
-        GENERATORS.add(new CMFillingRecipeGen(output, registries));
-        GENERATORS.add(new CMHauntingRecipeGen(output, registries));
-        GENERATORS.add(new CMMillingRecipeGen(output, registries));
-        GENERATORS.add(new CMMixingRecipeGen(output, registries));
-        GENERATORS.add(new CMPolishingRecipeGen(output, registries));
-        GENERATORS.add(new CMPressingRecipeGen(output, registries));
-        GENERATORS.add(new CMWashingRecipeGen(output, registries));
-
-        gen.addProvider(true, new DataProvider() {
-            @Override
-            public @NotNull String getName() {
-                return "Create: Cobblemon Industrialized Processing Recipes";
-            }
-
-            @Override
-            public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cachedOutput) {
-                return CompletableFuture.allOf(GENERATORS.stream()
-                        .map(gen -> gen.run(cachedOutput))
-                        .toArray(CompletableFuture[]::new));
-            }
-        });
     }
 }

@@ -16,5 +16,6 @@ public class CMBlockTagProvider extends BlockTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.@NotNull Provider provider) {}
+    protected void addTags(HolderLookup.@NotNull Provider provider) {
+    }
 }
