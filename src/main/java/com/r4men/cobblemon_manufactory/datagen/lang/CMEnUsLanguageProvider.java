@@ -51,7 +51,7 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
             add(fluid.getDescriptionId(), finalName);
         }
 
-        add("itemGroup.cobblemon_manufactory.cobblemon_manufactory_tab", "Cobblemon Manufactory");
+        add("itemGroup.cobblemon_manufactory.cm_tab", "Cobblemon Manufactory");
 
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
     }
