@@ -8,6 +8,7 @@ import com.r4men.cobblemon_manufactory.crafting.builder.DamagingShapelessRecipeB
 import com.r4men.cobblemon_manufactory.datagen.recipe.create.*;
 import com.r4men.cobblemon_manufactory.item.CMItems;
 import com.r4men.cobblemon_manufactory.util.CMTags;
+import com.r4men.cobblemon_manufactory.util.CMUtil;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.ProcessingRecipeGen;
 import net.minecraft.core.HolderLookup;
@@ -128,10 +129,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(AllItems.EMPTY_SCHEMATIC)
                 .unlockedBy("has_exp_candy_l", has(CobblemonItems.EXPERIENCE_CANDY_L))
                 .unlockedBy("has_empty_schematic", has(AllItems.EMPTY_SCHEMATIC))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                "rare_candy")
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL("rare_candy").withPrefix("shapeless/"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CobblemonItems.CHERISH_BALL, 1)
                 .pattern("RAR")
@@ -143,18 +141,13 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('I', Items.IRON_INGOT)
                 .unlockedBy("has_red_apricorn", has(CobblemonItems.RED_APRICORN))
                 .unlockedBy("has_black_apricorn", has(CobblemonItems.BLACK_APRICORN))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                "cherish_ball")
-                        .withPrefix("shaped/"));
+                .save(recipeOutput, CMUtil.modRL("cherish_ball").withPrefix("shaped/"));
 
         DamagingShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, CobblemonItems.LEFTOVERS, 1)
                 .requires(Items.APPLE)
                 .requires(Items.SHEARS)
                 .unlockedBy("has_apple", has(Items.APPLE))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        "leftovers"));
+                .save(recipeOutput, CMUtil.modRL("leftovers"));
 
         twoByTwoPackerUnpacker(CMItems.EXP_QUARTZ, CMBlocks.EXP_QUARTZ_BLOCK, recipeOutput);
 
@@ -165,10 +158,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
     private void simpleStonecutterRecipe(ItemLike input, ItemLike output, RecipeOutput recipeOutput) {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.MISC, output)
                 .unlockedBy(getHasName(input), has(input))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(output))
-                        .withPrefix("stonecutting/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(output)).withPrefix("stonecutting/"));
     }
 
     private void twoByTwoPackerUnpacker(ItemLike item, ItemLike block, RecipeOutput recipeOutput) {
@@ -177,17 +167,13 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("##")
                 .pattern("##")
                 .unlockedBy(getHasName(item), has(item))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(block))
+                .save(recipeOutput, CMUtil.modRL(getItemName(block))
                         .withPrefix("shaped/"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, item, 4)
                 .requires(block)
                 .unlockedBy(getHasName(item), has(item))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(item) + "_from_" + getItemName(block))
+                .save(recipeOutput, CMUtil.modRL(getConversionRecipeName(item, block))
                         .withPrefix("shapeless/"));
     }
 
@@ -199,10 +185,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
             recipe.requires(input);
         }
 
-        recipe.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        getItemName(output))
-                .withPrefix("shapeless/"));
+        recipe.save(recipeOutput, CMUtil.modRL(getItemName(output)).withPrefix("shapeless/"));
     }
 
     private void seedFromDye(ItemLike seed, ItemLike dye, RecipeOutput recipeOutput) {
@@ -211,10 +194,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
                 .unlockedBy("has_apricorn_sprouts", has(CobblemonItemTags.APRICORN_SPROUTS))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(seed))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(seed)).withPrefix("shapeless/"));
     }
 
     private void ancientBallFromDye(ItemLike ball, ItemLike dye, RecipeOutput recipeOutput) {
@@ -222,10 +202,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CMTags.Items.DYEABLE_ANCIENT_BALLS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(ball))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(ball)).withPrefix("shapeless/"));
     }
 
     private void ballFromDye(ItemLike ball, ItemLike dye, RecipeOutput recipeOutput) {
@@ -233,10 +210,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CMTags.Items.DYEABLE_POKE_BALLS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(ball))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(ball)).withPrefix("shapeless/"));
     }
 
     private void ancientLidFromDye(ItemLike lid, ItemLike dye, RecipeOutput recipeOutput) {
@@ -244,10 +218,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CMTags.Items.ANCIENT_BALL_LIDS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(lid))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(lid)).withPrefix("shapeless/"));
     }
 
     private void basicLidFromDye(ItemLike lid, ItemLike dye, RecipeOutput recipeOutput) {
@@ -255,10 +226,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CMTags.Items.POKE_BALL_LIDS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(lid))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(lid)).withPrefix("shapeless/"));
     }
 
     private void simpleLidFromDye(ItemLike input, ItemLike lid, ItemLike dye, RecipeOutput recipeOutput) {
@@ -266,10 +234,7 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(input)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(lid))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(lid)).withPrefix("shapeless/"));
     }
 
     private void apricornFromDye(ItemLike apricorn, ItemLike dye, RecipeOutput recipeOutput) {
@@ -277,9 +242,6 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(CobblemonItemTags.APRICORNS)
                 .requires(dye)
                 .unlockedBy(getHasName(dye), has(dye))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                                CobblemonManufactory.ID,
-                                getItemName(apricorn))
-                        .withPrefix("shapeless/"));
+                .save(recipeOutput, CMUtil.modRL(getItemName(apricorn)).withPrefix("shapeless/"));
     }
 }

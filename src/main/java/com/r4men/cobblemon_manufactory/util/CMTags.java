@@ -13,7 +13,7 @@ import net.minecraft.world.level.material.Fluid;
 public class CMTags {
     public static class Blocks {
         private static TagKey<Block> createTag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonManufactory.ID, name));
+            return BlockTags.create(CMUtil.modRL(name));
         }
     }
 
@@ -31,7 +31,7 @@ public class CMTags {
         public static final TagKey<Item> NO_MECHANICAL_CRAFTING = createTag("no_mechanical_crafting");
 
         private static TagKey<Item> createTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonManufactory.ID, name));
+            return ItemTags.create(CMUtil.modRL(name));
         }
     }
 
@@ -39,7 +39,7 @@ public class CMTags {
         public static final TagKey<Fluid> UPGRADES_TO_FULL_HEAL = createTag("upgrades_to_full_heal");
 
         private static TagKey<Fluid> createTag(String name) {
-            return FluidTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonManufactory.ID, name));
+            return FluidTags.create(CMUtil.modRL(name));
         }
     }
 }
