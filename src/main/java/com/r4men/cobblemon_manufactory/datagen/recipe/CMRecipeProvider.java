@@ -30,7 +30,11 @@ import java.util.concurrent.CompletableFuture;
 
 public class CMRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public static final int BUCKET = FluidType.BUCKET_VOLUME;
-    public static final int BOTTLE = 250;
+    public static final int BOTTLE = BUCKET / 4;
+    public static final int BLOCK = 1296;
+    public static final int INGOT = BLOCK / 9;
+    public static final int NUGGET = INGOT / 9;
+
     static final List<ProcessingRecipeGen<?, ?, ?>> GENERATORS = new ArrayList<>();
 
     public CMRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
