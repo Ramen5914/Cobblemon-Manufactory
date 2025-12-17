@@ -125,6 +125,12 @@ dependencies {
 
     // KotlinForForge
     implementation "curse.maven:kotlin-for-forge-351264:${kotlinforforge_curse_file}"
+
+    // Create: Dragons Plus
+    implementation "curse.maven:create-dragons-plus-1216624:${cdp_curse_file}"
+
+    // Create: Enchantment Industry
+    implementation "curse.maven:create-enchantment-industry-688768:${cei_curse_file}"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

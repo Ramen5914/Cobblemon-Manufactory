@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -33,5 +34,8 @@ public class CMFluidTagProvider extends FluidTagsProvider {
                 .add(CMFluids.ICE_HEAL.get())
                 .add(CMFluids.MEDICINAL_BREW.get())
                 .add(CMFluids.PARALYZE_HEAL.get());
+
+        tag(Tags.Fluids.EXPERIENCE)
+                .add(CEIFluids.EXPERIENCE.get());
     }
 }
