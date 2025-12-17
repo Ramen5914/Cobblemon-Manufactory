@@ -48,3 +48,10 @@ type = "required"
 versionRange = "${cobblemon_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "create_enchantment_industry"
+type = "optional"
+versionRange = "${cei_version_range}"
+ordering = "NONE"
+side = "BOTH"
