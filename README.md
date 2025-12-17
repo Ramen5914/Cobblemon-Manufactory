@@ -40,7 +40,9 @@ Pull requests are welcome as well!
 ## Credits
 My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/Cobblemon-Manufactory) mod.
 Huge thanks to them for the original idea and permission to do a port.
-Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x).
+Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x). 
+
+**Nearly all textures come from Bracken40's mod.** I am slowing making my own textures, but for now I am using theirs with permission.
 
 ## Support Me :)
 You can support me at any of the places below!

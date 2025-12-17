@@ -11,7 +11,7 @@ displayName="${mod_name}"
 updateJSONURL="${mod_update_json}"
 displayURL="${mod_display_url}"
 logoFile="${mod_logo}"
-credits="${mod_credits}"
+credits='''${mod_credits}'''
 authors="${mod_authors}"
 description='''${mod_description}'''
 
