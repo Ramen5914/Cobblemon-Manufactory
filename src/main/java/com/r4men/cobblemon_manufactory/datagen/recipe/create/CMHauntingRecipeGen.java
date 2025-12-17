@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,5 +27,10 @@ public final class CMHauntingRecipeGen extends HauntingRecipeGen {
 
     private GeneratedRecipe simpleHaunting(String name, ItemLike from, ItemLike to) {
         return create(name, b -> b.require(from).output(to));
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Haunting Recipes";
     }
 }

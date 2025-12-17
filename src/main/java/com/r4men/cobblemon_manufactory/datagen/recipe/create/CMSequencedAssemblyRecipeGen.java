@@ -316,6 +316,11 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
         super(output, registries, CobblemonManufactory.ID);
     }
 
+    @Override
+    public String getName() {
+        return CobblemonManufactory.NAME + "'s Sequenced Assembly Recipes";
+    }
+
     private GeneratedRecipe simpleBall(String name, ItemLike lid, ItemLike incomplete, ItemLike ball, TagKey<Item> tag) {
         return create(name, b -> b
                 .require(lid)

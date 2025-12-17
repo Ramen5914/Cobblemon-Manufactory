@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.material.Fluid;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -104,5 +105,10 @@ public final class CMEmptyingRecipeGen extends EmptyingRecipeGen {
                         .require(potion)
                         .output(fluid, CMRecipeProvider.BOTTLE)
                         .output(Items.GLASS_BOTTLE));
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Emptying Recipes";
     }
 }

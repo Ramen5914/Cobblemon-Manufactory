@@ -9,10 +9,17 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.neoforged.neoforge.fluids.FluidType;
+import org.jetbrains.annotations.NotNull;
 
 public class CMEnUsLanguageProvider extends LanguageProvider {
     public CMEnUsLanguageProvider(PackOutput output) {
         super(output, CobblemonManufactory.ID, "en_us");
+    }
+
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s English (US) Translations";
     }
 
     @Override

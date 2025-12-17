@@ -8,10 +8,16 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import org.jetbrains.annotations.NotNull;
 
 public class CMBlockStateProvider extends BlockStateProvider {
     public CMBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, CobblemonManufactory.ID, exFileHelper);
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Block States and Models";
     }
 
     @Override

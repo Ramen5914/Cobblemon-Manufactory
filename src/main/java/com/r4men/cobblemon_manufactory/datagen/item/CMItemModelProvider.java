@@ -11,10 +11,16 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import org.jetbrains.annotations.NotNull;
 
 public class CMItemModelProvider extends ItemModelProvider {
     public CMItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, CobblemonManufactory.ID, existingFileHelper);
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Item Models";
     }
 
     @Override

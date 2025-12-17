@@ -6,6 +6,7 @@ import com.simibubi.create.api.data.recipe.CuttingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,5 +25,10 @@ public final class CMCuttingRecipeGen extends CuttingRecipeGen {
 
     public CMCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Cutting Recipes";
     }
 }

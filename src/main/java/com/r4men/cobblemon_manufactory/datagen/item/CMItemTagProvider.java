@@ -22,6 +22,11 @@ public class CMItemTagProvider extends ItemTagsProvider {
     }
 
     @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Item Tags";
+    }
+
+    @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(CMTags.Items.ANCIENT_BALL_LIDS)
                 .add(CMItems.ANCIENT_BLUE_BALL_LID.get())

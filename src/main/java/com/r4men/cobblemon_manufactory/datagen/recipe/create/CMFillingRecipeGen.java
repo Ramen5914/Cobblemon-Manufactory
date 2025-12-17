@@ -97,6 +97,11 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
         super(output, registries, CobblemonManufactory.ID);
     }
 
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Filling Recipes";
+    }
+
     private GeneratedRecipe potionFilling(String name, FlowingFluid fluid, ItemLike potionItem) {
         return create(name, b -> b
                 .require(fluid, 250)

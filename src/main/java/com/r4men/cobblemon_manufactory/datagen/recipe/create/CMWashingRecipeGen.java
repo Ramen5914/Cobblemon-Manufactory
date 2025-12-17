@@ -6,6 +6,7 @@ import com.r4men.cobblemon_manufactory.item.CMItems;
 import com.simibubi.create.api.data.recipe.WashingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,5 +19,10 @@ public final class CMWashingRecipeGen extends WashingRecipeGen {
 
     public CMWashingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Washing Recipes";
     }
 }

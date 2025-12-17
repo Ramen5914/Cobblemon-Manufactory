@@ -12,6 +12,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -380,6 +381,11 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
 
     public CMCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Crushing Recipes";
     }
 
     private GeneratedRecipe createTumblestoneBlock(String name, ItemLike tumblestoneBlock, ItemLike tumblestoneItem) {

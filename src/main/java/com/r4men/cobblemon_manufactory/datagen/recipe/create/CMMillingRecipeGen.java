@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -41,5 +42,10 @@ public final class CMMillingRecipeGen extends MillingRecipeGen {
                 .duration(70)
                 .output(seed)
                 .output(.5f, seed));
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Milling Recipes";
     }
 }

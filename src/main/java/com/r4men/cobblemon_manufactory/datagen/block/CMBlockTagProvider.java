@@ -16,6 +16,11 @@ public class CMBlockTagProvider extends BlockTagsProvider {
     }
 
     @Override
+    public @NotNull String getName() {
+        return CobblemonManufactory.NAME + "'s Block Tags";
+    }
+
+    @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
     }
 }

@@ -1,4 +1,4 @@
-package com.r4men.cobblemon_manufactory.datagen.block;
+package com.r4men.cobblemon_manufactory.datagen.loot;
 
 import com.r4men.cobblemon_manufactory.block.CMBlocks;
 import net.minecraft.core.Holder;
