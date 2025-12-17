@@ -104,7 +104,7 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
 
     private GeneratedRecipe potionFilling(String name, FlowingFluid fluid, ItemLike potionItem) {
         return create(name, b -> b
-                .require(fluid, 250)
+                .require(fluid, CMRecipeProvider.BOTTLE)
                 .require(Items.GLASS_BOTTLE)
                 .output(potionItem));
     }
