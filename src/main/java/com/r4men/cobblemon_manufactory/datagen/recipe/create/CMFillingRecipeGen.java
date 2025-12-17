@@ -102,7 +102,7 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
             CobblemonItems.SUPER_POTION);
 
     GeneratedRecipe EXP_QUARTZ = create("exp_quartz", b -> b
-            .require(Tags.Fluids.EXPERIENCE, CMRecipeProvider.BOTTLE)
+            .require(Tags.Fluids.EXPERIENCE, CMRecipeProvider.NUGGET)
             .require(AllItems.ROSE_QUARTZ)
             .output(CMItems.EXP_QUARTZ));
 
@@ -117,7 +117,7 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
 
     private GeneratedRecipe potionFilling(String name, FlowingFluid fluid, ItemLike potionItem) {
         return create(name, b -> b
-                .require(fluid, CMRecipeProvider.NUGGET)
+                .require(fluid, CMRecipeProvider.BOTTLE)
                 .require(Items.GLASS_BOTTLE)
                 .output(potionItem));
     }
