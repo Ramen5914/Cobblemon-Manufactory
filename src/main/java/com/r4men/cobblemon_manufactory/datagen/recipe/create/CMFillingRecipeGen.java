@@ -2,13 +2,21 @@ package com.r4men.cobblemon_manufactory.datagen.recipe.create;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
+import com.r4men.cobblemon_manufactory.datagen.item.CMItemTagProvider;
+import com.r4men.cobblemon_manufactory.datagen.recipe.CMRecipeProvider;
 import com.r4men.cobblemon_manufactory.fluid.CMFluids;
+import com.r4men.cobblemon_manufactory.item.CMItems;
+import com.simibubi.create.AllFluids;
+import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.material.FlowingFluid;
+import net.neoforged.neoforge.common.Tags;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -92,6 +100,11 @@ public final class CMFillingRecipeGen extends FillingRecipeGen {
             "super_potion",
             CMFluids.SUPER_POTION.get(),
             CobblemonItems.SUPER_POTION);
+
+    GeneratedRecipe EXP_QUARTZ = create("exp_quartz", b -> b
+            .require(Tags.Fluids.EXPERIENCE, CMRecipeProvider.BOTTLE)
+            .require(AllItems.ROSE_QUARTZ)
+            .output(CMItems.EXP_QUARTZ));
 
     public CMFillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:rose_quartz"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:experience"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobblemon_manufactory:exp_quartz"
+    }
+  ]
+}
