@@ -30,7 +30,6 @@ Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that
 ## Disclaimer
 This mod will be heavily changed by version 1.0.0.
 Expect your existing automations to need an update as I will be changing recipes.
-Also, my mod will not be available on Curseforge or Modrinth until the 1.0.0 release.
 
 ## Suggestions and Contributing
 If you have any suggestions for the mod, please open an issue on GitHub and/or join the Discord server linked above.
