@@ -12,12 +12,12 @@
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/projects/Cobblemon-Manufactory)
 
 ## Stats
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
-[![Modrinth Version](https://img.shields.io/modrinth/v/FMcIBFPB?style=for-the-badge&logo=modrinth&label=Latest%20Version&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
-[![Modrinth Followers](https://img.shields.io/modrinth/followers/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
+[![Modrinth Version](https://img.shields.io/modrinth/v/FMcIBFPB?style=for-the-badge&logo=modrinth&label=Latest%20Version&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
+[![Modrinth Followers](https://img.shields.io/modrinth/followers/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
 
-[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
-[![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
+[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-manufactory)
+[![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-manufactory)
 
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Ramen5914/Cobblemon-Manufactory/total?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases)
 [![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Cobblemon-Manufactory?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest)
