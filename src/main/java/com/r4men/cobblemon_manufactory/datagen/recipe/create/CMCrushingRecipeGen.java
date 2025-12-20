@@ -27,30 +27,15 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
                     .output(Items.LEATHER, 1)
                     .output(Items.GRANITE, 3));
 
-    GeneratedRecipe BLACK_TUMBLESTONE_BLOCK = createTumblestoneBlock(
-            "black_tumblestone_block",
-            CobblemonBlocks.BLACK_TUMBLESTONE_BLOCK,
-            CobblemonItems.BLACK_TUMBLESTONE);
-
     GeneratedRecipe BLACK_TUMBLESTONE_CLUSTER = createTumblestoneCluster(
             "black_tumblestone_cluster",
             CobblemonBlocks.BLACK_TUMBLESTONE_CLUSTER,
             CobblemonItems.BLACK_TUMBLESTONE);
 
-    GeneratedRecipe SKY_TUMBLESTONE_BLOCK = createTumblestoneBlock(
-            "sky_tumblestone_block",
-            CobblemonBlocks.SKY_TUMBLESTONE_BLOCK,
-            CobblemonItems.SKY_TUMBLESTONE);
-
     GeneratedRecipe SKY_TUMBLESTONE_CLUSTER = createTumblestoneCluster(
             "sky_tumblestone_cluster",
             CobblemonBlocks.SKY_TUMBLESTONE_CLUSTER,
             CobblemonItems.SKY_TUMBLESTONE);
-
-    GeneratedRecipe TUMBLESTONE_BLOCK = createTumblestoneBlock(
-            "tumblestone_block",
-            CobblemonBlocks.TUMBLESTONE_BLOCK,
-            CobblemonItems.TUMBLESTONE);
 
     GeneratedRecipe TUMBLESTONE_CLUSTER = createTumblestoneCluster(
             "tumblestone_cluster",
@@ -386,14 +371,6 @@ public final class CMCrushingRecipeGen extends CrushingRecipeGen {
     @Override
     public @NotNull String getName() {
         return CobblemonManufactory.NAME + "'s Crushing Recipes";
-    }
-
-    private GeneratedRecipe createTumblestoneBlock(String name, ItemLike tumblestoneBlock, ItemLike tumblestoneItem) {
-        return create(name, b -> b
-                .require(tumblestoneBlock)
-                .duration(150)
-                .output(tumblestoneItem, 3)
-                .output(.5f, tumblestoneItem));
     }
 
     private GeneratedRecipe createTumblestoneCluster(String name, ItemLike tumblestoneCluster, ItemLike tumblestoneItem) {
