@@ -33,7 +33,7 @@ Expect your existing automations to need an update as I will be changing recipes
 
 ## Suggestions and Contributing
 If you have any suggestions for the mod, please open an issue on GitHub and/or join the Discord server linked above.
-The channel for this mod is [here](https://discord.com/channels/1284033904344567828/1447676302210367579).
+The channel for this mod is [here](https://discord.com/channels/1284033904344567828/1450170030133084361).
 Pull requests are welcome as well!
 
 ## Credits
