@@ -46,7 +46,6 @@ public class CMItemModelProvider extends ItemModelProvider {
         steppedItem(CMItems.INCOMPLETE_ANCIENT_WING_BALL, 2);
         steppedItem(CMItems.INCOMPLETE_AZURE_BALL, 2);
         steppedItem(CMItems.INCOMPLETE_BEAST_BALL, 2);
-        steppedItem(CMItems.INCOMPLETE_CHERISH_BALL, 2);
         steppedItem(CMItems.INCOMPLETE_CITRINE_BALL, 2);
         steppedItem(CMItems.INCOMPLETE_DIVE_BALL, 2);
         steppedItem(CMItems.INCOMPLETE_DREAM_BALL, 2);

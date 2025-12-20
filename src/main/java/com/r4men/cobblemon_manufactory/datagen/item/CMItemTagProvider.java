@@ -136,7 +136,6 @@ public class CMItemTagProvider extends ItemTagsProvider {
                 .add(CobblemonItems.DREAM_BALL)
                 .add(CobblemonItems.BEAST_BALL)
                 .add(CobblemonItems.MASTER_BALL)
-                .add(CobblemonItems.CHERISH_BALL)
                 .add(CobblemonItems.ANCIENT_POKE_BALL)
                 .add(CobblemonItems.ANCIENT_CITRINE_BALL)
                 .add(CobblemonItems.ANCIENT_VERDANT_BALL)

@@ -128,12 +128,6 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
             CMItems.INCOMPLETE_BEAST_BALL,
             CobblemonItems.BEAST_BALL);
 
-    GeneratedRecipe CHERISH_BALL = simpleCopperBall(
-            "cherish_ball",
-            CMItems.RED_BALL_LID,
-            CMItems.INCOMPLETE_CHERISH_BALL,
-            CobblemonItems.CHERISH_BALL);
-
     GeneratedRecipe CITRINE_BALL = simpleCopperBall(
             "citrine_ball",
             CMItems.YELLOW_BALL_LID,
