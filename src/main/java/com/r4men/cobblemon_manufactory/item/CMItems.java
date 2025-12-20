@@ -123,6 +123,8 @@ public class CMItems {
     public static final DeferredItem<Item> IRON_BALL_BASE = registerSimpleItem("iron_ball_base");
     public static final DeferredItem<Item> COPPER_BALL_BASE = registerSimpleItem("copper_ball_base");
     public static final DeferredItem<Item> GOLD_BALL_BASE = registerSimpleItem("gold_ball_base");
+    public static final DeferredItem<Item> DIAMOND_BALL_BASE = registerSimpleItem("diamond_ball_base");
+    public static final DeferredItem<Item> NETHERITE_BALL_BASE = registerSimpleItem("netherite_ball_base");
 
     public static DeferredItem<Item> registerSimpleItem(String name) {
         DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
