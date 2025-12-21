@@ -2,7 +2,7 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "minecraft:copper_ingot"
+      "tag": "cobblemon:tier_1_poke_ball_materials"
     }
   ],
   "processing_time": 200,
