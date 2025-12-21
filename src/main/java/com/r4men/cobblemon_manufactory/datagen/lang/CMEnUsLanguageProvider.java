@@ -16,7 +16,8 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        for (Item item : CMItems.ITEMS.getEntries().stream().map(Holder::value).toList()) {
+        // Items
+        for (var item : CMItems.ITEMS.getEntries().stream().map(Holder::value).toList()) {
             String itemName = item.toString().split(":")[1];
             String[] words = itemName.split("_");
             StringBuilder capitalizedName = new StringBuilder();
@@ -33,25 +34,31 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
             add(item, finalName);
         }
 
+        // Fluids
         for (FluidType fluid : CMFluidTypes.FLUID_TYPES.getEntries().stream().map(Holder::value).toList()) {
             String fluidName = fluid.toString().split(":")[1];
             String[] words = fluidName.split("_");
-            StringBuilder capitalizedName = new StringBuilder();
 
+            StringBuilder capitalizedName = new StringBuilder();
             for (String word : words) {
                 if (!word.isEmpty() && !word.equals("fluid") && !word.equals("type")) {
                     capitalizedName.append(Character.toUpperCase(word.charAt(0)))
                             .append(word.substring(1))
                             .append(" ");
                 }
-            }
 
+            }
             String finalName = capitalizedName.toString().trim();
+
             add(fluid.getDescriptionId(), finalName);
         }
 
+        // Creative Mode Tabs
         add("itemGroup.cobblemon_manufactory.cobblemon_manufactory_tab", "Cobblemon Manufactory");
 
+        // Tags
+        // # Item Tags
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
+        // # Fluid Tags
     }
 }
