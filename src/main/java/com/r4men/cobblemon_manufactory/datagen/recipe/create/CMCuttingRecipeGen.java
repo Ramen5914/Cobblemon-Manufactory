@@ -21,19 +21,19 @@ public final class CMCuttingRecipeGen extends CuttingRecipeGen {
             "iron_ball_base", b -> b
                     .require(CobblemonItemTags.TIER_2_POKE_BALL_MATERIALS)
                     .duration(200)
-                    .output(CMItems.IRON_BALL_BASE, 6));
+                    .output(CMItems.IRON_BALL_BASE, 4));
 
     GeneratedRecipe GOLD_BALL_BASE = create(
             "gold_ball_base", b -> b
                     .require(CobblemonItemTags.TIER_3_POKE_BALL_MATERIALS)
                     .duration(200)
-                    .output(CMItems.GOLD_BALL_BASE, 2));
+                    .output(CMItems.GOLD_BALL_BASE, 4));
 
     GeneratedRecipe DIAMOND_BALL_BASE = create(
             "diamond_ball_base", b -> b
                     .require(CobblemonItemTags.TIER_4_POKE_BALL_MATERIALS)
                     .duration(200)
-                    .output(CMItems.DIAMOND_BALL_BASE, 1));
+                    .output(CMItems.DIAMOND_BALL_BASE, 4));
 
     public CMCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);
