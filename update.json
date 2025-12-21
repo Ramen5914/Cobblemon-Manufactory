@@ -1,7 +1,7 @@
 {
   "homepage": "https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest",
   "1.21.1": {
-    "0.1.0": "Disabled crafting pokeballs with their crafting table recipes in create's mechanical crafters",
+    "0.1.0": "Disabled crafting poké balls with their crafting table recipes with Create's mechanical crafters",
     "0.0.3": "Fixed mod metadata to use new branch name",
     "0.0.2": "Fixed mod metadata and added new icon",
     "0.0.1": "Direct port of Create: Cobblemon Industrialized"
