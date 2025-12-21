@@ -58,7 +58,16 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
 
         // Tags
         // # Item Tags
+        addTag(() -> CMTags.Items.ANCIENT_BALL_LIDS, "Ancient Ball Lids");
+        addTag(() -> CMTags.Items.DYEABLE_ANCIENT_BALLS, "Dyeable Ancient Balls");
+        addTag(() -> CMTags.Items.DYEABLE_POKE_BALLS, "Dyeable Poké Balls");
+        addTag(() -> CMTags.Items.POKE_BALL_LIDS, "Poké Ball Lids");
+        addTag(() -> CMTags.Items.UPGRADES_SUPER_POTION, "Upgrades Super Potion");
+        addTag(() -> CMTags.Items.BLACK_TUMBLESTONE_BUDS, "Black Tumblestone Buds");
+        addTag(() -> CMTags.Items.SKY_TUMBLESTONE_BUDS, "Sky Tumblestone Buds");
+        addTag(() -> CMTags.Items.TUMBLESTONE_BUDS,"Tumblestone Buds");
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
         // # Fluid Tags
+        addTag(() -> CMTags.Fluids.UPGRADES_TO_FULL_HEAL, "Upgrades to Full Heal");
     }
 }
