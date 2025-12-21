@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "cobblemon:tier_3_poke_ball_materials"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 2,
+      "id": "cobblemon_manufactory:gold_ball_base"
+    }
+  ]
+}
