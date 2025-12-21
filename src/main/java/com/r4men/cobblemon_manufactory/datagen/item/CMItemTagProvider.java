@@ -152,5 +152,12 @@ public class CMItemTagProvider extends ItemTagsProvider {
                 .add(CobblemonItems.ANCIENT_LEADEN_BALL)
                 .add(CobblemonItems.ANCIENT_GIGATON_BALL)
                 .add(CobblemonItems.PREMIER_BALL);
+
+        tag(CMTags.Items.BALL_BASES)
+                .add(CMItems.COPPER_BALL_BASE.get())
+                .add(CMItems.IRON_BALL_BASE.get())
+                .add(CMItems.GOLD_BALL_BASE.get())
+                .add(CMItems.DIAMOND_BALL_BASE.get())
+                .add(CMItems.NETHERITE_BALL_BASE.get());
     }
 }

@@ -30,6 +30,8 @@ public class CMTags {
 
         public static final TagKey<Item> NO_MECHANICAL_CRAFTING = createTag("no_mechanical_crafting");
 
+        public static final TagKey<Item> BALL_BASES = createTag("ball_bases");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(CMUtil.modRL(name));
         }
