@@ -1,11 +1,13 @@
 package com.r4men.cobblemon_manufactory.datagen.lang;
 
+import com.r4men.cobblemon_manufactory.CMConfig;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
 import com.r4men.cobblemon_manufactory.fluid.CMFluidTypes;
 import com.r4men.cobblemon_manufactory.item.CMItems;
 import com.r4men.cobblemon_manufactory.util.CMTags;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.neoforged.neoforge.fluids.FluidType;
 
@@ -46,7 +48,6 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
                             .append(word.substring(1))
                             .append(" ");
                 }
-
             }
             String finalName = capitalizedName.toString().trim();
 
@@ -54,7 +55,7 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         }
 
         // Creative Mode Tabs
-        add("itemGroup.cobblemon_manufactory.cobblemon_manufactory_tab", "Cobblemon Manufactory");
+        add("itemGroup.cobblemon_manufactory.cm_tab", "Cobblemon Manufactory");
 
         // Tags
         // # Item Tags
@@ -69,5 +70,11 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
         // # Fluid Tags
         addTag(() -> CMTags.Fluids.UPGRADES_TO_FULL_HEAL, "Upgrades to Full Heal");
+
+        addConfiguration(CMConfig.REMOVE_MECHANICAL_CRAFTER_RECIPES, "Remove Mechanical Crafter Recipes");
+    }
+
+    private void addConfiguration(ModConfigSpec.ConfigValue<?> configValue, String name) {
+        add(CobblemonManufactory.ID + ".configuration." + configValue.getPath().getFirst(), name);
     }
 }
