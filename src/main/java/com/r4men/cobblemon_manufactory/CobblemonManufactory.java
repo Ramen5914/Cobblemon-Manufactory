@@ -14,9 +14,12 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -34,9 +37,8 @@ public class CobblemonManufactory {
 
         CMItems.register(modEventBus);
         CMBlocks.register(modEventBus);
-
-        CMFluidTypes.register(modEventBus);
         CMFluids.register(modEventBus);
+        CMFluidTypes.register(modEventBus);
 
         CMRecipes.register(modEventBus);
 
@@ -45,13 +47,17 @@ public class CobblemonManufactory {
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        modContainer.registerConfig(ModConfig.Type.COMMON, CMConfig.SPEC);
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("{} initializing!", NAME);
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
