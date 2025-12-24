@@ -13,9 +13,9 @@ public class CMTabs {
             .create(Registries.CREATIVE_MODE_TAB, CobblemonManufactory.ID);
 
     public static final Supplier<CreativeModeTab> COBBLEMON_MANUFACTORY_TAB = CREATIVE_MODE_TABS.register(
-            "cobblemon_manufactory_tab",
+            "cm_tab",
             () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.cobblemon_manufactory.cobblemon_manufactory_tab"))
+                    .title(Component.translatable("itemGroup.cobblemon_manufactory.cm_tab"))
                     .build()
     );
 
