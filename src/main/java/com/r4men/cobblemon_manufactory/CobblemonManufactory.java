@@ -46,8 +46,7 @@ public class CobblemonManufactory {
 
         modEventBus.addListener(this::addCreative);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, CMConfig.SPEC);
-        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+        modContainer.registerConfig(ModConfig.Type.SERVER, CMConfig.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
