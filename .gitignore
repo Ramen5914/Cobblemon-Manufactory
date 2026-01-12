@@ -30,3 +30,6 @@ repo
 
 # Generated Files Cache
 /src/generated/resources/.cache/
+
+# MacOS
+.DS_Store
