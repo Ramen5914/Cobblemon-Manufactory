@@ -42,10 +42,6 @@ public class CobblemonManufactory {
 
         CMTabs.register(modEventBus);
 
-        NeoForge.EVENT_BUS.register(this);
-
-        modEventBus.addListener(this::addCreative);
-
         modContainer.registerConfig(ModConfig.Type.SERVER, CMConfig.SPEC);
     }
 
@@ -53,21 +49,8 @@ public class CobblemonManufactory {
         LOGGER.info("{} initializing!", NAME);
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-
-    }
-
     @EventBusSubscriber(modid = CobblemonManufactory.ID, value = Dist.CLIENT)
     public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-
-        }
-
         @SubscribeEvent
         public static void onClientExtensions(RegisterClientExtensionsEvent event) {
             for (var fluid : CMFluidTypes.FLUID_TYPES.getEntries().stream().map(Holder::value).toList()) {
