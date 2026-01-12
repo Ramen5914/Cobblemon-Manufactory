@@ -72,9 +72,18 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         addTag(() -> CMTags.Fluids.UPGRADES_TO_FULL_HEAL, "Upgrades to Full Heal");
 
         addConfiguration(CMConfig.REMOVE_MECHANICAL_CRAFTER_RECIPES, "Remove Mechanical Crafter Recipes");
+
+        add("cobblemon_manufactory.configuration.title", "Cobblemon Manufactory Config");
+        add("cobblemon_manufactory.configuration.section.cobblemon.manufactory.server.toml", "Server Config Section");
+        add("cobblemon_manufactory.configuration.section.cobblemon.manufactory.server.toml.title", "Server Configuration");
     }
 
     private void addConfiguration(ModConfigSpec.ConfigValue<?> configValue, String name) {
         add(CobblemonManufactory.ID + ".configuration." + configValue.getPath().getFirst(), name);
+        if (configValue.getSpec().getComment() != null) {
+            add(CobblemonManufactory.ID + ".configuration." + configValue.getPath().getFirst() + ".tooltip", configValue.getSpec().getComment());
+        } else {
+            add(CobblemonManufactory.ID + ".configuration." + configValue.getPath().getFirst() + ".tooltip", "No description available.");
+        }
     }
 }
