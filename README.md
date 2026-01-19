@@ -12,12 +12,12 @@
 [![wakatime](https://wakatime.com/badge/user/7665ba68-57be-4a2f-b258-72b43367c940/project/415c0e47-101c-4447-a094-847e61c36ad7.svg?style=for-the-badge)](https://wakatime.com/projects/Cobblemon-Manufactory)
 
 ## Stats
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
-[![Modrinth Version](https://img.shields.io/modrinth/v/FMcIBFPB?style=for-the-badge&logo=modrinth&label=Latest%20Version&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
-[![Modrinth Followers](https://img.shields.io/modrinth/followers/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/create-cobblemon-manufactory)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
+[![Modrinth Version](https://img.shields.io/modrinth/v/FMcIBFPB?style=for-the-badge&logo=modrinth&label=Latest%20Version&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
+[![Modrinth Followers](https://img.shields.io/modrinth/followers/FMcIBFPB?style=for-the-badge&logo=modrinth&color=00AF5C)](https://modrinth.com/mod/cobblemon-manufactory)
 
-[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
-[![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-manufactory)
+[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1399042?style=for-the-badge&logo=curseforge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-manufactory)
+[![CurseForge Version](https://img.shields.io/curseforge/v/1399042?style=for-the-badge&logo=curseforge&label=Latest%20Version&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-manufactory/files/all)
 
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Ramen5914/Cobblemon-Manufactory/total?style=for-the-badge&logo=github&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases)
 [![GitHub Release](https://img.shields.io/github/v/release/Ramen5914/Cobblemon-Manufactory?include_prereleases&sort=semver&display_name=tag&style=for-the-badge&logo=github&label=Latest%20Version&color=EE1515)](https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest)
@@ -30,17 +30,18 @@ Perfect for tech-focused players, multiplayer servers, and Cobblemon worlds that
 ## Disclaimer
 This mod will be heavily changed by version 1.0.0.
 Expect your existing automations to need an update as I will be changing recipes.
-Also, my mod will not be available on Curseforge or Modrinth until the 1.0.0 release.
 
 ## Suggestions and Contributing
 If you have any suggestions for the mod, please open an issue on GitHub and/or join the Discord server linked above.
-The channel for this mod is [here](https://discord.com/channels/1284033904344567828/1447676302210367579).
+The channel for this mod is [here](https://discord.com/channels/1284033904344567828/1450170030133084361).
 Pull requests are welcome as well!
 
 ## Credits
 My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/Cobblemon-Manufactory) mod.
 Huge thanks to them for the original idea and permission to do a port.
-Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x).
+Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x). 
+
+**Nearly all textures come from Bracken40's mod.** I am slowing making my own textures, but for now I am using theirs with permission.
 
 ## Support Me :)
 You can support me at any of the places below!

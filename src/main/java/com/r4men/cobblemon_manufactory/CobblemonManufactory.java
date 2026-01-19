@@ -46,23 +46,13 @@ public class CobblemonManufactory {
 
         CMRecipes.register(modEventBus);
 
-        NeoForge.EVENT_BUS.register(this);
+        CMTabs.register(modEventBus);
 
-        modEventBus.addListener(this::addCreative);
-
-        modContainer.registerConfig(ModConfig.Type.COMMON, CMConfig.SPEC);
+        modContainer.registerConfig(ModConfig.Type.SERVER, CMConfig.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("{} initializing!", NAME);
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-
     }
 
     @EventBusSubscriber(modid = CobblemonManufactory.ID, value = Dist.CLIENT)

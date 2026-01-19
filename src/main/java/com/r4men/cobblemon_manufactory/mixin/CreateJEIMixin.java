@@ -1,5 +1,6 @@
 package com.r4men.cobblemon_manufactory.mixin;
 
+import com.r4men.cobblemon_manufactory.CMConfig;
 import com.r4men.cobblemon_manufactory.util.CMTags;
 import com.simibubi.create.compat.jei.CreateJEI;
 import net.minecraft.client.Minecraft;
@@ -24,22 +25,26 @@ public class CreateJEIMixin {
             index = 1
     )
     private Predicate<RecipeHolder<?>> filterPokeballRecipes(Predicate<RecipeHolder<?>> original) {
-        return recipe -> {
-            if (!original.test(recipe)) {
-                return false;
-            }
+        if (!CMConfig.REMOVE_MECHANICAL_CRAFTER_RECIPES.get()) {
+            return original;
+        } else {
+            return recipe -> {
+                if (!original.test(recipe)) {
+                    return false;
+                }
 
-            if (Minecraft.getInstance().level == null) {
+                if (Minecraft.getInstance().level == null) {
+                    return true;
+                }
+                RegistryAccess registryAccess = Minecraft.getInstance().level.registryAccess();
+                ItemStack result = recipe.value().getResultItem(registryAccess);
+
+                if (!result.isEmpty()) {
+                    return !result.is(CMTags.Items.NO_MECHANICAL_CRAFTING);
+                }
+
                 return true;
-            }
-            RegistryAccess registryAccess = Minecraft.getInstance().level.registryAccess();
-            ItemStack result = recipe.value().getResultItem(registryAccess);
-
-            if (!result.isEmpty()) {
-                return !result.is(CMTags.Items.NO_MECHANICAL_CRAFTING);
-            }
-
-            return true;
-        };
+            };
+        }
     }
 }

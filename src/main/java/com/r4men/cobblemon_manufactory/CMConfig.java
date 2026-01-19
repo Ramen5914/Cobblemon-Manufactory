@@ -7,7 +7,9 @@ public class CMConfig {
 
     public static final ModConfigSpec.BooleanValue REMOVE_MECHANICAL_CRAFTER_RECIPES = BUILDER
             .comment("Whether to remove pokeball crafting recipes from Create mod's Mechanical Crafter.")
-            .define("removeMechanicalCrafterRecipes", true);
+            .worldRestart()
+            .define("remove_mechanical_crafter_recipes", true);
+
 
     static final ModConfigSpec SPEC = BUILDER.build();
 }
