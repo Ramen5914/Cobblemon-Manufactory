@@ -32,6 +32,9 @@ public class CMTags {
 
         public static final TagKey<Item> BALL_BASES = createTag("ball_bases");
 
+        // Continuation on tags from Cobblemon itself
+        public static final TagKey<Item> TIER_5_POKE_BALL_MATERIALS = createTag("tier_5_poke_ball_materials");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(CMUtil.modRL(name));
         }

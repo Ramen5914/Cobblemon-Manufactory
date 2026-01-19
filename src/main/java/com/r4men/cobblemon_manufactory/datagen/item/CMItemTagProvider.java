@@ -9,6 +9,7 @@ import com.simibubi.create.AllTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -159,5 +160,8 @@ public class CMItemTagProvider extends ItemTagsProvider {
                 .add(CMItems.GOLD_BALL_BASE.get())
                 .add(CMItems.DIAMOND_BALL_BASE.get())
                 .add(CMItems.NETHERITE_BALL_BASE.get());
+
+        tag(CMTags.Items.TIER_5_POKE_BALL_MATERIALS)
+                .add(Items.NETHERITE_INGOT);
     }
 }

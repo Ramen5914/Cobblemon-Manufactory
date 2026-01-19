@@ -3,6 +3,7 @@ package com.r4men.cobblemon_manufactory.datagen.recipe.create;
 import com.cobblemon.mod.common.api.tags.CobblemonItemTags;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
 import com.r4men.cobblemon_manufactory.item.CMItems;
+import com.r4men.cobblemon_manufactory.util.CMTags;
 import com.simibubi.create.api.data.recipe.CuttingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -34,6 +35,12 @@ public final class CMCuttingRecipeGen extends CuttingRecipeGen {
                     .require(CobblemonItemTags.TIER_4_POKE_BALL_MATERIALS)
                     .duration(200)
                     .output(CMItems.DIAMOND_BALL_BASE, 4));
+
+    GeneratedRecipe NETHERITE_BALL_BASE = create(
+            "netherite_ball_base", b -> b
+                    .require(CMTags.Items.TIER_5_POKE_BALL_MATERIALS)
+                    .duration(200)
+                    .output(CMItems.NETHERITE_BALL_BASE, 4));
 
     public CMCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CobblemonManufactory.ID);

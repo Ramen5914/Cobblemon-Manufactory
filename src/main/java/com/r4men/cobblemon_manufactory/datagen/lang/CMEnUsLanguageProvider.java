@@ -61,5 +61,6 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         add("itemGroup.cobblemon_manufactory.cm_tab", "Cobblemon Manufactory");
 
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
+        addTag(() -> CMTags.Items.TIER_5_POKE_BALL_MATERIALS, "Tier 5 Poké Ball Materials");
     }
 }
