@@ -105,21 +105,6 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
                         "rare_candy")
                         .withPrefix("shapeless/"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CobblemonItems.CHERISH_BALL, 1)
-                .pattern("RAR")
-                .pattern("BIB")
-                .pattern("RAR")
-                .define('R', Items.REDSTONE)
-                .define('A', CobblemonItems.RED_APRICORN)
-                .define('B', CobblemonItems.BLACK_APRICORN)
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy("has_red_apricorn", has(CobblemonItems.RED_APRICORN))
-                .unlockedBy("has_black_apricorn", has(CobblemonItems.BLACK_APRICORN))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
-                        CobblemonManufactory.ID,
-                        "cherish_ball")
-                        .withPrefix("shaped/"));
-
         DamagingShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, CobblemonItems.LEFTOVERS, 1)
                 .requires(Items.APPLE)
                 .requires(Items.SHEARS)

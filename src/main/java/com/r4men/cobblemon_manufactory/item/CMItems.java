@@ -83,7 +83,6 @@ public class CMItems {
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_WING_BALL = registerSimpleIncompleteItem("incomplete_ancient_wing_ball");
     public static final DeferredItem<Item> INCOMPLETE_AZURE_BALL = registerSimpleIncompleteItem("incomplete_azure_ball");
     public static final DeferredItem<Item> INCOMPLETE_BEAST_BALL = registerSimpleIncompleteItem("incomplete_beast_ball");
-    public static final DeferredItem<Item> INCOMPLETE_CHERISH_BALL = registerSimpleIncompleteItem("incomplete_cherish_ball");
     public static final DeferredItem<Item> INCOMPLETE_CITRINE_BALL = registerSimpleIncompleteItem("incomplete_citrine_ball");
     public static final DeferredItem<Item> INCOMPLETE_DIVE_BALL = registerSimpleIncompleteItem("incomplete_dive_ball");
     public static final DeferredItem<Item> INCOMPLETE_DREAM_BALL = registerSimpleIncompleteItem("incomplete_dream_ball");
