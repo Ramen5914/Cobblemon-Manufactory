@@ -2,16 +2,13 @@ package com.r4men.cobblemon_manufactory.datagen.recipe.create;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
-import com.r4men.cobblemon_manufactory.datagen.item.CMItemTagProvider;
 import com.r4men.cobblemon_manufactory.datagen.recipe.CMRecipeProvider;
 import com.r4men.cobblemon_manufactory.fluid.CMFluids;
 import com.r4men.cobblemon_manufactory.item.CMItems;
-import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.material.FlowingFluid;

@@ -1,14 +1,14 @@
 package com.r4men.cobblemon_manufactory.datagen;
 
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
-import com.r4men.cobblemon_manufactory.datagen.loot.CMBlockLootTableProvider;
 import com.r4men.cobblemon_manufactory.datagen.block.CMBlockStateProvider;
 import com.r4men.cobblemon_manufactory.datagen.block.CMBlockTagProvider;
-import com.r4men.cobblemon_manufactory.datagen.loot.CMLootTableProvider;
 import com.r4men.cobblemon_manufactory.datagen.fluid.CMFluidTagProvider;
 import com.r4men.cobblemon_manufactory.datagen.item.CMItemModelProvider;
 import com.r4men.cobblemon_manufactory.datagen.item.CMItemTagProvider;
 import com.r4men.cobblemon_manufactory.datagen.lang.CMEnUsLanguageProvider;
+import com.r4men.cobblemon_manufactory.datagen.loot.CMBlockLootTableProvider;
+import com.r4men.cobblemon_manufactory.datagen.loot.CMLootTableProvider;
 import com.r4men.cobblemon_manufactory.datagen.recipe.CMRecipeProvider;
 import com.r4men.cobblemon_manufactory.datagen.recipe.create.CMSequencedAssemblyRecipeGen;
 import net.minecraft.core.HolderLookup;
