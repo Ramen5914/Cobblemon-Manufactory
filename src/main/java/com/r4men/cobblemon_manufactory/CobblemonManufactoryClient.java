@@ -7,7 +7,6 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 @Mod(value = CobblemonManufactory.ID, dist = Dist.CLIENT)
-//@EventBusSubscriber(modid = CobblemonManufactory.ID, value = Dist.CLIENT)
 public class CobblemonManufactoryClient {
     public CobblemonManufactoryClient(ModContainer modContainer) {
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
