@@ -12,58 +12,112 @@ import java.util.List;
 public class CMItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CobblemonManufactory.ID);
 
-    public static final List<DeferredItem<Item>> ALL_ITEMS = new ArrayList<>();
+    public static final List<DeferredItem<Item>> OTHER_ITEMS = new ArrayList<>();
+    public static final List<DeferredItem<Item>> ALL_LIDS = new ArrayList<>();
+    public static final List<DeferredItem<Item>> ALL_BASES = new ArrayList<>();
+    public static final List<DeferredItem<Item>> ALL_CORES = new ArrayList<>();
 
     // Lids
-    public static final DeferredItem<Item> ANCIENT_BLACK_BALL_LID = registerSimpleItem("ancient_black_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_BLUE_BALL_LID = registerSimpleItem("ancient_blue_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_FEATHER_BALL_LID = registerSimpleItem("ancient_feather_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_GIGATON_BALL_LID = registerSimpleItem("ancient_gigaton_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_GREAT_BALL_LID = registerSimpleItem("ancient_great_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_GREEN_BALL_LID = registerSimpleItem("ancient_green_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_HEAVY_BALL_LID = registerSimpleItem("ancient_heavy_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_JET_BALL_LID = registerSimpleItem("ancient_jet_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_LEADEN_BALL_LID = registerSimpleItem("ancient_leaden_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_PINK_BALL_LID = registerSimpleItem("ancient_pink_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_RED_BALL_LID = registerSimpleItem("ancient_red_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_ULTRA_BALL_LID = registerSimpleItem("ancient_ultra_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_WHITE_BALL_LID = registerSimpleItem("ancient_white_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_WING_BALL_LID = registerSimpleItem("ancient_wing_ball_lid");
-    public static final DeferredItem<Item> ANCIENT_YELLOW_BALL_LID = registerSimpleItem("ancient_yellow_ball_lid");
-    public static final DeferredItem<Item> BEAST_BALL_LID = registerSimpleItem("beast_ball_lid");
-    public static final DeferredItem<Item> BLACK_BALL_LID = registerSimpleItem("black_ball_lid");
-    public static final DeferredItem<Item> BLACK_TUMBLESTONE_LID = registerSimpleItem("black_tumblestone_lid");
-    public static final DeferredItem<Item> BLUE_BALL_LID = registerSimpleItem("blue_ball_lid");
-    public static final DeferredItem<Item> DIVE_BALL_LID = registerSimpleItem("dive_ball_lid");
-    public static final DeferredItem<Item> DREAM_BALL_LID = registerSimpleItem("dream_ball_lid");
-    public static final DeferredItem<Item> DUSK_BALL_LID = registerSimpleItem("dusk_ball_lid");
-    public static final DeferredItem<Item> FAST_BALL_LID = registerSimpleItem("fast_ball_lid");
-    public static final DeferredItem<Item> FRIEND_BALL_LID = registerSimpleItem("friend_ball_lid");
-    public static final DeferredItem<Item> GREAT_BALL_LID = registerSimpleItem("great_ball_lid");
-    public static final DeferredItem<Item> GREEN_BALL_LID = registerSimpleItem("green_ball_lid");
-    public static final DeferredItem<Item> HEAL_BALL_LID = registerSimpleItem("heal_ball_lid");
-    public static final DeferredItem<Item> HEAVY_BALL_LID = registerSimpleItem("heavy_ball_lid");
-    public static final DeferredItem<Item> LEVEL_BALL_LID = registerSimpleItem("level_ball_lid");
-    public static final DeferredItem<Item> LOVE_BALL_LID = registerSimpleItem("love_ball_lid");
-    public static final DeferredItem<Item> LURE_BALL_LID = registerSimpleItem("lure_ball_lid");
-    public static final DeferredItem<Item> LUXURY_BALL_LID = registerSimpleItem("luxury_ball_lid");
-    public static final DeferredItem<Item> MASTER_BALL_LID = registerSimpleItem("master_ball_lid");
-    public static final DeferredItem<Item> MOON_BALL_LID = registerSimpleItem("moon_ball_lid");
-    public static final DeferredItem<Item> NEST_BALL_LID = registerSimpleItem("nest_ball_lid");
-    public static final DeferredItem<Item> NET_BALL_LID = registerSimpleItem("net_ball_lid");
-    public static final DeferredItem<Item> PARK_BALL_LID = registerSimpleItem("park_ball_lid");
-    public static final DeferredItem<Item> PINK_BALL_LID = registerSimpleItem("pink_ball_lid");
-    public static final DeferredItem<Item> QUICK_BALL_LID = registerSimpleItem("quick_ball_lid");
-    public static final DeferredItem<Item> RED_BALL_LID = registerSimpleItem("red_ball_lid");
-    public static final DeferredItem<Item> REPEAT_BALL_LID = registerSimpleItem("repeat_ball_lid");
-    public static final DeferredItem<Item> SAFARI_BALL_LID = registerSimpleItem("safari_ball_lid");
-    public static final DeferredItem<Item> SKY_TUMBLESTONE_LID = registerSimpleItem("sky_tumblestone_lid");
-    public static final DeferredItem<Item> SPORT_BALL_LID = registerSimpleItem("sport_ball_lid");
-    public static final DeferredItem<Item> TIMER_BALL_LID = registerSimpleItem("timer_ball_lid");
-    public static final DeferredItem<Item> TUMBLESTONE_LID = registerSimpleItem("tumblestone_lid");
-    public static final DeferredItem<Item> ULTRA_BALL_LID = registerSimpleItem("ultra_ball_lid");
-    public static final DeferredItem<Item> WHITE_BALL_LID = registerSimpleItem("white_ball_lid");
-    public static final DeferredItem<Item> YELLOW_BALL_LID = registerSimpleItem("yellow_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_BLACK_BALL_LID = registerSimpleLid("ancient_black_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_BLUE_BALL_LID = registerSimpleLid("ancient_blue_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_FEATHER_BALL_LID = registerSimpleLid("ancient_feather_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_GIGATON_BALL_LID = registerSimpleLid("ancient_gigaton_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_GREAT_BALL_LID = registerSimpleLid("ancient_great_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_GREEN_BALL_LID = registerSimpleLid("ancient_green_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_HEAVY_BALL_LID = registerSimpleLid("ancient_heavy_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_JET_BALL_LID = registerSimpleLid("ancient_jet_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_LEADEN_BALL_LID = registerSimpleLid("ancient_leaden_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_PINK_BALL_LID = registerSimpleLid("ancient_pink_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_RED_BALL_LID = registerSimpleLid("ancient_red_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_ULTRA_BALL_LID = registerSimpleLid("ancient_ultra_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_WHITE_BALL_LID = registerSimpleLid("ancient_white_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_WING_BALL_LID = registerSimpleLid("ancient_wing_ball_lid");
+    public static final DeferredItem<Item> ANCIENT_YELLOW_BALL_LID = registerSimpleLid("ancient_yellow_ball_lid");
+    public static final DeferredItem<Item> BEAST_BALL_LID = registerSimpleLid("beast_ball_lid");
+    public static final DeferredItem<Item> BLACK_BALL_LID = registerSimpleLid("black_ball_lid");
+    public static final DeferredItem<Item> BLACK_TUMBLESTONE_LID = registerSimpleLid("black_tumblestone_lid");
+    public static final DeferredItem<Item> BLUE_BALL_LID = registerSimpleLid("blue_ball_lid");
+    public static final DeferredItem<Item> DIVE_BALL_LID = registerSimpleLid("dive_ball_lid");
+    public static final DeferredItem<Item> DREAM_BALL_LID = registerSimpleLid("dream_ball_lid");
+    public static final DeferredItem<Item> DUSK_BALL_LID = registerSimpleLid("dusk_ball_lid");
+    public static final DeferredItem<Item> FAST_BALL_LID = registerSimpleLid("fast_ball_lid");
+    public static final DeferredItem<Item> FRIEND_BALL_LID = registerSimpleLid("friend_ball_lid");
+    public static final DeferredItem<Item> GREAT_BALL_LID = registerSimpleLid("great_ball_lid");
+    public static final DeferredItem<Item> GREEN_BALL_LID = registerSimpleLid("green_ball_lid");
+    public static final DeferredItem<Item> HEAL_BALL_LID = registerSimpleLid("heal_ball_lid");
+    public static final DeferredItem<Item> HEAVY_BALL_LID = registerSimpleLid("heavy_ball_lid");
+    public static final DeferredItem<Item> LEVEL_BALL_LID = registerSimpleLid("level_ball_lid");
+    public static final DeferredItem<Item> LOVE_BALL_LID = registerSimpleLid("love_ball_lid");
+    public static final DeferredItem<Item> LURE_BALL_LID = registerSimpleLid("lure_ball_lid");
+    public static final DeferredItem<Item> LUXURY_BALL_LID = registerSimpleLid("luxury_ball_lid");
+    public static final DeferredItem<Item> MASTER_BALL_LID = registerSimpleLid("master_ball_lid");
+    public static final DeferredItem<Item> MOON_BALL_LID = registerSimpleLid("moon_ball_lid");
+    public static final DeferredItem<Item> NEST_BALL_LID = registerSimpleLid("nest_ball_lid");
+    public static final DeferredItem<Item> NET_BALL_LID = registerSimpleLid("net_ball_lid");
+    public static final DeferredItem<Item> PARK_BALL_LID = registerSimpleLid("park_ball_lid");
+    public static final DeferredItem<Item> PINK_BALL_LID = registerSimpleLid("pink_ball_lid");
+    public static final DeferredItem<Item> QUICK_BALL_LID = registerSimpleLid("quick_ball_lid");
+    public static final DeferredItem<Item> RED_BALL_LID = registerSimpleLid("red_ball_lid");
+    public static final DeferredItem<Item> REPEAT_BALL_LID = registerSimpleLid("repeat_ball_lid");
+    public static final DeferredItem<Item> SAFARI_BALL_LID = registerSimpleLid("safari_ball_lid");
+    public static final DeferredItem<Item> SKY_TUMBLESTONE_LID = registerSimpleLid("sky_tumblestone_lid");
+    public static final DeferredItem<Item> SPORT_BALL_LID = registerSimpleLid("sport_ball_lid");
+    public static final DeferredItem<Item> TIMER_BALL_LID = registerSimpleLid("timer_ball_lid");
+    public static final DeferredItem<Item> TUMBLESTONE_LID = registerSimpleLid("tumblestone_lid");
+    public static final DeferredItem<Item> ULTRA_BALL_LID = registerSimpleLid("ultra_ball_lid");
+    public static final DeferredItem<Item> WHITE_BALL_LID = registerSimpleLid("white_ball_lid");
+    public static final DeferredItem<Item> YELLOW_BALL_LID = registerSimpleLid("yellow_ball_lid");
+
+    // Bases
+    public static final DeferredItem<Item> ANCIENT_BLACK_BALL_BASE = registerSimpleBase("ancient_black_ball_base");
+    public static final DeferredItem<Item> ANCIENT_BLUE_BALL_BASE = registerSimpleBase("ancient_blue_ball_base");
+    public static final DeferredItem<Item> ANCIENT_FEATHER_BALL_BASE = registerSimpleBase("ancient_feather_ball_base");
+    public static final DeferredItem<Item> ANCIENT_GIGATON_BALL_BASE = registerSimpleBase("ancient_gigaton_ball_base");
+    public static final DeferredItem<Item> ANCIENT_GREAT_BALL_BASE = registerSimpleBase("ancient_great_ball_base");
+    public static final DeferredItem<Item> ANCIENT_GREEN_BALL_BASE = registerSimpleBase("ancient_green_ball_base");
+    public static final DeferredItem<Item> ANCIENT_HEAVY_BALL_BASE = registerSimpleBase("ancient_heavy_ball_base");
+    public static final DeferredItem<Item> ANCIENT_JET_BALL_BASE = registerSimpleBase("ancient_jet_ball_base");
+    public static final DeferredItem<Item> ANCIENT_LEADEN_BALL_BASE = registerSimpleBase("ancient_leaden_ball_base");
+    public static final DeferredItem<Item> ANCIENT_PINK_BALL_BASE = registerSimpleBase("ancient_pink_ball_base");
+    public static final DeferredItem<Item> ANCIENT_RED_BALL_BASE = registerSimpleBase("ancient_red_ball_base");
+    public static final DeferredItem<Item> ANCIENT_ULTRA_BALL_BASE = registerSimpleBase("ancient_ultra_ball_base");
+    public static final DeferredItem<Item> ANCIENT_WHITE_BALL_BASE = registerSimpleBase("ancient_white_ball_base");
+    public static final DeferredItem<Item> ANCIENT_WING_BALL_BASE = registerSimpleBase("ancient_wing_ball_base");
+    public static final DeferredItem<Item> ANCIENT_YELLOW_BALL_BASE = registerSimpleBase("ancient_yellow_ball_base");
+    public static final DeferredItem<Item> BEAST_BALL_BASE = registerSimpleBase("beast_ball_base");
+    public static final DeferredItem<Item> BLACK_BALL_BASE = registerSimpleBase("black_ball_base");
+    public static final DeferredItem<Item> BLACK_TUMBLESTONE_BASE = registerSimpleBase("black_tumblestone_base");
+    public static final DeferredItem<Item> BLUE_BALL_BASE = registerSimpleBase("blue_ball_base");
+    public static final DeferredItem<Item> DIVE_BALL_BASE = registerSimpleBase("dive_ball_base");
+    public static final DeferredItem<Item> DREAM_BALL_BASE = registerSimpleBase("dream_ball_base");
+    public static final DeferredItem<Item> DUSK_BALL_BASE = registerSimpleBase("dusk_ball_base");
+    public static final DeferredItem<Item> FAST_BALL_BASE = registerSimpleBase("fast_ball_base");
+    public static final DeferredItem<Item> FRIEND_BALL_BASE = registerSimpleBase("friend_ball_base");
+    public static final DeferredItem<Item> GREAT_BALL_BASE = registerSimpleBase("great_ball_base");
+    public static final DeferredItem<Item> GREEN_BALL_BASE = registerSimpleBase("green_ball_base");
+    public static final DeferredItem<Item> HEAL_BALL_BASE = registerSimpleBase("heal_ball_base");
+    public static final DeferredItem<Item> HEAVY_BALL_BASE = registerSimpleBase("heavy_ball_base");
+    public static final DeferredItem<Item> LEVEL_BALL_BASE = registerSimpleBase("level_ball_base");
+    public static final DeferredItem<Item> LOVE_BALL_BASE = registerSimpleBase("love_ball_base");
+    public static final DeferredItem<Item> LURE_BALL_BASE = registerSimpleBase("lure_ball_base");
+    public static final DeferredItem<Item> LUXURY_BALL_BASE = registerSimpleBase("luxury_ball_base");
+    public static final DeferredItem<Item> MASTER_BALL_BASE = registerSimpleBase("master_ball_base");
+    public static final DeferredItem<Item> MOON_BALL_BASE = registerSimpleBase("moon_ball_base");
+    public static final DeferredItem<Item> NEST_BALL_BASE = registerSimpleBase("nest_ball_base");
+    public static final DeferredItem<Item> NET_BALL_BASE = registerSimpleBase("net_ball_base");
+    public static final DeferredItem<Item> PARK_BALL_BASE = registerSimpleBase("park_ball_base");
+    public static final DeferredItem<Item> PINK_BALL_BASE = registerSimpleBase("pink_ball_base");
+    public static final DeferredItem<Item> QUICK_BALL_BASE = registerSimpleBase("quick_ball_base");
+    public static final DeferredItem<Item> RED_BALL_BASE = registerSimpleBase("red_ball_base");
+    public static final DeferredItem<Item> REPEAT_BALL_BASE = registerSimpleBase("repeat_ball_base");
+    public static final DeferredItem<Item> SAFARI_BALL_BASE = registerSimpleBase("safari_ball_base");
+    public static final DeferredItem<Item> SKY_TUMBLESTONE_BASE = registerSimpleBase("sky_tumblestone_base");
+    public static final DeferredItem<Item> SPORT_BALL_BASE = registerSimpleBase("sport_ball_base");
+    public static final DeferredItem<Item> TIMER_BALL_BASE = registerSimpleBase("timer_ball_base");
+    public static final DeferredItem<Item> TUMBLESTONE_BASE = registerSimpleBase("tumblestone_base");
+    public static final DeferredItem<Item> ULTRA_BALL_BASE = registerSimpleBase("ultra_ball_base");
+    public static final DeferredItem<Item> WHITE_BALL_BASE = registerSimpleBase("white_ball_base");
+    public static final DeferredItem<Item> YELLOW_BALL_BASE = registerSimpleBase("yellow_ball_base");
 
     // Incomplete Balls
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_AZURE_BALL = registerSimpleIncompleteItem("incomplete_ancient_azure_ball");
@@ -120,16 +174,37 @@ public class CMItems {
     public static final DeferredItem<Item> CRUSHED_EXP_QUARTZ = registerSimpleItem("crushed_exp_quartz");
     public static final DeferredItem<Item> EXP_QUARTZ = registerSimpleItem("exp_quartz");
 
-    public static final DeferredItem<Item> IRON_BALL_BASE = registerSimpleItem("iron_ball_base");
-    public static final DeferredItem<Item> COPPER_BALL_BASE = registerSimpleItem("copper_ball_base");
-    public static final DeferredItem<Item> GOLD_BALL_BASE = registerSimpleItem("gold_ball_base");
-    public static final DeferredItem<Item> DIAMOND_BALL_BASE = registerSimpleItem("diamond_ball_base");
-    public static final DeferredItem<Item> NETHERITE_BALL_BASE = registerSimpleItem("netherite_ball_base");
+    public static final DeferredItem<Item> IRON_BALL_CORE = registerSimpleCore("iron_ball_core");
+    public static final DeferredItem<Item> COPPER_BALL_CORE = registerSimpleCore("copper_ball_core");
+    public static final DeferredItem<Item> GOLD_BALL_CORE = registerSimpleCore("gold_ball_core");
+    public static final DeferredItem<Item> DIAMOND_BALL_CORE = registerSimpleCore("diamond_ball_core");
+    public static final DeferredItem<Item> NETHERITE_BALL_CORE = registerSimpleCore("netherite_ball_core");
 
     public static DeferredItem<Item> registerSimpleItem(String name) {
         DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
 
-        ALL_ITEMS.add(item);
+        OTHER_ITEMS.add(item);
+        return item;
+    }
+
+    public static DeferredItem<Item> registerSimpleCore(String name) {
+        DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
+
+        ALL_CORES.add(item);
+        return item;
+    }
+
+    public static DeferredItem<Item> registerSimpleLid(String name) {
+        DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
+
+        ALL_LIDS.add(item);
+        return item;
+    }
+
+    public static DeferredItem<Item> registerSimpleBase(String name) {
+        DeferredItem<Item> item = ITEMS.registerSimpleItem(name);
+
+        ALL_BASES.add(item);
         return item;
     }
 
