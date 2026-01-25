@@ -75,6 +75,7 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         addTag(() -> CMTags.Items.SKY_TUMBLESTONE_BUDS, "Sky Tumblestone Buds");
         addTag(() -> CMTags.Items.TUMBLESTONE_BUDS,"Tumblestone Buds");
         addTag(() -> CMTags.Items.NO_MECHANICAL_CRAFTING, "No Mechanical Crafting");
+        addTag(() -> CMTags.Items.BALL_CORES, "Poké Ball Cores");
         // # Adds to Cobblemon's Existing Tags
         addTag(() -> CMTags.Items.TIER_5_POKE_BALL_MATERIALS, "Tier 5 Poké Ball Materials");
         // # Fluid Tags
