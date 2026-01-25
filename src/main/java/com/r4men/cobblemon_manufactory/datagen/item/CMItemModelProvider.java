@@ -25,8 +25,20 @@ public class CMItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        for (var item : CMItems.ALL_ITEMS.stream().map(DeferredHolder::get).toList()) {
+        for (var item : CMItems.OTHER_ITEMS.stream().map(DeferredHolder::get).toList()) {
             basicItem(item);
+        }
+
+        for (var lid : CMItems.ALL_LIDS.stream().map(DeferredHolder::get).toList()) {
+
+        }
+
+        for (var base : CMItems.ALL_BASES.stream().map(DeferredHolder::get).toList()) {
+
+        }
+
+        for (var core : CMItems.ALL_CORES.stream().map(DeferredHolder::get).toList()) {
+
         }
 
         steppedItem(CMItems.INCOMPLETE_ANCIENT_AZURE_BALL, 2);

@@ -154,12 +154,12 @@ public class CMItemTagProvider extends ItemTagsProvider {
                 .add(CobblemonItems.ANCIENT_GIGATON_BALL)
                 .add(CobblemonItems.PREMIER_BALL);
 
-        tag(CMTags.Items.BALL_BASES)
-                .add(CMItems.COPPER_BALL_BASE.get())
-                .add(CMItems.IRON_BALL_BASE.get())
-                .add(CMItems.GOLD_BALL_BASE.get())
-                .add(CMItems.DIAMOND_BALL_BASE.get())
-                .add(CMItems.NETHERITE_BALL_BASE.get());
+        tag(CMTags.Items.BALL_CORES)
+                .add(CMItems.COPPER_BALL_CORE.get())
+                .add(CMItems.IRON_BALL_CORE.get())
+                .add(CMItems.GOLD_BALL_CORE.get())
+                .add(CMItems.DIAMOND_BALL_CORE.get())
+                .add(CMItems.NETHERITE_BALL_CORE.get());
 
         tag(CMTags.Items.TIER_5_POKE_BALL_MATERIALS)
                 .add(Items.NETHERITE_INGOT);
