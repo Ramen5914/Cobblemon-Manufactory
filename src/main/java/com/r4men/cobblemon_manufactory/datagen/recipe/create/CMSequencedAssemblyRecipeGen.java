@@ -321,7 +321,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
                 .transitionTo(incomplete)
                 .addOutput(ball, 1)
                 .loops(1)
-                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.IRON_BALL_BASE))
+                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.IRON_BALL_CORE))
                 .addStep(DeployerApplicationRecipe::new, rb -> rb.require(tag)));
     }
 
@@ -331,7 +331,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
                 .transitionTo(incomplete)
                 .addOutput(ball, 1)
                 .loops(1)
-                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.IRON_BALL_BASE))
+                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.IRON_BALL_CORE))
                 .addStep(DeployerApplicationRecipe::new, rb -> rb.require(nugget)));
     }
 
@@ -344,7 +344,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
                 .transitionTo(transitional.getItem())
                 .addOutput(ball, 1)
                 .loops(1)
-                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.COPPER_BALL_BASE))
+                .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.COPPER_BALL_CORE))
                 .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.IRON_NUGGET)));
     }
 
