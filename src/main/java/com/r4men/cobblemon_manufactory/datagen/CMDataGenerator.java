@@ -12,6 +12,7 @@ import com.r4men.cobblemon_manufactory.datagen.loot.CMLootTableProvider;
 import com.r4men.cobblemon_manufactory.datagen.recipe.CMRecipeProvider;
 import com.r4men.cobblemon_manufactory.datagen.recipe.create.CMSequencedAssemblyRecipeGen;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -28,7 +29,7 @@ import java.util.concurrent.CompletableFuture;
 public class CMDataGenerator {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-        net.minecraft.data.DataGenerator generator = event.getGenerator();
+        DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
