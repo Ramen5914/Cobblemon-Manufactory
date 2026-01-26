@@ -12,17 +12,17 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.CompletableFuture;
 
 public final class CMDeployingRecipeGen extends DeployingRecipeGen {
-    GeneratedRecipe ANCIENT_BLACK_BALL_LID = create(
-            "ancient_black_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.BLACK_DYE)
-                    .output(CMItems.ANCIENT_BLACK_BALL_LID));
+//    GeneratedRecipe ANCIENT_SLATE_BALL_LID = create(
+//            "ancient_black_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.BLACK_DYE)
+//                    .output(CMItems.ANCIENT_SLATE_BALL_LID));
 
-    GeneratedRecipe ANCIENT_BLUE_BALL_LID = create(
-            "ancient_blue_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.BLUE_DYE)
-                    .output(CMItems.ANCIENT_BLUE_BALL_LID));
+//    GeneratedRecipe ANCIENT_AZURE_BALL_LID = create(
+//            "ancient_blue_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.BLUE_DYE)
+//                    .output(CMItems.ANCIENT_AZURE_BALL_LID));
 
     GeneratedRecipe ANCIENT_GIGATON_BALL_LID = create(
             "ancient_gigaton_ball_lid", b -> b
@@ -32,21 +32,21 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe ANCIENT_GREAT_BALL_LID = create(
             "ancient_great_ball_lid", b -> b
-                    .require(CMItems.ANCIENT_BLUE_BALL_LID)
+                    .require(CMItems.ANCIENT_AZURE_BALL_LID)
                     .require(Items.RED_DYE)
                     .output(CMItems.ANCIENT_GREAT_BALL_LID));
 
-    GeneratedRecipe ANCIENT_GREEN_BALL_LID = create(
-            "ancient_green_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.GREEN_DYE)
-                    .output(CMItems.ANCIENT_GREEN_BALL_LID));
+//    GeneratedRecipe ANCIENT_VERDANT_BALL_LID = create(
+//            "ancient_green_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.GREEN_DYE)
+//                    .output(CMItems.ANCIENT_VERDANT_BALL_LID));
 
-    GeneratedRecipe ANCIENT_HEAVY_BALL_LID = create(
-            "ancient_heavy_ball_lid", b -> b
-                    .require(CMItems.BLACK_TUMBLESTONE_LID)
-                    .require(Items.BLACK_DYE)
-                    .output(CMItems.ANCIENT_HEAVY_BALL_LID));
+//    GeneratedRecipe ANCIENT_HEAVY_BALL_LID = create(
+//            "ancient_heavy_ball_lid", b -> b
+//                    .require(CMItems.BLACK_TUMBLESTONE_LID)
+//                    .require(Items.BLACK_DYE)
+//                    .output(CMItems.ANCIENT_HEAVY_BALL_LID));
 
     GeneratedRecipe ANCIENT_LEADEN_BALL_LID = create(
             "ancient_leaden_ball_lid", b -> b
@@ -54,35 +54,35 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
                     .require(Items.IRON_NUGGET)
                     .output(CMItems.ANCIENT_LEADEN_BALL_LID));
 
-    GeneratedRecipe ANCIENT_PINK_BALL_LID = create(
-            "ancient_pink_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.PINK_DYE)
-                    .output(CMItems.ANCIENT_PINK_BALL_LID));
+//    GeneratedRecipe ANCIENT_ROSEATE_BALL_LID = create(
+//            "ancient_pink_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.PINK_DYE)
+//                    .output(CMItems.ANCIENT_ROSEATE_BALL_LID));
 
-    GeneratedRecipe ANCIENT_RED_BALL_LID = create(
-            "ancient_red_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.RED_DYE)
-                    .output(CMItems.ANCIENT_RED_BALL_LID));
+//    GeneratedRecipe ANCIENT_POKE_BALL_LID = create(
+//            "ancient_red_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.RED_DYE)
+//                    .output(CMItems.ANCIENT_POKE_BALL_LID));
 
     GeneratedRecipe ANCIENT_ULTRA_BALL_LID = create(
             "ancient_ultra_ball_lid", b -> b
-                    .require(CMItems.ANCIENT_BLACK_BALL_LID)
+                    .require(CMItems.ANCIENT_SLATE_BALL_LID)
                     .require(Items.YELLOW_DYE)
                     .output(CMItems.ANCIENT_ULTRA_BALL_LID));
 
-    GeneratedRecipe ANCIENT_WHITE_BALL_LID = create(
-            "ancient_white_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.WHITE_DYE)
-                    .output(CMItems.ANCIENT_WHITE_BALL_LID));
+//    GeneratedRecipe ANCIENT_IVORY_BALL_LID = create(
+//            "ancient_white_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.WHITE_DYE)
+//                    .output(CMItems.ANCIENT_IVORY_BALL_LID));
 
-    GeneratedRecipe ANCIENT_YELLOW_BALL_LID = create(
-            "ancient_yellow_ball_lid", b -> b
-                    .require(CMItems.TUMBLESTONE_LID)
-                    .require(Items.YELLOW_DYE)
-                    .output(CMItems.ANCIENT_YELLOW_BALL_LID));
+//    GeneratedRecipe ANCIENT_CITRINE_BALL_LID = create(
+//            "ancient_yellow_ball_lid", b -> b
+//                    .require(CMItems.TUMBLESTONE_LID)
+//                    .require(Items.YELLOW_DYE)
+//                    .output(CMItems.ANCIENT_CITRINE_BALL_LID));
 
     GeneratedRecipe BEAST_BALL_LID = create(
             "beast_ball_lid", b -> b
@@ -92,7 +92,7 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe DIVE_BALL_LID = create(
             "dive_ball_lid", b -> b
-                    .require(CMItems.BLUE_BALL_LID)
+                    .require(CMItems.AZURE_BALL_LID)
                     .require(Items.WHITE_DYE)
                     .output(CMItems.DIVE_BALL_LID));
 
@@ -104,43 +104,43 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe DUSK_BALL_LID = create(
             "dusk_ball_lid", b -> b
-                    .require(CMItems.GREEN_BALL_LID)
+                    .require(CMItems.VERDANT_BALL_LID)
                     .require(Items.BLACK_DYE)
                     .output(CMItems.DUSK_BALL_LID));
 
     GeneratedRecipe FAST_BALL_LID = create(
             "fast_ball_lid", b -> b
-                    .require(CMItems.RED_BALL_LID)
+                    .require(CMItems.POKE_BALL_LID)
                     .require(Items.YELLOW_DYE)
                     .output(CMItems.FAST_BALL_LID));
 
-    GeneratedRecipe ANCIENT_FEATHER_BALL_LID = create(
-            "ancient_feather_ball_lid", b -> b
-                    .require(CMItems.SKY_TUMBLESTONE_LID)
-                    .require(Items.LIGHT_BLUE_DYE)
-                    .output(CMItems.ANCIENT_FEATHER_BALL_LID));
+//    GeneratedRecipe ANCIENT_FEATHER_BALL_LID = create(
+//            "ancient_feather_ball_lid", b -> b
+//                    .require(CMItems.SKY_TUMBLESTONE_LID)
+//                    .require(Items.LIGHT_BLUE_DYE)
+//                    .output(CMItems.ANCIENT_FEATHER_BALL_LID));
 
     GeneratedRecipe FRIEND_BALL_LID = create(
             "friend_ball_lid", b -> b
-                    .require(CMItems.GREEN_BALL_LID)
+                    .require(CMItems.VERDANT_BALL_LID)
                     .require(Items.RED_DYE)
                     .output(CMItems.FRIEND_BALL_LID));
 
     GeneratedRecipe GREAT_BALL_LID = create(
             "great_ball_lid", b -> b
-                    .require(CMItems.BLUE_BALL_LID)
+                    .require(CMItems.AZURE_BALL_LID)
                     .require(Items.RED_DYE)
                     .output(CMItems.GREAT_BALL_LID));
 
     GeneratedRecipe HEAL_BALL_LID = create(
             "heal_ball_lid", b -> b
-                    .require(CMItems.PINK_BALL_LID)
+                    .require(CMItems.ROSEATE_BALL_LID)
                     .require(Items.WHITE_DYE)
                     .output(CMItems.HEAL_BALL_LID));
 
     GeneratedRecipe HEAVY_BALL_LID = create(
             "heavy_ball_lid", b -> b
-                    .require(CMItems.BLACK_BALL_LID)
+                    .require(CMItems.SLATE_BALL_LID)
                     .require(Items.BLUE_DYE)
                     .output(CMItems.HEAVY_BALL_LID));
 
@@ -152,25 +152,25 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe LEVEL_BALL_LID = create(
             "level_ball_lid", b -> b
-                    .require(CMItems.BLACK_BALL_LID)
+                    .require(CMItems.SLATE_BALL_LID)
                     .require(Items.RED_DYE)
                     .output(CMItems.LEVEL_BALL_LID));
 
     GeneratedRecipe LOVE_BALL_LID = create(
             "love_ball_lid", b -> b
-                    .require(CMItems.WHITE_BALL_LID)
+                    .require(CMItems.PREMIER_BALL_LID)
                     .require(Items.PINK_DYE)
                     .output(CMItems.LOVE_BALL_LID));
 
     GeneratedRecipe LURE_BALL_LID = create(
             "lure_ball_lid", b -> b
-                    .require(CMItems.RED_BALL_LID)
+                    .require(CMItems.POKE_BALL_LID)
                     .require(Items.CYAN_DYE)
                     .output(CMItems.LURE_BALL_LID));
 
     GeneratedRecipe LUXURY_BALL_LID = create(
             "luxury_ball_lid", b -> b
-                    .require(CMItems.BLACK_BALL_LID)
+                    .require(CMItems.SLATE_BALL_LID)
                     .require(Items.GOLD_NUGGET)
                     .output(CMItems.LUXURY_BALL_LID));
 
@@ -182,25 +182,25 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe NEST_BALL_LID = create(
             "nest_ball_lid", b -> b
-                    .require(CMItems.GREEN_BALL_LID)
+                    .require(CMItems.VERDANT_BALL_LID)
                     .require(Items.YELLOW_DYE)
                     .output(CMItems.NEST_BALL_LID));
 
     GeneratedRecipe NET_BALL_LID = create(
             "net_ball_lid", b -> b
-                    .require(CMItems.BLUE_BALL_LID)
+                    .require(CMItems.AZURE_BALL_LID)
                     .require(Items.BLACK_DYE)
                     .output(CMItems.NET_BALL_LID));
 
     GeneratedRecipe PARK_BALL_LID = create(
             "park_ball_lid", b -> b
-                    .require(CMItems.GREEN_BALL_LID)
+                    .require(CMItems.VERDANT_BALL_LID)
                     .require(Items.LIME_DYE)
                     .output(CMItems.PARK_BALL_LID));
 
     GeneratedRecipe QUICK_BALL_LID = create(
             "quick_ball_lid", b -> b
-                    .require(CMItems.BLUE_BALL_LID)
+                    .require(CMItems.AZURE_BALL_LID)
                     .require(Items.YELLOW_DYE)
                     .output(CMItems.QUICK_BALL_LID));
 
@@ -212,13 +212,13 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe SAFARI_BALL_LID = create(
             "safari_ball_lid", b -> b
-                    .require(CMItems.GREEN_BALL_LID)
+                    .require(CMItems.VERDANT_BALL_LID)
                     .require(Items.BROWN_DYE)
                     .output(CMItems.SAFARI_BALL_LID));
 
     GeneratedRecipe SPORT_BALL_LID = create(
             "sport_ball_lid", b -> b
-                    .require(CMItems.RED_BALL_LID)
+                    .require(CMItems.POKE_BALL_LID)
                     .require(Items.WHITE_DYE)
                     .output(CMItems.SPORT_BALL_LID));
 
@@ -230,7 +230,7 @@ public final class CMDeployingRecipeGen extends DeployingRecipeGen {
 
     GeneratedRecipe ULTRA_BALL_LID = create(
             "ultra_ball_lid", b -> b
-                    .require(CMItems.BLACK_BALL_LID)
+                    .require(CMItems.SLATE_BALL_LID)
                     .require(Items.YELLOW_DYE)
                     .output(CMItems.ULTRA_BALL_LID));
 

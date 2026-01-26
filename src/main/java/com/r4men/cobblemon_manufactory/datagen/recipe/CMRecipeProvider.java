@@ -84,21 +84,21 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
         ancientBallFromDye(CobblemonItems.ANCIENT_IVORY_BALL, Items.WHITE_DYE, recipeOutput);
         ancientBallFromDye(CobblemonItems.ANCIENT_CITRINE_BALL, Items.YELLOW_DYE, recipeOutput);
 
-        ancientLidFromDye(CMItems.ANCIENT_BLACK_BALL_LID.get(), Items.BLACK_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_BLUE_BALL_LID.get(), Items.BLUE_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_GREEN_BALL_LID.get(), Items.GREEN_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_PINK_BALL_LID.get(), Items.PINK_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_RED_BALL_LID.get(), Items.RED_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_WHITE_BALL_LID.get(), Items.WHITE_DYE, recipeOutput);
-        ancientLidFromDye(CMItems.ANCIENT_YELLOW_BALL_LID.get(), Items.YELLOW_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_SLATE_BALL_LID.get(), Items.BLACK_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_AZURE_BALL_LID.get(), Items.BLUE_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_VERDANT_BALL_LID.get(), Items.GREEN_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_ROSEATE_BALL_LID.get(), Items.PINK_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_POKE_BALL_LID.get(), Items.RED_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_IVORY_BALL_LID.get(), Items.WHITE_DYE, recipeOutput);
+        ancientLidFromDye(CMItems.ANCIENT_CITRINE_BALL_LID.get(), Items.YELLOW_DYE, recipeOutput);
 
-        basicLidFromDye(CMItems.BLACK_BALL_LID.get(), Items.BLACK_DYE, recipeOutput);
-        basicLidFromDye(CMItems.BLUE_BALL_LID.get(), Items.BLUE_DYE, recipeOutput);
-        basicLidFromDye(CMItems.GREEN_BALL_LID.get(), Items.GREEN_DYE, recipeOutput);
-        basicLidFromDye(CMItems.PINK_BALL_LID.get(), Items.PINK_DYE, recipeOutput);
-        basicLidFromDye(CMItems.RED_BALL_LID.get(), Items.RED_DYE, recipeOutput);
-        basicLidFromDye(CMItems.WHITE_BALL_LID.get(), Items.WHITE_DYE, recipeOutput);
-        basicLidFromDye(CMItems.YELLOW_BALL_LID.get(), Items.YELLOW_DYE, recipeOutput);
+        basicLidFromDye(CMItems.SLATE_BALL_LID.get(), Items.BLACK_DYE, recipeOutput);
+        basicLidFromDye(CMItems.AZURE_BALL_LID.get(), Items.BLUE_DYE, recipeOutput);
+        basicLidFromDye(CMItems.VERDANT_BALL_LID.get(), Items.GREEN_DYE, recipeOutput);
+        basicLidFromDye(CMItems.ROSEATE_BALL_LID.get(), Items.PINK_DYE, recipeOutput);
+        basicLidFromDye(CMItems.POKE_BALL_LID.get(), Items.RED_DYE, recipeOutput);
+        basicLidFromDye(CMItems.PREMIER_BALL_LID.get(), Items.WHITE_DYE, recipeOutput);
+        basicLidFromDye(CMItems.CITRINE_BALL_LID.get(), Items.YELLOW_DYE, recipeOutput);
 
         apricornFromDye(CobblemonItems.BLACK_APRICORN, Items.BLACK_DYE, recipeOutput);
         apricornFromDye(CobblemonItems.BLUE_APRICORN, Items.BLUE_DYE, recipeOutput);
@@ -115,9 +115,6 @@ public class CMRecipeProvider extends RecipeProvider implements IConditionBuilde
         ballFromDye(CobblemonItems.ROSEATE_BALL, Items.PINK_DYE, recipeOutput);
         ballFromDye(CobblemonItems.SLATE_BALL, Items.BLACK_DYE, recipeOutput);
         ballFromDye(CobblemonItems.VERDANT_BALL, Items.GREEN_DYE, recipeOutput);
-
-        simpleLidFromDye(CMItems.BLACK_TUMBLESTONE_LID.get(), CMItems.ANCIENT_HEAVY_BALL_LID.get(), Items.BLACK_DYE, recipeOutput);
-        simpleLidFromDye(CMItems.SKY_TUMBLESTONE_LID.get(), CMItems.ANCIENT_FEATHER_BALL_LID.get(), Items.LIGHT_BLUE_DYE, recipeOutput);
 
         compressionRecipe(CobblemonItems.EXPERIENCE_CANDY_XS, 6, CobblemonItems.EXPERIENCE_CANDY_S, recipeOutput);
         compressionRecipe(CobblemonItems.EXPERIENCE_CANDY_S, 3, CobblemonItems.EXPERIENCE_CANDY_M, recipeOutput);

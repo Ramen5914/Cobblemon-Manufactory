@@ -17,7 +17,6 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         super(output, CobblemonManufactory.ID, "en_us");
     }
 
-
     @Override
     public @NotNull String getName() {
         return CobblemonManufactory.NAME + "'s English (US) Translations";

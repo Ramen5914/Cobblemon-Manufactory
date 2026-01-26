@@ -6,6 +6,7 @@ import com.r4men.cobblemon_manufactory.item.CMItems;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.SequencedAssemblyRecipeGen;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.data.PackOutput;
@@ -20,21 +21,42 @@ import net.neoforged.neoforge.common.Tags;
 import java.util.concurrent.CompletableFuture;
 
 public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeGen {
-    GeneratedRecipe POKE_BALL = baseBall(
-            "poke_ball",
-            CMItems.RED_BALL_LID,
-            CMItems.INCOMPLETE_POKE_BALL,
-            CobblemonItems.POKE_BALL);
+    GeneratedRecipe POKE_BALL_LID = create(
+            "poke_ball_lid", b -> b
+                    .require(CobblemonItems.RED_APRICORN)
+                    .transitionTo(CMItems.INCOMPLETE_POKE_BALL_LID)
+                    .addOutput(CMItems.POKE_BALL_LID, 1)
+                    .loops(1)
+                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CobblemonItems.RED_APRICORN))
+                    .addStep(PressingRecipe::new, rb -> rb));
+
+    GeneratedRecipe POKE_BALL_BASE = create(
+            "poke_ball_base", b -> b
+                    .require(CobblemonItems.RED_APRICORN)
+                    .transitionTo(CMItems.INCOMPLETE_POKE_BALL_BASE)
+                    .addOutput(CMItems.POKE_BALL_BASE, 1)
+                    .loops(1)
+                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CobblemonItems.RED_APRICORN)));
+
+    GeneratedRecipe POKE_BALL = create(
+            "poke_ball", b -> b
+                    .require(CMItems.COPPER_BALL_CORE)
+                    .transitionTo(CMItems.INCOMPLETE_POKE_BALL)
+                    .addOutput(CobblemonItems.POKE_BALL, 1)
+                    .loops(1)
+                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.POKE_BALL_BASE))
+                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(CMItems.POKE_BALL_LID))
+                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.IRON_NUGGET)));
 
     GeneratedRecipe ANCIENT_SLATE_BALL = simpleCopperBall(
             "ancient_slate_ball",
-            CMItems.ANCIENT_BLACK_BALL_LID,
+            CMItems.ANCIENT_SLATE_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_SLATE_BALL,
             CobblemonItems.ANCIENT_SLATE_BALL);
 
     GeneratedRecipe ANCIENT_AZURE_BALL = simpleCopperBall(
             "ancient_azure_ball",
-            CMItems.ANCIENT_BLUE_BALL_LID,
+            CMItems.ANCIENT_AZURE_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_AZURE_BALL,
             CobblemonItems.ANCIENT_AZURE_BALL);
 
@@ -58,7 +80,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe ANCIENT_VERDANT_BALL = simpleCopperBall(
             "ancient_verdant_ball",
-            CMItems.ANCIENT_GREEN_BALL_LID,
+            CMItems.ANCIENT_VERDANT_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_VERDANT_BALL,
             CobblemonItems.ANCIENT_VERDANT_BALL);
 
@@ -82,13 +104,13 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe ANCIENT_ROSEATE_BALL = simpleCopperBall(
             "ancient_roseate_ball",
-            CMItems.ANCIENT_PINK_BALL_LID,
+            CMItems.ANCIENT_ROSEATE_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_ROSEATE_BALL,
             CobblemonItems.ANCIENT_ROSEATE_BALL);
 
     GeneratedRecipe ANCIENT_POKE_BALL = simpleCopperBall(
             "ancient_poke_ball",
-            CMItems.ANCIENT_RED_BALL_LID,
+            CMItems.ANCIENT_POKE_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_POKE_BALL,
             CobblemonItems.ANCIENT_POKE_BALL);
 
@@ -100,7 +122,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe ANCIENT_IVORY_BALL = simpleCopperBall(
             "ancient_ivory_ball",
-            CMItems.ANCIENT_WHITE_BALL_LID,
+            CMItems.ANCIENT_IVORY_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_IVORY_BALL,
             CobblemonItems.ANCIENT_IVORY_BALL);
 
@@ -112,13 +134,13 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe ANCIENT_CITRINE_BALL = simpleCopperBall(
             "ancient_citrine_ball",
-            CMItems.ANCIENT_YELLOW_BALL_LID,
+            CMItems.ANCIENT_CITRINE_BALL_LID,
             CMItems.INCOMPLETE_ANCIENT_CITRINE_BALL,
             CobblemonItems.ANCIENT_CITRINE_BALL);
 
     GeneratedRecipe AZURE_BALL = simpleCopperBall(
             "azure_ball",
-            CMItems.BLUE_BALL_LID,
+            CMItems.AZURE_BALL_LID,
             CMItems.INCOMPLETE_AZURE_BALL,
             CobblemonItems.AZURE_BALL);
 
@@ -130,7 +152,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe CITRINE_BALL = simpleCopperBall(
             "citrine_ball",
-            CMItems.YELLOW_BALL_LID,
+            CMItems.CITRINE_BALL_LID,
             CMItems.INCOMPLETE_CITRINE_BALL,
             CobblemonItems.CITRINE_BALL);
 
@@ -238,7 +260,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe PREMIER_BALL = simpleCopperBall(
             "premier_ball",
-            CMItems.WHITE_BALL_LID,
+            CMItems.PREMIER_BALL_LID,
             CMItems.INCOMPLETE_PREMIER_BALL,
             CobblemonItems.PREMIER_BALL);
 
@@ -256,7 +278,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe ROSEATE_BALL = simpleCopperBall(
             "roseate_ball",
-            CMItems.PINK_BALL_LID,
+            CMItems.ROSEATE_BALL_LID,
             CMItems.INCOMPLETE_ROSEATE_BALL,
             CobblemonItems.ROSEATE_BALL);
 
@@ -268,7 +290,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe SLATE_BALL = simpleCopperBall(
             "slate_ball",
-            CMItems.BLACK_BALL_LID,
+            CMItems.SLATE_BALL_LID,
             CMItems.INCOMPLETE_SLATE_BALL,
             CobblemonItems.SLATE_BALL);
 
@@ -292,7 +314,7 @@ public final class CMSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeG
 
     GeneratedRecipe VERDANT_BALL = simpleCopperBall(
             "verdant_ball",
-            CMItems.GREEN_BALL_LID,
+            CMItems.VERDANT_BALL_LID,
             CMItems.INCOMPLETE_VERDANT_BALL,
             CobblemonItems.VERDANT_BALL);
 
