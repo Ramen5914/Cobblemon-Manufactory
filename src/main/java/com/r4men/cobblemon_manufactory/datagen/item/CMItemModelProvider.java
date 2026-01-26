@@ -1,10 +1,12 @@
 package com.r4men.cobblemon_manufactory.datagen.item;
 
+import com.cobblemon.mod.common.CobblemonItems;
 import com.r4men.cobblemon_manufactory.CobblemonManufactory;
 import com.r4men.cobblemon_manufactory.component.CMDataComponentTypes;
 import com.r4men.cobblemon_manufactory.item.CMItems;
 import com.r4men.cobblemon_manufactory.util.CMUtil;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -29,12 +31,32 @@ public class CMItemModelProvider extends ItemModelProvider {
             basicItem(item);
         }
 
-        for (var lid : CMItems.ALL_LIDS.stream().map(DeferredHolder::get).toList()) {
+        for (var lidTuple : CMItems.ALL_LIDS) {
+            var lid = lidTuple.getA().get();
+            var textureName = lidTuple.getB();
 
+            var builder = getBuilder(CMUtil.getItemName(lid))
+                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "poke_balls/" + textureName));;
+
+            if (textureName.startsWith("ancient")) {
+                builder.parent(new ModelFile.ExistingModelFile(modLoc("item/ancient_lid"), this.existingFileHelper));
+            } else {
+                builder.parent(new ModelFile.ExistingModelFile(modLoc("item/normal_lid"), this.existingFileHelper));
+            }
         }
 
-        for (var base : CMItems.ALL_BASES.stream().map(DeferredHolder::get).toList()) {
+        for (var baseTuple : CMItems.ALL_BASES) {
+            var base = baseTuple.getA().get();
+            var textureName = baseTuple.getB();
 
+            var builder = getBuilder(CMUtil.getItemName(base))
+                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "poke_balls/" + textureName));;
+
+            if (textureName.startsWith("ancient")) {
+                builder.parent(new ModelFile.ExistingModelFile(modLoc("item/ancient_base"), this.existingFileHelper));
+            } else {
+                builder.parent(new ModelFile.ExistingModelFile(modLoc("item/normal_base"), this.existingFileHelper));
+            }
         }
 
         for (var core : CMItems.ALL_CORES.stream().map(DeferredHolder::get).toList()) {
