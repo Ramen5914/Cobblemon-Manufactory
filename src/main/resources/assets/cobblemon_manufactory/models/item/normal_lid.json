@@ -1,0 +1,39 @@
+{
+	"parent": "cobblemon_manufactory:item/ball_lid",
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"particle": "#ball"
+	},
+	"elements": [
+		{
+			"name": "inner",
+			"from": [4, 0, 4],
+			"to": [12, 4, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 12]},
+			"faces": {
+				"north": {"uv": [2, 4, 4, 6], "texture": "#ball"},
+				"east": {"uv": [0, 4, 2, 6], "texture": "#ball"},
+				"south": {"uv": [6, 4, 8, 6], "texture": "#ball"},
+				"west": {"uv": [4, 4, 6, 6], "texture": "#ball"},
+				"up": {"uv": [4, 4, 2, 0], "texture": "#ball"},
+				"down": {"uv": [6, 0, 4, 4], "texture": "#ball"}
+			}
+		},
+		{
+			"name": "outer",
+			"from": [3.75, -0.25, 3.75],
+			"to": [12.25, 4.25, 12.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 14, 4, 16], "texture": "#ball"},
+				"east": {"uv": [0, 14, 2, 16], "texture": "#ball"},
+				"south": {"uv": [6, 14, 8, 16], "texture": "#ball"},
+				"west": {"uv": [4, 14, 6, 16], "texture": "#ball"},
+				"up": {"uv": [2, 10, 4, 14], "rotation": 180, "texture": "#ball"},
+				"down": {"uv": [6, 10, 4, 14], "texture": "#ball"}
+			}
+		},
+	]
+}
