@@ -19,32 +19,31 @@ public class CMTabs {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.cobblemon_manufactory.cm_tab"))
                     .displayItems((params, output) -> {
-                        output.accept(CMItems.ANCIENT_BLACK_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_BLUE_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_SLATE_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_AZURE_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_FEATHER_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_GIGATON_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_GREAT_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_GREEN_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_VERDANT_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_HEAVY_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_JET_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_LEADEN_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_PINK_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_RED_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_ROSEATE_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_POKE_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_ULTRA_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_WHITE_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_IVORY_BALL_LID.get());
                         output.accept(CMItems.ANCIENT_WING_BALL_LID.get());
-                        output.accept(CMItems.ANCIENT_YELLOW_BALL_LID.get());
+                        output.accept(CMItems.ANCIENT_CITRINE_BALL_LID.get());
                         output.accept(CMItems.BEAST_BALL_LID.get());
-                        output.accept(CMItems.BLACK_BALL_LID.get());
-                        output.accept(CMItems.BLACK_TUMBLESTONE_LID.get());
-                        output.accept(CMItems.BLUE_BALL_LID.get());
+                        output.accept(CMItems.SLATE_BALL_LID.get());
+                        output.accept(CMItems.AZURE_BALL_LID.get());
                         output.accept(CMItems.DIVE_BALL_LID.get());
                         output.accept(CMItems.DREAM_BALL_LID.get());
                         output.accept(CMItems.DUSK_BALL_LID.get());
                         output.accept(CMItems.FAST_BALL_LID.get());
                         output.accept(CMItems.FRIEND_BALL_LID.get());
                         output.accept(CMItems.GREAT_BALL_LID.get());
-                        output.accept(CMItems.GREEN_BALL_LID.get());
+                        output.accept(CMItems.VERDANT_BALL_LID.get());
                         output.accept(CMItems.HEAL_BALL_LID.get());
                         output.accept(CMItems.HEAVY_BALL_LID.get());
                         output.accept(CMItems.LEVEL_BALL_LID.get());
@@ -56,18 +55,16 @@ public class CMTabs {
                         output.accept(CMItems.NEST_BALL_LID.get());
                         output.accept(CMItems.NET_BALL_LID.get());
                         output.accept(CMItems.PARK_BALL_LID.get());
-                        output.accept(CMItems.PINK_BALL_LID.get());
+                        output.accept(CMItems.ROSEATE_BALL_LID.get());
                         output.accept(CMItems.QUICK_BALL_LID.get());
-                        output.accept(CMItems.RED_BALL_LID.get());
+                        output.accept(CMItems.POKE_BALL_LID.get());
                         output.accept(CMItems.REPEAT_BALL_LID.get());
                         output.accept(CMItems.SAFARI_BALL_LID.get());
-                        output.accept(CMItems.SKY_TUMBLESTONE_LID.get());
                         output.accept(CMItems.SPORT_BALL_LID.get());
                         output.accept(CMItems.TIMER_BALL_LID.get());
-                        output.accept(CMItems.TUMBLESTONE_LID.get());
                         output.accept(CMItems.ULTRA_BALL_LID.get());
-                        output.accept(CMItems.WHITE_BALL_LID.get());
-                        output.accept(CMItems.YELLOW_BALL_LID.get());
+                        output.accept(CMItems.PREMIER_BALL_LID.get());
+                        output.accept(CMItems.CITRINE_BALL_LID.get());
 
                         output.accept(CMItems.CRUSHED_EXP_QUARTZ.get());
                         output.accept(CMItems.EXP_QUARTZ.get());
