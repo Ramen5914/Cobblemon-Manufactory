@@ -1,0 +1,6 @@
+{
+  "parent": "cobblemon_manufactory:item/ball_lid",
+  "textures": {
+    "ball": "cobblemon:item/poke_balls/models/level_ball"
+  }
+}
