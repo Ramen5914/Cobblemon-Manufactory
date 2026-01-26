@@ -38,7 +38,6 @@ public class CMItems {
     public static final DeferredItem<Item> ANCIENT_WING_BALL_LID = registerSimpleLid("ancient_wing_ball_lid", "ancient_wing_ball");
     public static final DeferredItem<Item> AZURE_BALL_LID = registerSimpleLid("azure_ball_lid", "azure_ball");
     public static final DeferredItem<Item> BEAST_BALL_LID = registerSimpleLid("beast_ball_lid", "beast_ball");
-    public static final DeferredItem<Item> CHERISH_BALL_LID = registerSimpleLid("cherish_ball_lid", "cherish_ball");
     public static final DeferredItem<Item> CITRINE_BALL_LID = registerSimpleLid("citrine_ball_lid", "citrine_ball");
     public static final DeferredItem<Item> DIVE_BALL_LID = registerSimpleLid("dive_ball_lid", "dive_ball");
     public static final DeferredItem<Item> DREAM_BALL_LID = registerSimpleLid("dream_ball_lid", "dream_ball");
@@ -89,7 +88,6 @@ public class CMItems {
     public static final DeferredItem<Item> ANCIENT_WING_BALL_BASE = registerSimpleBase("ancient_wing_ball_base", "ancient_wing_ball");
     public static final DeferredItem<Item> AZURE_BALL_BASE = registerSimpleBase("azure_ball_base", "azure_ball");
     public static final DeferredItem<Item> BEAST_BALL_BASE = registerSimpleBase("beast_ball_base", "beast_ball");
-    public static final DeferredItem<Item> CHERISH_BALL_BASE = registerSimpleBase("cherish_ball_base", "cherish_ball");
     public static final DeferredItem<Item> CITRINE_BALL_BASE = registerSimpleBase("citrine_ball_base", "citrine_ball");
     public static final DeferredItem<Item> DIVE_BALL_BASE = registerSimpleBase("dive_ball_base", "dive_ball");
     public static final DeferredItem<Item> DREAM_BALL_BASE = registerSimpleBase("dream_ball_base", "dream_ball");
