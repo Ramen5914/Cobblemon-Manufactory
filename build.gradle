@@ -84,6 +84,11 @@ neoForge {
         data {
             data()
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+            programArguments.addAll(providers.provider {
+                configurations.runtimeClasspath.resolve()
+                        .findAll { it.name.endsWith('.jar') || it.isDirectory() }
+                        .collectMany { ['--existing', it.absolutePath] }
+            })
         }
 
         configureEach {
