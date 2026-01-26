@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "cobblemon_manufactory:green_ball_lid"
+      "item": "cobblemon_manufactory:verdant_ball_lid"
     },
     {
       "item": "minecraft:black_dye"

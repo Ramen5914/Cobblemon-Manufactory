@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "cobblemon_manufactory:white_ball_lid"
+      "item": "cobblemon_manufactory:premier_ball_lid"
     },
     {
       "item": "minecraft:pink_dye"

@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "cobblemon_manufactory:black_ball_lid"
+    "item": "cobblemon_manufactory:slate_ball_lid"
   },
   "results": [
     {

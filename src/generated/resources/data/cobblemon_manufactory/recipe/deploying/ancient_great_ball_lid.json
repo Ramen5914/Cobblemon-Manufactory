@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "cobblemon_manufactory:ancient_blue_ball_lid"
+      "item": "cobblemon_manufactory:ancient_azure_ball_lid"
     },
     {
       "item": "minecraft:red_dye"

@@ -1,0 +1,45 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon:red_apricorn"
+  },
+  "results": [
+    {
+      "id": "cobblemon_manufactory:poke_ball_lid"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_poke_ball_lid"
+        },
+        {
+          "item": "cobblemon:red_apricorn"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_poke_ball_lid"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_poke_ball_lid"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_poke_ball_lid"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_poke_ball_lid"
+  }
+}

@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "item": "cobblemon_manufactory:black_ball_lid"
+      "item": "cobblemon_manufactory:slate_ball_lid"
     },
     {
       "item": "minecraft:yellow_dye"

@@ -1,0 +1,32 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon:red_apricorn"
+  },
+  "results": [
+    {
+      "id": "cobblemon_manufactory:poke_ball_base"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_poke_ball_base"
+        },
+        {
+          "item": "cobblemon:red_apricorn"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_poke_ball_base"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_poke_ball_base"
+  }
+}
