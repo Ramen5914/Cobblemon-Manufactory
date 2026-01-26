@@ -30,14 +30,13 @@ public class CMItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(CMTags.Items.ANCIENT_BALL_LIDS)
-                .add(CMItems.ANCIENT_BLUE_BALL_LID.get())
-                .add(CMItems.ANCIENT_YELLOW_BALL_LID.get())
-                .add(CMItems.ANCIENT_WHITE_BALL_LID.get())
-                .add(CMItems.ANCIENT_RED_BALL_LID.get())
-                .add(CMItems.ANCIENT_PINK_BALL_LID.get())
-                .add(CMItems.ANCIENT_BLACK_BALL_LID.get())
-                .add(CMItems.ANCIENT_GREEN_BALL_LID.get())
-                .add(CMItems.TUMBLESTONE_LID.get());
+                .add(CMItems.ANCIENT_AZURE_BALL_LID.get())
+                .add(CMItems.ANCIENT_CITRINE_BALL_LID.get())
+                .add(CMItems.ANCIENT_IVORY_BALL_LID.get())
+                .add(CMItems.ANCIENT_POKE_BALL_LID.get())
+                .add(CMItems.ANCIENT_ROSEATE_BALL_LID.get())
+                .add(CMItems.ANCIENT_SLATE_BALL_LID.get())
+                .add(CMItems.ANCIENT_VERDANT_BALL_LID.get());
 
         tag(CMTags.Items.DYEABLE_ANCIENT_BALLS)
                 .add(CobblemonItems.ANCIENT_AZURE_BALL)
@@ -58,13 +57,13 @@ public class CMItemTagProvider extends ItemTagsProvider {
                 .add(CobblemonItems.VERDANT_BALL);
 
         tag(CMTags.Items.POKE_BALL_LIDS)
-                .add(CMItems.BLACK_BALL_LID.get())
-                .add(CMItems.BLUE_BALL_LID.get())
-                .add(CMItems.GREEN_BALL_LID.get())
-                .add(CMItems.PINK_BALL_LID.get())
-                .add(CMItems.RED_BALL_LID.get())
-                .add(CMItems.WHITE_BALL_LID.get())
-                .add(CMItems.YELLOW_BALL_LID.get());
+                .add(CMItems.SLATE_BALL_LID.get())
+                .add(CMItems.AZURE_BALL_LID.get())
+                .add(CMItems.VERDANT_BALL_LID.get())
+                .add(CMItems.ROSEATE_BALL_LID.get())
+                .add(CMItems.POKE_BALL_LID.get())
+                .add(CMItems.PREMIER_BALL_LID.get())
+                .add(CMItems.CITRINE_BALL_LID.get());
 
         tag(CMTags.Items.UPGRADES_SUPER_POTION)
                 .add(CobblemonItems.AGUAV_BERRY)
