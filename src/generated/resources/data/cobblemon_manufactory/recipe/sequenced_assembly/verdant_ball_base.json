@@ -1,0 +1,45 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cobblemon:green_apricorn"
+  },
+  "results": [
+    {
+      "id": "cobblemon_manufactory:verdant_ball_base"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_verdant_ball_base"
+        },
+        {
+          "item": "cobblemon:green_apricorn"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_verdant_ball_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_verdant_ball_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_verdant_ball_base"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cobblemon_manufactory:incomplete_verdant_ball_base"
+  }
+}
