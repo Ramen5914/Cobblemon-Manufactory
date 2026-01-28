@@ -24,6 +24,19 @@
           "id": "cobblemon_manufactory:incomplete_poke_ball_base"
         }
       ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cobblemon_manufactory:incomplete_poke_ball_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "cobblemon_manufactory:incomplete_poke_ball_base"
+        }
+      ]
     }
   ],
   "transitional_item": {

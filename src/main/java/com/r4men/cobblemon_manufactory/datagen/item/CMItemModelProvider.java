@@ -36,7 +36,7 @@ public class CMItemModelProvider extends ItemModelProvider {
             var textureName = lidTuple.getB();
 
             var builder = getBuilder(CMUtil.getItemName(lid))
-                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "poke_balls/" + textureName));;
+                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "item/poke_balls/models/" + textureName));;
 
             if (textureName.startsWith("ancient")) {
                 builder.parent(new ModelFile.ExistingModelFile(modLoc("item/ancient_lid"), this.existingFileHelper));
@@ -50,7 +50,7 @@ public class CMItemModelProvider extends ItemModelProvider {
             var textureName = baseTuple.getB();
 
             var builder = getBuilder(CMUtil.getItemName(base))
-                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "poke_balls/" + textureName));;
+                    .texture("ball", ResourceLocation.fromNamespaceAndPath("cobblemon", "item/poke_balls/models/" + textureName));;
 
             if (textureName.startsWith("ancient")) {
                 builder.parent(new ModelFile.ExistingModelFile(modLoc("item/ancient_base"), this.existingFileHelper));

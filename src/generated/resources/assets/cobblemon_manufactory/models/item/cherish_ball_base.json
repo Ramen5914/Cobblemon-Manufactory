@@ -1,6 +1,0 @@
-{
-  "parent": "cobblemon_manufactory:item/ball_lid",
-  "textures": {
-    "ball": "cobblemon:item/poke_balls/models/cherish_ball"
-  }
-}

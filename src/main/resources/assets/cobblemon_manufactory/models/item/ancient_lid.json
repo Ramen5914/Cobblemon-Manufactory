@@ -1,11 +1,10 @@
 {
-	"parent": "cobblemon_manufactory:item/ball_lid",
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
+	"parent": "cobblemon_manufactory:item/ball_lid",
 	"texture_size": [64, 32],
 	"textures": {
-		"particle": "#ball",
-		"ball": "cobblemon_copy:poke_balls/ancient_poke_ball"
+		"particle": "#ball"
 	},
 	"elements": [
 		{

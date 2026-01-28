@@ -1,5 +1,5 @@
 {
-  "parent": "cobblemon_manufactory:item/ball_lid",
+  "parent": "cobblemon_manufactory:item/ancient_base",
   "textures": {
     "ball": "cobblemon:item/poke_balls/models/ancient_poke_ball"
   }
