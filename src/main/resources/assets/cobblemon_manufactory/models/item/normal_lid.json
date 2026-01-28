@@ -34,6 +34,6 @@
 				"up": {"uv": [2, 10, 4, 14], "rotation": 180, "texture": "#ball"},
 				"down": {"uv": [6, 10, 4, 14], "texture": "#ball"}
 			}
-		},
+		}
 	]
 }
