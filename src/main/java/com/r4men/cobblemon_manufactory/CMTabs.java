@@ -115,9 +115,14 @@ public class CMTabs {
                         output.accept(CMItems.PREMIER_BALL_BASE.get());
                         output.accept(CMItems.CITRINE_BALL_BASE.get());
 
+                        output.accept(CMItems.COPPER_BALL_CORE.get());
+                        output.accept(CMItems.IRON_BALL_CORE.get());
+                        output.accept(CMItems.GOLD_BALL_CORE.get());
+                        output.accept(CMItems.DIAMOND_BALL_CORE.get());
+                        output.accept(CMItems.NETHERITE_BALL_CORE.get());
+
                         output.accept(CMItems.CRUSHED_EXP_QUARTZ.get());
                         output.accept(CMItems.EXP_QUARTZ.get());
-                        output.accept(CMItems.IRON_BALL_CORE.get());
 
                         output.accept(CMBlocks.EXP_QUARTZ_BLOCK.get());
                         output.accept(CMBlocks.EXP_QUARTZ_TILES.get());
