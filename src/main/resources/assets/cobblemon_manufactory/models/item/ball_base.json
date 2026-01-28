@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 32],
 	"textures": {
-		"0": "cobblemon_copy:poke_balls/ancient_poke_ball",
-		"particle": "cobblemon_copy:poke_balls/ancient_poke_ball"
+		"particle": "#ball"
 	},
 	"elements": [
 		{
@@ -13,12 +12,12 @@
 			"to": [12.25, 4.25, 12.25],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]},
 			"faces": {
-				"north": {"uv": [10, 14, 12, 16], "texture": "#0"},
-				"east": {"uv": [8, 14, 10, 16], "texture": "#0"},
-				"south": {"uv": [14, 14, 16, 16], "texture": "#0"},
-				"west": {"uv": [12, 14, 14, 16], "texture": "#0"},
-				"up": {"uv": [12, 14, 10, 10], "texture": "#0"},
-				"down": {"uv": [14, 10, 12, 14], "texture": "#0"}
+				"north": {"uv": [10, 14, 12, 16], "texture": "#ball"},
+				"east": {"uv": [8, 14, 10, 16], "texture": "#ball"},
+				"south": {"uv": [14, 14, 16, 16], "texture": "#ball"},
+				"west": {"uv": [12, 14, 14, 16], "texture": "#ball"},
+				"up": {"uv": [12, 14, 10, 10], "texture": "#ball"},
+				"down": {"uv": [14, 10, 12, 14], "texture": "#ball"}
 			}
 		},
 		{
@@ -27,12 +26,12 @@
 			"to": [12, 4, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]},
 			"faces": {
-				"north": {"uv": [10, 4, 12, 6], "texture": "#0"},
-				"east": {"uv": [8, 4, 10, 6], "texture": "#0"},
-				"south": {"uv": [14, 4, 16, 6], "texture": "#0"},
-				"west": {"uv": [12, 4, 14, 6], "texture": "#0"},
-				"up": {"uv": [12, 4, 10, 0], "texture": "#0"},
-				"down": {"uv": [14, 0, 12, 4], "texture": "#0"}
+				"north": {"uv": [10, 4, 12, 6], "texture": "#ball"},
+				"east": {"uv": [8, 4, 10, 6], "texture": "#ball"},
+				"south": {"uv": [14, 4, 16, 6], "texture": "#ball"},
+				"west": {"uv": [12, 4, 14, 6], "texture": "#ball"},
+				"up": {"uv": [12, 4, 10, 0], "texture": "#ball"},
+				"down": {"uv": [14, 0, 12, 4], "texture": "#ball"}
 			}
 		}
 	],
