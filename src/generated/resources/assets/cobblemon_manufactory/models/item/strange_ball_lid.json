@@ -1,6 +1,0 @@
-{
-  "parent": "cobblemon_manufactory:item/normal_lid",
-  "textures": {
-    "ball": "cobblemon:item/poke_balls/models/strange_ball"
-  }
-}

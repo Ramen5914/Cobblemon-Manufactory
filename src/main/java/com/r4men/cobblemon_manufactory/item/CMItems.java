@@ -63,7 +63,6 @@ public class CMItems {
     public static final DeferredItem<Item> SAFARI_BALL_LID = registerSimpleLid("safari_ball_lid", "safari_ball");
     public static final DeferredItem<Item> SLATE_BALL_LID = registerSimpleLid("slate_ball_lid", "slate_ball");
     public static final DeferredItem<Item> SPORT_BALL_LID = registerSimpleLid("sport_ball_lid", "sport_ball");
-    public static final DeferredItem<Item> STRANGE_BALL_LID = registerSimpleLid("strange_ball_lid", "strange_ball");
     public static final DeferredItem<Item> TIMER_BALL_LID = registerSimpleLid("timer_ball_lid", "timer_ball");
     public static final DeferredItem<Item> ULTRA_BALL_LID = registerSimpleLid("ultra_ball_lid", "ultra_ball");
     public static final DeferredItem<Item> VERDANT_BALL_LID = registerSimpleLid("verdant_ball_lid", "verdant_ball");
@@ -113,7 +112,6 @@ public class CMItems {
     public static final DeferredItem<Item> SAFARI_BALL_BASE = registerSimpleBase("safari_ball_base", "safari_ball");
     public static final DeferredItem<Item> SLATE_BALL_BASE = registerSimpleBase("slate_ball_base", "slate_ball");
     public static final DeferredItem<Item> SPORT_BALL_BASE = registerSimpleBase("sport_ball_base", "sport_ball");
-    public static final DeferredItem<Item> STRANGE_BALL_BASE = registerSimpleBase("strange_ball_base", "strange_ball");
     public static final DeferredItem<Item> TIMER_BALL_BASE = registerSimpleBase("timer_ball_base", "timer_ball");
     public static final DeferredItem<Item> ULTRA_BALL_BASE = registerSimpleBase("ultra_ball_base", "ultra_ball");
     public static final DeferredItem<Item> VERDANT_BALL_BASE = registerSimpleBase("verdant_ball_base", "verdant_ball");
@@ -163,7 +161,6 @@ public class CMItems {
     public static final DeferredItem<Item> INCOMPLETE_SAFARI_BALL_LID = registerSimpleIncompleteItem("incomplete_safari_ball_lid");
     public static final DeferredItem<Item> INCOMPLETE_SLATE_BALL_LID = registerSimpleIncompleteItem("incomplete_slate_ball_lid");
     public static final DeferredItem<Item> INCOMPLETE_SPORT_BALL_LID = registerSimpleIncompleteItem("incomplete_sport_ball_lid");
-    public static final DeferredItem<Item> INCOMPLETE_STRANGE_BALL_LID = registerSimpleIncompleteItem("incomplete_strange_ball_lid");
     public static final DeferredItem<Item> INCOMPLETE_TIMER_BALL_LID = registerSimpleIncompleteItem("incomplete_timer_ball_lid");
     public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL_LID = registerSimpleIncompleteItem("incomplete_ultra_ball_lid");
     public static final DeferredItem<Item> INCOMPLETE_VERDANT_BALL_LID = registerSimpleIncompleteItem("incomplete_verdant_ball_lid");
@@ -213,7 +210,6 @@ public class CMItems {
     public static final DeferredItem<Item> INCOMPLETE_SAFARI_BALL_BASE = registerSimpleIncompleteItem("incomplete_safari_ball_base");
     public static final DeferredItem<Item> INCOMPLETE_SLATE_BALL_BASE = registerSimpleIncompleteItem("incomplete_slate_ball_base");
     public static final DeferredItem<Item> INCOMPLETE_SPORT_BALL_BASE = registerSimpleIncompleteItem("incomplete_sport_ball_base");
-    public static final DeferredItem<Item> INCOMPLETE_STRANGE_BALL_BASE = registerSimpleIncompleteItem("incomplete_strange_ball_base");
     public static final DeferredItem<Item> INCOMPLETE_TIMER_BALL_BASE = registerSimpleIncompleteItem("incomplete_timer_ball_base");
     public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL_BASE = registerSimpleIncompleteItem("incomplete_ultra_ball_base");
     public static final DeferredItem<Item> INCOMPLETE_VERDANT_BALL_BASE = registerSimpleIncompleteItem("incomplete_verdant_ball_base");
