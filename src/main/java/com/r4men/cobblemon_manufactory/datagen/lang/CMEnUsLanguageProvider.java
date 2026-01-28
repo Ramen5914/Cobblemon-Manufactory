@@ -61,7 +61,7 @@ public class CMEnUsLanguageProvider extends LanguageProvider {
         }
 
         // Creative Mode Tabs
-        add("itemGroup.cobblemon_manufactory.cm_tab", "Cobblemon Manufactory");
+        add("itemGroup.cobblemon_manufactory.cm_tab", "Create: Cobblemon Manufactory");
 
         // Tags
         // # Item Tags
