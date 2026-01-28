@@ -34,6 +34,9 @@
     },
     "on_shelf": {
       "rotation": [0, -180, 0]
+    },
+    "fixed": {
+      "translation": [0, 4, 0]
     }
   }
 }
