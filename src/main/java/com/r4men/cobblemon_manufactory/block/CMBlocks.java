@@ -22,19 +22,22 @@ public class CMBlocks {
             () -> new Block(BlockBehaviour.Properties
                     .ofFullCopy(Blocks.STONE)
                     .sound(SoundType.AMETHYST)
-                    .mapColor(MapColor.COLOR_GREEN)));
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> EXP_QUARTZ_TILES = registerBlock("exp_quartz_tiles",
             () -> new Block(BlockBehaviour.Properties
                     .ofFullCopy(Blocks.STONE)
                     .sound(SoundType.AMETHYST)
-                    .mapColor(MapColor.COLOR_GREEN)));
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> SMALL_EXP_QUARTZ_TILES = registerBlock("small_exp_quartz_tiles",
             () -> new Block(BlockBehaviour.Properties
                     .ofFullCopy(Blocks.STONE)
                     .sound(SoundType.AMETHYST)
-                    .mapColor(MapColor.COLOR_GREEN)));
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
