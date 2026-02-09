@@ -37,7 +37,7 @@ The channel for this mod is [here](https://discord.com/channels/1284033904344567
 Pull requests are welcome as well!
 
 ## Credits
-My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/Cobblemon-Manufactory) mod.
+My mod borrows heavily from [Bracken40](https://www.curseforge.com/members/bracken40/projects)'s [Create: Cobblemon Industrialized](https://www.curseforge.com/minecraft/mc-mods/create-cobblemon-industrialized) mod.
 Huge thanks to them for the original idea and permission to do a port.
 Source code for their mod is here: [GitHub](https://github.com/Lord-Of-Crumbs/Create-Cobblemon-Industrialized-Fabric-1.20.x). 
 
