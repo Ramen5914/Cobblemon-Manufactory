@@ -1,6 +1,7 @@
 {
-  "homepage": "https://github.com/Ramen5914/Cobblemon-Manufactory/releases/latest",
+  "homepage": "https://r4men.com/mods/cobblemon-manufactory",
   "1.21.1": {
+    "0.3.3": "Changed update checker url and homepage to point to my new website",
     "0.3.2": "Updated dependencies to make sure mod runs properly for create 6.0.10",
     "0.3.1": "Fixed block drop loot tables for 3 blocks",
     "0.3.0": "Removed cherish ball from the mod entirely",
@@ -17,8 +18,8 @@
     "0.0.1": "Direct port of Create: Cobblemon Industrialized"
   },
   "promos": {
-    "1.21.1-latest": "0.3.2",
-    "1.21.1-recommended": "0.3.2"
+    "1.21.1-latest": "0.3.3",
+    "1.21.1-recommended": "0.3.3"
   },
   "supportedVersions": "1.21.1"
 }
